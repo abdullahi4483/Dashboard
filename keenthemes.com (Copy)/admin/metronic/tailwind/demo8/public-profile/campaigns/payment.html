@@ -16,7 +16,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   dir="ltr"
   lang="en"
 >
-  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:38:40 GMT -->
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list?dir=ltr by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:40:25 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=utf-8"
@@ -207,7 +207,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                       class="font-medium text-2x1 text-mono"
                       style="font-size: 30px"
                     >
-                      My Invoice
+                      Payment
                     </h1>
                   </div>
                   <div class="flex items-center flex-wrap gap-1.5 lg:gap-2.5">
@@ -2153,440 +2153,270 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
               <!-- End of Container -->
               <!-- Container -->
-              <div class="kt-container-fixed">
-                <!-- begin: works -->
-                <div class="flex flex-col items-stretch gap-5 lg:gap-7.5">
-                  <!-- begin: toolbar -->
+              <div class="min-h-screen p-4">
+                <div class="max-w-6xl mx-auto">
+                  <!-- Section Header -->
+                  <h1 class="text-lg font-semibold text-gray-800">
+                    Payment History
+                  </h1>
+                  <p class="text-sm text-gray-500 mb-6">
+                    View all your payment transactions and receipts
+                  </p>
 
-                  <!-- end: toolbar -->
-                  <!-- begin: cards -->
-
-                  <!-- end: cards -->
-                  <!-- begin: list -->
+                  <!-- Cards Grid -->
                   <div
-                    class="w-full max-w-5xl bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
                   >
-                    <div class="bg-center bg-cover bg-no-repeat hero-bg mb-5">
-                      <!-- Container -->
-                      <div
-                        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 w-full max-w-6xl p-4"
-                      >
-                        <!-- Total Invoices -->
-                        <div
-                          class="bg-white rounded-xl shadow-sm border border-gray-200 p-5 flex justify-between items-center"
-                        >
-                          <div>
-                            <h3 class="text-sm font-semibold text-gray-600">
-                              Total Invoices
-                            </h3>
-                            <p class="text-2xl font-bold text-gray-800">4</p>
-                          </div>
-                          <div class="text-gray-500 text-3xl">📄</div>
-                        </div>
-
-                        <!-- Pending -->
-                        <div
-                          class="bg-white rounded-xl shadow-sm border border-gray-200 p-5 flex justify-between items-center"
-                        >
-                          <div>
-                            <h3 class="text-sm font-semibold text-gray-600">
-                              Pending
-                            </h3>
-                            <p class="text-2xl font-bold text-orange-500">1</p>
-                          </div>
-                          <div class="text-orange-500 text-3xl">⏰</div>
-                        </div>
-
-                        <!-- Partially Paid -->
-                        <div
-                          class="bg-white rounded-xl shadow-sm border border-gray-200 p-5 flex justify-between items-center"
-                        >
-                          <div>
-                            <h3 class="text-sm font-semibold text-gray-600">
-                              Partially Paid
-                            </h3>
-                            <p class="text-2xl font-bold text-red-500">2</p>
-                          </div>
-                          <div class="text-red-500 text-3xl">📉</div>
-                        </div>
-
-                        <!-- Paid -->
-                        <div
-                          class="bg-white rounded-xl shadow-sm border border-gray-200 p-5 flex justify-between items-center"
-                        >
-                          <div>
-                            <h3 class="text-sm font-semibold text-gray-600">
-                              Paid
-                            </h3>
-                            <p class="text-2xl font-bold text-green-500">1</p>
-                          </div>
-                          <div class="text-green-500 text-3xl">✅</div>
-                        </div>
+                    <!-- Total Payments -->
+                    <div
+                      class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between"
+                    >
+                      <div>
+                        <h2 class="text-xs font-medium text-gray-600">
+                          Total Payments
+                        </h2>
+                        <p class="text-lg font-bold text-gray-800">3</p>
                       </div>
-                      <!-- End of Container -->
+                      <span class="text-gray-500 text-2xl">💳</span>
                     </div>
-                    <!-- Header -->
+
+                    <!-- Total Paid -->
+                    <div
+                      class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between"
+                    >
+                      <div>
+                        <h2 class="text-xs font-medium text-gray-600">
+                          Total Paid
+                        </h2>
+                        <p class="text-lg font-bold text-green-600">₦725,000</p>
+                      </div>
+                      <span class="text-green-600 text-2xl">$</span>
+                    </div>
+
+                    <!-- Partial Payments -->
+                    <div
+                      class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between"
+                    >
+                      <div>
+                        <h2 class="text-xs font-medium text-gray-600">
+                          Partial Payments
+                        </h2>
+                        <p
+                          class="text-lg font-bold text-orange-600"
+                          style="color: oklch(0.646 0.222 41.116)"
+                        >
+                          2
+                        </p>
+                      </div>
+                      <span class="text-orange-600 text-2xl">↘</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Container -->
+              <div class="p-4">
+                <div class="max-w-5xl mx-auto bg-white shadow rounded-lg p-4">
+                  <!-- Header -->
+                  <div class="mb-4">
                     <h2 class="text-lg font-semibold text-gray-800">
-                      Invoice List
+                      Recent Payments
                     </h2>
-                    <p class="text-sm text-gray-500 mb-6">All your invoices</p>
+                    <p class="text-sm text-gray-500">
+                      Your payment transaction history
+                    </p>
+                  </div>
 
-                    <div class="space-y-4">
-                      <!-- INVOICE 1 -->
-                      <div class="border border-gray-200 rounded-xl p-5">
-                        <div
-                          class="flex flex-col md:flex-row justify-between items-start md:items-center"
-                        >
-                          <div>
-                            <div class="flex items-center gap-2">
-                              <span class="text-sm font-semibold text-gray-700"
-                                >INV-001</span
-                              >
-                              <span
-                                class="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full"
-                                style="
-                                  color: #a16207;
-                                  background-color: #fef9c3;
-                                "
-                                >Partially Paid</span
-                              >
-                            </div>
-                            <p class="text-sm text-gray-600">
-                              Ocean View Apartment
-                            </p>
-                            <p class="text-xs text-gray-400">
-                              Monthly Service Charge - September 2024
-                            </p>
-                            <p class="text-xs text-gray-400">
-                              Issued: 9/1/2024 • Due: 9/30/2024 • Last payment:
-                              9/15/2024
-                            </p>
-                            <p
-                              class="text-sm text-green-600 font-semibold mt-1"
-                            >
-                              Paid: ₦125,000
-                            </p>
-                          </div>
-                          <div class="text-right mt-3 md:mt-0">
-                            <p class="text-sm font-bold text-gray-800">
-                              ₦250,000
-                            </p>
-                            <p class="text-xs text-pink-500">
-                              ₦125,000 remaining
-                            </p>
-                          </div>
+                  <!-- Payment Card -->
+                  <div class="space-y-4">
+                    <!-- Payment Item -->
+                    <div
+                      class="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid rgb(216, 210, 210);
+                      "
+                    >
+                      <div>
+                        <div class="flex items-center gap-2 mb-1">
+                          <span class="text-sm font-semibold text-gray-700"
+                            >PAY-001</span
+                          >
+                          <span
+                            class="border border-0 text-red-500 text-xs px-2 py-0.5 rounded"
+                            style="background-color: #ec4899; color: white"
+                            >Completed</span
+                          >
                         </div>
-                        <!-- Progress -->
-                        <div class="mt-3">
-                          <div
-                            class="w-full bg-pink-100 h-2 rounded-full"
-                            style="background-color: #cc9eb5"
-                          >
-                            <div
-                              class="bg-pink-500 h-2 rounded-full"
-                              style="width: 50%; background-color: #ec4899"
-                            ></div>
-                          </div>
-                          <p class="text-xs text-gray-500 text-right mt-1">
-                            50%
-                          </p>
-                        </div>
-                        <!-- Actions -->
-                        <div class="flex flex-wrap gap-2 mt-4">
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                            command="show-modal"
-                            commandfor="invoiceDialog"
-                          >
-                            👁 View Details
-                          </button>
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                          >
-                            ⬇ Download
-                          </button>
-                          <button
-                            class="text-sm bg-pink-500 text-white px-3 py-1.5 rounded-lg hover:bg-pink-600"
-                            style="background-color: #ec4899"
-                            command="show-modal"
-                            commandfor="invoiceDialoggg"
-                          >
-                            💳 Make Payment
-                          </button>
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                            command="show-modal"
-                            commandfor="invoiceDialogggg"
-                          >
-                            📜 History
-                          </button>
-                        </div>
+                        <p class="text-gray-800 font-medium">Executive Villa</p>
+                        <p class="text-sm text-gray-500">Invoice: INV-003</p>
+                        <p class="text-sm text-gray-500">
+                          Method: Card Payment &nbsp; | &nbsp; Reference:
+                          REF-123456789 &nbsp; | &nbsp; Type: Full Payment
+                        </p>
                       </div>
-
-                      <!-- INVOICE 2 -->
-                      <div class="border border-gray-200 rounded-xl p-5">
-                        <div
-                          class="flex flex-col md:flex-row justify-between items-start md:items-center"
+                      <div class="flex flex-col items-end mt-3 sm:mt-0">
+                        <p class="text-green-600 font-semibold">₦500,000</p>
+                        <p class="text-xs text-gray-400">10/5/2024</p>
+                        <button
+                          class="mt-2 flex items-center gap-1 border rounded px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
                         >
-                          <div>
-                            <div class="flex items-center gap-2">
-                              <span class="text-sm font-semibold text-gray-700"
-                                >INV-002</span
-                              >
-                              <span
-                                class="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full"
-                                style="
-                                  color: #a16207;
-                                  background-color: #fef9c3;
-                                "
-                                >Partially Paid</span
-                              >
-                            </div>
-                            <p class="text-sm text-gray-600">
-                              Ocean View Apartment
-                            </p>
-                            <p class="text-xs text-gray-400">
-                              Monthly Service Charge - October 2024
-                            </p>
-                            <p class="text-xs text-gray-400">
-                              Issued: 10/1/2024 • Due: 10/31/2024 • Last
-                              payment: 10/10/2024
-                            </p>
-                            <p
-                              class="text-sm text-green-600 font-semibold mt-1"
-                            >
-                              Paid: ₦100,000
-                            </p>
-                          </div>
-                          <div class="text-right mt-3 md:mt-0">
-                            <p class="text-sm font-bold text-gray-800">
-                              ₦250,000
-                            </p>
-                            <p class="text-xs text-pink-500">
-                              ₦150,000 remaining
-                            </p>
-                          </div>
-                        </div>
-                        <!-- Progress -->
-                        <div class="mt-3">
-                          <div
-                            class="w-full bg-pink-100 h-2 rounded-full"
-                            style="background-color: #cc9eb5"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
                           >
-                            <div
-                              class="bg-pink-500 h-2 rounded-full"
-                              style="width: 40%; background-color: #ec4899"
-                            ></div>
-                          </div>
-                          <p class="text-xs text-gray-500 text-right mt-1">
-                            40%
-                          </p>
-                        </div>
-                        <!-- Actions -->
-                        <div class="flex flex-wrap gap-2 mt-4">
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                            command="show-modal"
-                            commandfor="invoiceDialog"
-                          >
-                            👁 View Details
-                          </button>
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                          >
-                            ⬇ Download
-                          </button>
-                          <button
-                            class="text-sm bg-pink-500 text-white px-3 py-1.5 rounded-lg hover:bg-pink-600"
-                            style="background-color: #ec4899"
-                            command="show-modal"
-                            commandfor="invoiceDialoggg"
-                          >
-                            💳 Make Payment
-                          </button>
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                            command="show-modal"
-                            commandfor="invoiceDialogggg"
-                          >
-                            📜 History
-                          </button>
-                        </div>
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 4v16m8-8H4"
+                            />
+                          </svg>
+                          Receipt
+                        </button>
                       </div>
+                    </div>
 
-                      <!-- INVOICE 3 -->
-                      <div class="border border-gray-200 rounded-xl p-5">
-                        <div
-                          class="flex flex-col md:flex-row justify-between items-start md:items-center"
-                        >
-                          <div>
-                            <div class="flex items-center gap-2">
-                              <span class="text-sm font-semibold text-gray-700"
-                                >INV-003</span
-                              >
-                              <span
-                                class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full"
-                                style="
-                                  color: #15803d;
-                                  background-color: #98dfb2;
-                                "
-                                >Paid</span
-                              >
-                            </div>
-                            <p class="text-sm text-gray-600">Executive Villa</p>
-                            <p class="text-xs text-gray-400">
-                              Monthly Service Charge - October 2024
-                            </p>
-                            <p class="text-xs text-gray-400">
-                              Issued: 10/1/2024 • Due: 10/31/2024
-                            </p>
-                            <p
-                              class="text-sm text-green-600 font-semibold mt-1"
-                            >
-                              Paid: ₦500,000
-                            </p>
-                          </div>
-                          <div class="text-right mt-3 md:mt-0">
-                            <p class="text-sm font-bold text-gray-800">
-                              ₦500,000
-                            </p>
-                            <p class="text-xs text-green-600">Fully Paid</p>
-                          </div>
-                        </div>
-                        <!-- Progress -->
-                        <div class="mt-3">
-                          <div class="w-full bg-pink-100 h-2 rounded-full">
-                            <div
-                              class="bg-pink-500 h-2 rounded-full"
-                              style="width: 100%; background-color: #ec4899"
-                            ></div>
-                          </div>
-                          <p class="text-xs text-gray-500 text-right mt-1">
-                            100%
-                          </p>
-                        </div>
-                        <!-- Actions -->
-                        <div class="flex flex-wrap gap-2 mt-4">
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                            command="show-modal"
-                            commandfor="invoiceDialog"
+                    <!-- Payment Item -->
+                    <div
+                      class="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid rgb(216, 210, 210);
+                      "
+                    >
+                      <div>
+                        <div class="flex items-center gap-2 mb-1">
+                          <span class="text-sm font-semibold text-gray-700"
+                            >PAY-002</span
                           >
-                            👁 View Details
-                          </button>
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
+                          <span
+                            class="border border-red-500 text-red-500 text-xs px-2 py-0.5 rounded"
+                            style="background-color: #ec4899; color: white"
+                            >Completed</span
                           >
-                            ⬇ Download
-                          </button>
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                            command="show-modal"
-                            commandfor="invoiceDialogggg"
+                          <span
+                            class="border text-red-500 text-xs px-2 py-0.5 rounded"
+                            style="border: 1px solid #ec4899; color: #ec4899"
+                            >Partial</span
                           >
-                            📜 History
-                          </button>
                         </div>
+                        <p class="text-gray-800 font-medium">
+                          Ocean View Apartment
+                        </p>
+                        <p class="text-sm text-gray-500">Invoice: INV-001</p>
+                        <p class="text-sm text-gray-500">
+                          Method: Bank Transfer &nbsp; | &nbsp; Reference:
+                          REF-987654321 &nbsp; | &nbsp; Type: Partial Payment (1
+                          of 2)
+                        </p>
                       </div>
-
-                      <!-- INVOICE 4 -->
-                      <div class="border border-gray-200 rounded-xl p-5">
-                        <div
-                          class="flex flex-col md:flex-row justify-between items-start md:items-center"
+                      <div class="flex flex-col items-end mt-3 sm:mt-0">
+                        <p class="text-green-600 font-semibold">₦125,000</p>
+                        <p class="text-xs text-gray-400">9/15/2024</p>
+                        <button
+                          class="mt-2 flex items-center gap-1 border rounded px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
                         >
-                          <div>
-                            <div class="flex items-center gap-2">
-                              <span class="text-sm font-semibold text-gray-700"
-                                >INV-004</span
-                              >
-                              <span
-                                class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full"
-                                style="color: #c2410c"
-                                >Pending</span
-                              >
-                            </div>
-                            <p class="text-sm text-gray-600">
-                              Ocean View Apartment
-                            </p>
-                            <p class="text-xs text-gray-400">
-                              Monthly Service Charge - November 2024
-                            </p>
-                            <p class="text-xs text-gray-400">
-                              Issued: 11/1/2024 • Due: 11/30/2024
-                            </p>
-                            <p
-                              class="text-sm text-red-500 font-semibold mt-1"
-                              style="color: rgb(221, 6, 6)"
-                            >
-                              Unpaid
-                            </p>
-                          </div>
-                          <div class="text-right mt-3 md:mt-0">
-                            <p class="text-sm font-bold text-gray-800">
-                              ₦250,000
-                            </p>
-                            <p class="text-xs text-pink-500">
-                              ₦250,000 remaining
-                            </p>
-                          </div>
-                        </div>
-                        <!-- Progress -->
-                        <div class="mt-3">
-                          <div
-                            class="w-full bg-pink-100 h-2 rounded-full"
-                            style="background-color: #cc9eb5"
-                          ></div>
-                          <p class="text-xs text-gray-500 text-right mt-1">
-                            0%
-                          </p>
-                        </div>
-                        <!-- Actions -->
-                        <div class="flex flex-wrap gap-2 mt-4">
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
-                            command="show-modal"
-                            commandfor="invoiceDialog"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
                           >
-                            👁 View Details
-                          </button>
-                          <button
-                            class="text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-50"
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 4v16m8-8H4"
+                            />
+                          </svg>
+                          Receipt
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Payment Item -->
+                    <div
+                      class="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid rgb(216, 210, 210);
+                      "
+                    >
+                      <div>
+                        <div class="flex items-center gap-2 mb-1">
+                          <span class="text-sm font-semibold text-gray-700"
+                            >PAY-003</span
                           >
-                            ⬇ Download
-                          </button>
-                          <button
-                            class="text-sm bg-pink-500 text-white px-3 py-1.5 rounded-lg hover:bg-pink-600"
-                            style="background-color: #ec4899"
-                            command="show-modal"
-                            commandfor="invoiceDialoggg"
+                          <span
+                            class="border border-0 text-red-500 text-xs px-2 py-0.5 rounded"
+                            style="background-color: #ec4899; color: white"
+                            >Completed</span
                           >
-                            💳 Make Payment
-                          </button>
+                          <span
+                            class="border border-red-500 text-red-500 text-xs px-2 py-0.5 rounded"
+                            style="border: 1px solid #ec4899; color: #ec4899"
+                            >Partial</span
+                          >
                         </div>
+                        <p class="text-gray-800 font-medium">
+                          Ocean View Apartment
+                        </p>
+                        <p class="text-sm text-gray-500">Invoice: INV-002</p>
+                        <p class="text-sm text-gray-500">
+                          Method: Card Payment &nbsp; | &nbsp; Reference:
+                          REF-456789123 &nbsp; | &nbsp; Type: Partial Payment (1
+                          of 3)
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-end mt-3 sm:mt-0">
+                        <p class="text-green-600 font-semibold">₦100,000</p>
+                        <p class="text-xs text-gray-400">10/10/2024</p>
+                        <button
+                          class="mt-2 flex items-center gap-1 border rounded px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 4v16m8-8H4"
+                            />
+                          </svg>
+                          Receipt
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <!-- end: list -->
                 </div>
-                <!-- end: works -->
               </div>
-              <!-- End of Container -->
             </main>
           </div>
           <!-- Footer -->
           <footer class="footer">
-            <!-- Container 
+            <!-- Container -->
             <div class="kt-container-fixed">
               <div
                 class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 py-5"
               >
                 <div class="flex order-2 md:order-1 gap-2 font-normal text-sm">
-                  <span class="text-muted-foreground"> 2025© </span>
+                  <span class="text-muted-foreground"> </span>
                   <a
                     class="text-secondary-foreground hover:text-primary"
                     href="https://keenthemes.com/"
                   >
-                    Keenthemes Inc.
                   </a>
                 </div>
                 <nav
@@ -2596,31 +2426,26 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     class="hover:text-primary"
                     href="https://keenthemes.com/metronic/tailwind/docs"
                   >
-                    Docs
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://1.envato.market/Vm7VRE"
                   >
-                    Purchase
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
                   >
-                    FAQ
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://devs.keenthemes.com/"
                   >
-                    Support
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
                   >
-                    License
                   </a>
                 </nav>
               </div>
@@ -3140,845 +2965,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
         </div>
       </div>
     </div>
-
-    <el-dialog>
-      <dialog
-        id="invoiceDialog"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed; /* fixed */
-          inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
-          width: auto; /* size-auto → width:auto */
-          height: auto; /* size-auto → height:auto */
-          max-height: none; /* max-h-none */
-          max-width: none; /* max-w-none */
-          overflow-y: auto; /* overflow-y-auto */
-          background-color: transparent; /* bg-transparent */
-          backdrop-filter: none; /* backdrop:bg-transparent (no backdrop color) */
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-        >
-        </el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-2xl data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4 my-header"
-            >
-              <h3my-panel
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem; /* text-lg → 18px */
-                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
-                  font-weight: 600; /* font-semibold */
-                  color: #111827;
-                "
-              >
-                Invoice Details
-              </h3my-panel>
-              <button
-                command="close"
-                commandfor="invoiceDialog"
-                class="text-gray-400 hover:text-gray-600 my-link"
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div class="px-6 py-4 space-y-4 my-section">
-              <p
-                class="text-sm text-gray-500"
-                style="
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem; /* Tailwind's default for text-sm */
-                  color: #6b7280;
-                "
-              >
-                Invoice INV-001 for Ocean View Apartment
-              </p>
-
-              <div
-                class="grid grid-cols-2 gap-4 text-sm"
-                style="
-                  display: grid; /* grid */
-                  grid-template-columns: repeat(
-                    2,
-                    minmax(0, 1fr)
-                  ); /* grid-cols-2 */
-                  gap: 1rem; /* gap-4 → 16px */
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem;
-                "
-              >
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Invoice ID
-                  </p>
-                  <p class="text-gray-900" style="color: #111827">INV-001</p>
-                </div>
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Status
-                  </p>
-                  <p
-                    class="text-yellow-600 font-semibold"
-                    style="
-                      color: #ca8a04; /* text-yellow-600 */
-                      font-weight: 600;
-                    "
-                  >
-                    Partially Paid
-                  </p>
-                </div>
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Issue Date
-                  </p>
-                  <p class="text-gray-900" style="color: #111827">9/1/2024</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Due Date</p>
-                  <p class="text-gray-900">9/30/2024</p>
-                </div>
-              </div>
-
-              <hr class="border-gray-200" />
-
-              <div>
-                <p class="font-medium text-gray-700">Description</p>
-                <p class="text-sm text-gray-500">
-                  Monthly Service Charge - September 2024
-                </p>
-              </div>
-
-              <div class="space-y-2 text-sm">
-                <div class="flex justify-between">
-                  <span>Service Charge</span>
-                  <span class="font-medium">₦200,000</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Security Fee</span>
-                  <span class="font-medium">₦30,000</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Maintenance Fee</span>
-                  <span class="font-medium">₦20,000</span>
-                </div>
-              </div>
-
-              <hr class="border-gray-200" />
-
-              <div class="flex justify-between font-semibold text-gray-900">
-                <span>Total Amount</span>
-                <span>₦250,000</span>
-              </div>
-
-              <div class="flex justify-between text-sm">
-                <span class="text-green-600 font-semibold">Paid Amount</span>
-                <span class="text-green-600 font-semibold">₦125,000</span>
-              </div>
-              <div class="flex justify-between text-sm">
-                <span class="text-red-600 font-semibold">Remaining Amount</span>
-                <span class="text-red-600 font-semibold">₦125,000</span>
-              </div>
-
-              <div class="pt-2">
-                <div class="flex justify-between text-xs text-gray-600 mb-1">
-                  <span>Payment Progress</span>
-                  <span>50%</span>
-                </div>
-                <div
-                  class="w-full bg-gray-200 h-2"
-                  style="
-                    width: 100%; /* w-full */
-                    background-color: #e5e7eb;
-                    border-radius: 9999px; /* rounded-full */
-                    height: 0.5rem;
-                  "
-                >
-                  <div
-                    class="bg-red-500 h-2 rounded-full w-1/2"
-                    style="
-                      background-color: #ec4899; /* bg-red-500 */
-                      height: 0.5rem; /* h-2 */
-                      border-radius: 9999px; /* rounded-full */
-                      width: 50%;
-                    "
-                  ></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
-              <button
-                command="close"
-                commandfor="invoiceDialog"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                Close
-              </button>
-              <button
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                Download
-              </button>
-              <button
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                History
-              </button>
-              <button class="my-danger-btn">Make Payment</button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-    <!-- End of Modal -->
-    <!-- Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialoggg"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed;
-          inset: 0;
-          width: auto;
-          height: auto;
-          max-height: none;
-          max-width: none;
-          overflow-y: auto;
-          background-color: transparent;
-          backdrop-filter: none;
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-        >
-        </el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4"
-              style="
-                display: flex;
-                align-items: center; /* items-center */
-                justify-content: space-between; /* justify-between */
-                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <h3
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem; /* text-lg → 18px */
-                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
-                  font-weight: 600; /* font-semibold */
-                  color: #111827;
-                "
-              >
-                Make Payment
-              </h3>
-              <button
-                command="close"
-                commandfor="invoiceDialoggg"
-                class="text-gray-400 hover:text-gray-600"
-                style="
-                  color: #9ca3af; /* text-gray-400 */
-                  transition: color 0.2s ease-in-out; /* smooth hover effect */
-                "
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-4"
-              style="
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-              "
-            >
-              <!-- Invoice summary -->
-              <div
-                class="bg-gray-50 rounded-md p-4 grid grid-cols-2 gap-4 text-sm"
-                style="
-                  background-color: #f9fafb;
-                  border-radius: 0.375rem;
-                  padding: 1rem;
-                  display: grid;
-                  grid-template-columns: repeat(2, minmax(0, 1fr));
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                  line-height: 1.25rem;
-                "
-              >
-                <div>
-                  <p class="font-medium text-gray-600">Invoice Amount</p>
-                  <p class="font-semibold text-gray-900">₦250,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Paid Amount</p>
-                  <p class="font-semibold text-green-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Remaining Amount</p>
-                  <p class="font-semibold text-red-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Progress</p>
-                  <p class="font-semibold text-gray-900">50% paid</p>
-                </div>
-              </div>
-
-              <!-- Progress bar -->
-              <div class="pt-2">
-                <div class="w-full bg-gray-200 h-2 rounded-full">
-                  <div
-                    class="bg-green-500 h-2 rounded-full"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Payment Amount -->
-              <div>
-                <label class="font-medium text-gray-700"
-                  >Payment Amount (₦)</label
-                >
-                <input
-                  type="number"
-                  placeholder="Enter amount (Max: ₦125,000)"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
-                  style="max-width: 100%"
-                />
-                <div class="flex gap-2 mt-2">
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    25%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    50%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    75%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    Full
-                  </button>
-                </div>
-              </div>
-
-              <!-- Payment Method -->
-              <div>
-                <p class="font-medium text-gray-700">Payment Method</p>
-                <div class="mt-1 flex items-center gap-2">
-                  <input type="radio" name="payment-method" />
-                  <span>Card Payment</span>
-                </div>
-              </div>
-
-              <!-- Notes -->
-              <div>
-                <p class="font-medium text-gray-700">Notes (Optional)</p>
-                <textarea
-                  placeholder="Add any payment notes..."
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
-                ></textarea>
-              </div>
-
-              <!-- Secure payment notice -->
-              <div
-                class="border border-blue-200 bg-blue-50 rounded-md p-3 text-xs text-blue-700"
-              >
-                <strong>Secure Payment:</strong> Your payment will be processed
-                securely. You’ll receive a confirmation receipt via email.
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
-              <button
-                command="close"
-                commandfor="invoiceDialoggg"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  border: 1px solid #d1d5db; /* border-gray-300 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  color: #374151; /* text-gray-700 */
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Cancel
-              </button>
-              <button
-                class="rounded-md bg-red-600 text-white px-3 py-2 text-sm font-medium hover:bg-red-700"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  background-color: #dc2626; /* bg-red-600 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  font-weight: 500; /* font-medium */
-                  color: #ffffff; /* text-white */
-                  cursor: pointer;
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Pay ₦0
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-
-    <!-- End of Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialogggg"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed;
-          inset: 0;
-          width: auto;
-          height: auto;
-          max-height: none;
-          max-width: none;
-          overflow-y: auto;
-          background-color: transparent;
-          backdrop-filter: none;
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-          style="
-            position: fixed; /* fixed */
-            inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
-            background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
-            transition: opacity 0.3s ease-out; /* smooth fade-in/out */
-            opacity: 1; /* fully visible by default */
-          "
-        ></el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-          style="
-            display: flex; /* flex */
-            min-height: 100%; /* min-h-full */
-            align-items: flex-end; /* items-end */
-            justify-content: center; /* justify-center */
-            padding: 1rem; /* p-4 → 16px */
-            text-align: center; /* text-center */
-            outline: none; /* focus:outline-none */
-          "
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl"
-            style="
-              position: relative; /* relative */
-              transform: translateY(0) scale(1); /* initial state */
-              overflow: hidden; /* overflow-hidden */
-              border-radius: 0.5rem; /* rounded-lg */
-              background-color: #ffffff; /* bg-white */
-              text-align: left; /* text-left */
-              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-                0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
-              transition: all 0.3s ease-out; /* smooth transition */
-              margin-top: 2rem; /* sm:my-8 → margin vertical on small screens */
-              margin-bottom: 2rem;
-              width: 100%; /* sm:w-full */
-              max-width: 32rem; /* sm:max-w-2xl → max-width: 768px */
-            "
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4"
-              style="
-                display: flex;
-                align-items: center; /* items-center */
-                justify-content: space-between; /* justify-between */
-                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <h3
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem;
-                  line-height: 1.75rem;
-                  font-weight: 600;
-                  color: #111827;
-                "
-              >
-                Payment History
-              </h3>
-              <button
-                command="close"
-                commandfor="invoiceDialogggg"
-                class="text-gray-400 hover:text-gray-600"
-                style="
-                  color: #9ca3af; /* text-gray-400 */
-                  transition: color 0.2s ease-in-out; /* smooth hover effect */
-                "
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-4"
-              style="
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem; /* space-y-4 → vertical spacing */
-              "
-            >
-              <p
-                class="text-sm text-gray-500"
-                style="
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem; /* Tailwind's default for text-sm */
-                  color: #6b7280;
-                "
-              >
-                All payments for invoice INV-001
-              </p>
-
-              <!-- Summary -->
-              <div class="grid grid-cols-3 gap-4 text-center text-sm">
-                <div>
-                  <p class="font-semibold text-gray-900">Total Invoice</p>
-                  <p class="font-bold text-black">₦250,000</p>
-                </div>
-                <div>
-                  <p class="font-semibold text-gray-900">Total Paid</p>
-                  <p class="font-bold text-green-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-semibold text-gray-900">Balance Due</p>
-                  <p class="font-bold text-red-600">₦125,000</p>
-                </div>
-              </div>
-
-              <!-- Progress bar -->
-              <div class="pt-2" style="padding-top: 0.5rem; /* pt-2 */">
-                <div
-                  class="flex justify-between text-xs text-gray-600 mb-1"
-                  style="margin-bottom: 0.25rem; /* mb-1 */"
-                >
-                  <span>50% completed</span>
-                </div>
-                <div class="w-full bg-gray-200 h-2 rounded-full">
-                  <div
-                    class="bg-red-500 h-2 rounded-full"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Payment Record -->
-              <div
-                class="border rounded-lg p-4 flex justify-between items-center"
-                style="
-                  border: 1px solid #e5e7eb; /* light gray border */
-                  border-radius: 0.375rem; /* rounded-lg */
-                  padding: 1rem; /* p-4 */
-                  display: flex; /* flex */
-                  justify-content: space-between; /* justify-between */
-                  align-items: center; /* items-center */
-                "
-              >
-                <div>
-                  <p class="font-semibold">
-                    PAY-002
-                    <span
-                      class="bg-red-100 text-red-600 text-xs font-medium px-2 py-1 rounded-full ml-2"
-                      style="
-                        background-color: #fee2e2; /* bg-red-100 */
-                        color: #dc2626; /* text-red-600 */
-                        font-size: 0.75rem; /* text-xs */
-                        font-weight: 500; /* font-medium */
-                        padding: 0.25rem 0.5rem; /* px-2 py-1 */
-                        border-radius: 9999px; /* rounded-full */
-                        margin-left: 0.5rem; /* ml-2 */
-                      "
-                    >
-                      Completed
-                    </span>
-                  </p>
-                  <p class="text-sm text-gray-600">Method: Bank Transfer</p>
-                  <p class="text-xs text-gray-400">Reference: REF-987654321</p>
-                </div>
-                <div class="text-right">
-                  <p class="text-green-600 font-bold">₦125,000</p>
-                  <p class="text-xs text-gray-500">9/15/2024</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div
-              class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4"
-              style="
-                display: flex; /* flex */
-                justify-content: flex-end; /* justify-end */
-                gap: 0.5rem; /* gap-2 → 8px */
-                border-top: 1px solid #e5e7eb; /* border-t */
-                background-color: #f9fafb; /* bg-gray-50 */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <button
-                command="close"
-                commandfor="invoiceDialogggg"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  border: 1px solid #d1d5db; /* border-gray-300 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  color: #374151; /* text-gray-700 */
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Close
-              </button>
-              <button
-                class="rounded-md bg-pink-600 text-white px-4 py-2 text-sm font-medium hover:bg-pink-700 flex items-center gap-1"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  background-color: #ec4899; /* bg-red-500 */
-                  padding: 0.5rem 1rem; /* px-4 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  font-weight: 500; /* font-medium */
-                  color: #ffffff; /* text-white */
-                  cursor: pointer;
-                  transition: background-color 0.2s ease;
-                  display: flex; /* flex */
-                  align-items: center; /* items-center */
-                  gap: 0.25rem; /* gap-1 → 4px */
-                "
-                command="show-modal"
-                commandfor="invoiceDialoggg"
-              >
-                <span>＋</span> Make Payment
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
     <!-- End of Page -->
-
-    <style>
-      .my-danger-btn {
-        border-radius: 0.375rem; /* rounded-md */
-        background-color: #ec4899; /* bg-red-500 */
-        padding: 0.5rem 0.75rem; /* px-3 py-2 */
-        font-size: 0.875rem; /* text-sm */
-        font-weight: 600; /* font-semibold */
-        color: #ffffff; /* text-white */
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-
-      .my-danger-btn:hover {
-        background-color: #f87171; /* hover:bg-red-400 */
-      }
-
-      .my-section {
-        padding-left: 1.5rem; /* px-6 → 24px */
-        padding-right: 1.5rem;
-        padding-top: 1rem; /* py-4 → 16px */
-        padding-bottom: 1rem;
-      }
-
-      /* space-y-4 → adds vertical spacing between children */
-      .my-section > * + * {
-        margin-top: 1rem; /* 16px */
-      }
-
-      .my-link {
-        color: #9ca3af; /* text-gray-400 */
-        transition: color 0.2s ease-in-out; /* smooth hover effect */
-      }
-
-      .my-link:hover {
-        color: #4b5563; /* text-gray-600 */
-      }
-
-      .my-backdrop {
-        position: fixed; /* fixed */
-        inset: 0; /* inset-0 → top:0; right:0; bottom:0; left:0 */
-        background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
-        transition-property: opacity; /* transition-opacity */
-        transition-duration: 150ms; /* default Tailwind duration */
-        transition-timing-function: ease-in-out; /* default easing */
-      }
-
-      /* State when dialog is closed */
-      .my-backdrop[data-closed] {
-        opacity: 0; /* data-closed:opacity-0 */
-      }
-
-      /* Enter transition */
-      .my-backdrop[data-enter] {
-        transition-duration: 300ms; /* data-enter:duration-300 */
-        transition-timing-function: ease-out; /* data-enter:ease-out */
-      }
-
-      /* Leave transition */
-      .my-backdrop[data-leave] {
-        transition-duration: 200ms; /* data-leave:duration-200 */
-        transition-timing-function: ease-in; /* data-leave:ease-in */
-      }
-
-      .my-container {
-        display: flex; /* flex */
-        min-height: 100%; /* min-h-full */
-        align-items: flex-end; /* items-end */
-        justify-content: center; /* justify-center */
-        padding: 1rem; /* p-4 */
-        text-align: center; /* text-center */
-        outline: none; /* focus:outline-none */
-      }
-
-      /* Small screens and up (sm:) */
-      @media (min-width: 640px) {
-        .my-container {
-          align-items: center; /* sm:items-center */
-          padding: 0; /* sm:p-0 */
-        }
-      }
-      .my-panel {
-        position: relative; /* relative */
-        transform: translate(0, 0); /* transform (baseline) */
-        overflow: hidden; /* overflow-hidden */
-        border-radius: 0.5rem; /* rounded-lg (8px radius) */
-        background-color: #ffffff; /* bg-white */
-        text-align: left; /* text-left */
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
-        transition-property: all; /* transition-all */
-        transition-duration: 150ms; /* default Tailwind duration */
-        transition-timing-function: ease-in-out; /* default ease */
-        opacity: 1; /* default visible */
-        margin: 0; /* reset */
-      }
-
-      /* Closed state */
-      .my-panel[data-closed] {
-        transform: translateY(1rem); /* data-closed:translate-y-4 (16px down) */
-        opacity: 0; /* data-closed:opacity-0 */
-      }
-
-      @media (min-width: 640px) {
-        .my-panel {
-          margin-top: 2rem; /* sm:my-8 (32px vertical margin) */
-          margin-bottom: 2rem;
-          width: 100%; /* sm:w-full */
-          max-width: 42rem; /* sm:max-w-2xl (672px) */
-        }
-
-        .my-panel[data-closed] {
-          transform: translateY(0) scale(0.95);
-          /* data-closed:sm:translate-y-0 + data-closed:sm:scale-95 */
-        }
-      }
-
-      /* Enter transition */
-      .my-panel[data-enter] {
-        transition-duration: 300ms; /* data-enter:duration-300 */
-        transition-timing-function: ease-out; /* data-enter:ease-out */
-      }
-
-      /* Leave transition */
-      .my-panel[data-leave] {
-        transition-duration: 200ms; /* data-leave:duration-200 */
-        transition-timing-function: ease-in; /* data-leave:ease-in */
-      }
-      .my-header {
-        display: flex; /* flex */
-        align-items: center; /* items-center */
-        justify-content: space-between; /* justify-between */
-        border-bottom: 1px solid #e5e7eb; /* border-b (Tailwind gray-200 default) */
-        padding-left: 1.5rem; /* px-6 → 24px */
-        padding-right: 1.5rem;
-        padding-top: 1rem; /* py-4 → 16px */
-        padding-bottom: 1rem;
-      }
-      .my-rounded-btn {
-        border-radius: 0.375rem; /* rounded-md */
-        border: 1px solid #d1d5db; /* border-gray-300 */
-        padding: 0.5rem 0.75rem; /* px-3 py-2 */
-        font-size: 0.875rem; /* text-sm */
-        color: #374151; /* text-gray-700 */
-        background-color: transparent;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-
-      .my-rounded-btn:hover {
-        background-color: #f3f4f6; /* hover:bg-gray-100 */
-      }
-    </style>
     <!-- Scripts -->
     <script src="../../../../../static/metronic/tailwind/dist/assets/my-js/sidebar2.js"></script>
     <script src="../../../../../static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
@@ -3987,5 +2974,5 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <!-- End of Scripts -->
   </body>
 
-  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:38:41 GMT -->
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list?dir=ltr by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:40:25 GMT -->
 </html>
