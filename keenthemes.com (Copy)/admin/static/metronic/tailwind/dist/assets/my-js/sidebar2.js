@@ -47,7 +47,7 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Boards
+                    Dashboard
                   </span>
                 </a>
               </div>
@@ -55,7 +55,7 @@ const sideHtmll = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="../../properties.html"
+                  href="../../client.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -65,7 +65,7 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Properties
+                    Clients
                   </span>
                 </a>
               </div>
@@ -82,24 +82,7 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    My invoice
-                  </span>
-                </a>
-              </div>
-              <div class="kt-menu-item">
-                <a
-                  class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="create-invoice.html"
-                >
-                  <span
-                    class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
-                  >
-                    <i class="ki-filled ki-file ki-plus text-xl"></i>
-                  </span>
-                  <span
-                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
-                  >
-                    Create invoice
+                    Invoices
                   </span>
                 </a>
               </div>
@@ -111,32 +94,33 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
                   >
-                    <i class="ki-filled ki-bank text-xl"></i>
+                    <i class="ki-filled ki-file ki-plus text-xl"></i>
                   </span>
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Payment
+                    Payments
                   </span>
                 </a>
               </div>
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="receipt.html"
+                  href="properties.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
                   >
-                    <i class="ki-filled ki-receipt ki-text text-xl"></i>
+                    <i class="ki-filled ki-bank text-xl"></i>
                   </span>
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Receipt
+                    Properties
                   </span>
                 </a>
               </div>
+              
             </div>
             <!-- End of Sidebar Menu -->
           </div>

@@ -16,7 +16,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   dir="ltr"
   lang="en"
 >
-  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list?dir=ltr by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:40:25 GMT -->
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:38:40 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=utf-8"
@@ -105,6 +105,18 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       href="../../../../../static/metronic/tailwind/dist/assets/css/styles.css"
       rel="stylesheet"
     />
+    <!-- Regular Rounded Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <!-- Solid Rounded Icons (optional, if you need solid style icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+
     <!-- Google tag (gtag.js) -->
     <script
       async=""
@@ -202,13 +214,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 <div
                   class="kt-container-fixed flex items-center justify-between flex-wrap gap-3"
                 >
-                  <div class="flex items-center flex-wrap gap-1 lg:gap-5">
-                    <h1
-                      class="font-medium text-2x1 text-mono"
-                      style="font-size: 30px"
-                    >
-                      Payment
-                    </h1>
+                  <div class="items-center flex-wrap gap-1 lg:gap-5">
+                    <h2 class="text-lg font-semibold text-gray-700">
+                      Payment Monitoring
+                    </h2>
                   </div>
                   <div class="flex items-center flex-wrap gap-1.5 lg:gap-2.5">
                     <!-- Search -->
@@ -2133,7 +2142,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     <!-- End of Notifications -->
                     <a class="kt-btn kt-btn-sm kt-btn-outline">
                       <i class="ki-filled ki-exit-down text-base!"> </i>
-                      Export
+                      logout
                     </a>
                   </div>
                 </div>
@@ -2153,270 +2162,344 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
               <!-- End of Container -->
               <!-- Container -->
-              <div class="min-h-screen p-4">
-                <div class="max-w-6xl mx-auto">
-                  <!-- Section Header -->
-                  <h1 class="text-lg font-semibold text-gray-800">
-                    Payment History
-                  </h1>
-                  <p class="text-sm text-gray-500 mb-6">
-                    View all your payment transactions and receipts
-                  </p>
+              <div class="kt-container-fixed">
+                <!-- begin: works -->
+                <div class="flex flex-col items-stretch gap-5 lg:gap-7.5">
+                  <!-- begin: toolbar -->
 
-                  <!-- Cards Grid -->
+                  <!-- end: toolbar -->
+                  <!-- begin: cards -->
                   <div
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+                    class="grid grid-cols- sm:grid-cols-2 xl:grid-cols-4 gap-4"
                   >
-                    <!-- Total Payments -->
+                    <!-- Total Properties -->
                     <div
-                      class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between"
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
                     >
-                      <div>
-                        <h2 class="text-xs font-medium text-gray-600">
-                          Total Payments
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Total Collections
                         </h2>
-                        <p class="text-lg font-bold text-gray-800">3</p>
+                        <i class="fi fi-rr-building text-gray-600"></i>
                       </div>
-                      <span class="text-gray-500 text-2xl">💳</span>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-gray-800">₦825,000</p>
+                      </div>
                     </div>
 
-                    <!-- Total Paid -->
+                    <!-- Buyers & Tenants -->
                     <div
-                      class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between"
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
                     >
-                      <div>
-                        <h2 class="text-xs font-medium text-gray-600">
-                          Total Paid
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Total Transactions
                         </h2>
-                        <p class="text-lg font-bold text-green-600">₦725,000</p>
+                        <i class="fi fi-rr-text text-blue-600"></i>
                       </div>
-                      <span class="text-green-600 text-2xl">$</span>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-blue-600">4</p>
+                      </div>
                     </div>
 
-                    <!-- Partial Payments -->
+                    <!-- Revenue Collected -->
                     <div
-                      class="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between"
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Transaction Fees
+                        </h2>
+                        <i class="fi fi-rr-dollar text-green-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-green-600">₦6,300</p>
+                      </div>
+                    </div>
+
+                    <!-- Pending Collections -->
+                    <div
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">Success Rate</h2>
+                        <i class="fi fi-rr-time-check text-yellow-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-yellow-600">100%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end: cards -->
+
+                  <!-- begin: list -->
+                  <div
+                    class="bg-white border-0 rounded-lg p-4 shadow-sm"
+                    style="border: 1px solid #eee"
+                  >
+                    <!-- Header -->
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 16px;
+                      "
                     >
                       <div>
-                        <h2 class="text-xs font-medium text-gray-600">
-                          Partial Payments
+                        <h2 class="text-lg text-gray-700">
+                          Payment Transactions
                         </h2>
-                        <p
-                          class="text-lg font-bold text-orange-600"
-                          style="color: oklch(0.646 0.222 41.116)"
-                        >
-                          2
+                        <p class="text-sm text-gray-500 mb-4">
+                          4 payments found
                         </p>
                       </div>
-                      <span class="text-orange-600 text-2xl">↘</span>
+                      <button class="kt-btn kt-btn-sm kt-btn-outline">
+                        <i class="ki-filled ki-exit-down text-lg"> </i>
+                        Export
+                      </button>
+                    </div>
+                    <!-- Transactions List -->
+                    <div class="space-y-4">
+                      <!-- Payment 1 -->
+                      <div
+                        class="border-0 rounded-lg p-4 flex flex-col md:flex-row md:items-center md:justify-between"
+                        style="border: 1px solid #eee"
+                      >
+                        <div>
+                          <div class="flex items-center gap-2 mb-1">
+                            <span class="font-semibold text-gray-700"
+                              >PAY-001</span
+                            >
+                            <span
+                              class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-600"
+                              style="background-color: #f3e9e9; color: #b22222"
+                              >Completed</span
+                            >
+                          </div>
+                          <p class="text-sm text-gray-600">Jane Smith</p>
+                          <p class="text-xs text-gray-500">Invoice: INV-002</p>
+                          <p class="text-xs text-gray-500">
+                            Method: Card Payment • Reference: REF-123456789 •
+                            Fee: ₦2,000 • Type: Full Payment
+                          </p>
+                        </div>
+                        <div class="text-right mt-3 md:mt-0">
+                          <p class="font-semibold text-gray-700">₦200,000</p>
+                          <p class="text-xs text-gray-500">10/5/2024</p>
+                          <div class="flex justify-end gap-2 mt-2">
+                            <button
+                              class="p-2 border-0 rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                              command="show-modal"
+                              commandfor="paymentDialog"
+                            >
+                              <i class="fi fi-rr-eye"></i>
+                            </button>
+                            <button
+                              class="p-2 border rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                            >
+                              <i class="fi fi-rr-download"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Payment 2 -->
+                      <div
+                        class="border-0 rounded-lg p-4 flex flex-col md:flex-row md:items-center md:justify-between"
+                        style="border: 1px solid #eee"
+                      >
+                        <div>
+                          <div class="flex items-center gap-2 mb-1">
+                            <span class="font-semibold text-gray-700"
+                              >PAY-002</span
+                            >
+                            <span
+                              class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-600"
+                              style="background-color: #f3e9e9; color: #b22222"
+                              >Completed</span
+                            >
+                            <span
+                              class="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700"
+                              style="background-color: #fff4e5; color: #d97706"
+                              >Partial</span
+                            >
+                          </div>
+                          <p class="text-sm text-gray-600">John Doe</p>
+                          <p class="text-xs text-gray-500">Invoice: INV-001</p>
+                          <p
+                            class="text-xs text-gray-500 mb-4"
+                            style="color: #b22222"
+                          >
+                            Remaining: ₦125,000
+                          </p>
+                          <p class="text-xs text-gray-500">
+                            Remaining: ₦125,000 • Method: Bank Transfer •
+                            Reference: REF-987654321 • Fee: ₦600 • Type: Partial
+                            Payment
+                          </p>
+                        </div>
+                        <div class="text-right mt-3 md:mt-0">
+                          <p class="font-semibold text-gray-700">₦123,000</p>
+                          <p class="text-xs text-gray-500">9/15/2024</p>
+                          <div class="flex justify-end gap-2 mt-2">
+                            <button
+                              class="p-2 border-0 rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                              command="show-modal"
+                              commandfor="paymentDialog"
+                            >
+                              <i class="fi fi-rr-eye"></i>
+                            </button>
+                            <button
+                              class="p-2 border-0 rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                            >
+                              <i class="fi fi-rr-download"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Payment 3 -->
+                      <div
+                        class="border-0 rounded-lg p-4 flex flex-col md:flex-row md:items-center md:justify-between"
+                        style="border: 1px solid #eee"
+                      >
+                        <div>
+                          <div class="flex items-center gap-2 mb-1">
+                            <span class="font-semibold text-gray-700"
+                              >PAY-003</span
+                            >
+                            <span
+                              class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-600"
+                              style="background-color: #f3e9e9; color: #b22222"
+                              >Completed</span
+                            >
+                            <span
+                              class="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700"
+                              style="background-color: #fff4e5; color: #d97706"
+                              >Partial</span
+                            >
+                          </div>
+                          <p class="text-sm text-gray-600">Mike Johnson</p>
+                          <p class="text-xs text-gray-500">Invoice: INV-004</p>
+                          <p
+                            class="text-xs text-gray-500 mb-4"
+                            style="color: #b22222"
+                          >
+                            Remaining: ₦600,000
+                          </p>
+
+                          <p class="text-xs text-gray-500">
+                            Remaining: ₦600,000 • Method: Bank Transfer •
+                            Reference: REF-111222333 • Fee: ₦400 • Type: Partial
+                            Payment (1 of 4)
+                          </p>
+                        </div>
+                        <div class="text-right mt-3 md:mt-0">
+                          <p class="font-semibold text-gray-700">₦200,000</p>
+                          <p class="text-xs text-gray-500">10/12/2024</p>
+                          <div class="flex justify-end gap-2 mt-2">
+                            <button
+                              class="p-2 border-0 rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                              command="show-modal"
+                              commandfor="paymentDialog"
+                            >
+                              <i class="fi fi-rr-eye"></i>
+                            </button>
+                            <button
+                              class="p-2 border-0 rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                            >
+                              <i class="fi fi-rr-download"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Payment 4 -->
+                      <div
+                        class="border-0 rounded-lg p-4 flex flex-col md:flex-row md:items-center md:justify-between"
+                        style="border: 1px solid #eee"
+                      >
+                        <div>
+                          <div class="flex items-center gap-2 mb-1">
+                            <span class="font-semibold text-gray-700"
+                              >PAY-004</span
+                            >
+                            <span
+                              class="px-2 py-1 text-xs rounded-full bg-red-100 text-red-600"
+                              style="background-color: #f3e9e9; color: #b22222"
+                              >Completed</span
+                            >
+                            <span
+                              class="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700"
+                              style="background-color: #fff4e5; color: #d97706"
+                              >Partial</span
+                            >
+                          </div>
+                          <p class="text-sm text-gray-600">Mike Johnson</p>
+                          <p class="text-xs text-gray-500">Invoice: INV-004</p>
+                          <p
+                            class="text-xs text-gray-500 mb-4"
+                            style="color: #b22222"
+                          >
+                            Remaining: ₦400,000
+                          </p>
+
+                          <p class="text-xs text-gray-500">
+                            Remaining: ₦400,000 • Method: Card Payment •
+                            Reference: REF-444555666 • Fee: ₦200 • Type: Partial
+                            Payment (2 of 4)
+                          </p>
+                        </div>
+                        <div class="text-right mt-3 md:mt-0">
+                          <p class="font-semibold text-gray-700">₦200,000</p>
+                          <p class="text-xs text-gray-500">10/10/2024</p>
+                          <div class="flex justify-end gap-2 mt-2">
+                            <button
+                              class="p-2 border-0 rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                              command="show-modal"
+                              commandfor="paymentDialog"
+                            >
+                              <i class="fi fi-rr-eye"></i>
+                            </button>
+                            <button
+                              class="p-2 border-0 rounded hover:bg-gray-100"
+                              style="border: 1px solid #eee"
+                            >
+                              <i class="fi fi-rr-download"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- end: works -->
               </div>
               <!-- End of Container -->
-              <div class="p-4">
-                <div class="max-w-5xl mx-auto bg-white shadow rounded-lg p-4">
-                  <!-- Header -->
-                  <div class="mb-4">
-                    <h2 class="text-lg font-semibold text-gray-800">
-                      Recent Payments
-                    </h2>
-                    <p class="text-sm text-gray-500">
-                      Your payment transaction history
-                    </p>
-                  </div>
-
-                  <!-- Payment Card -->
-                  <div class="space-y-4">
-                    <!-- Payment Item -->
-                    <div
-                      class="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        border: 1px solid rgb(216, 210, 210);
-                      "
-                    >
-                      <div>
-                        <div class="flex items-center gap-2 mb-1">
-                          <span class="text-sm font-semibold text-gray-700"
-                            >PAY-001</span
-                          >
-                          <span
-                            class="border border-0 text-red-500 text-xs px-2 py-0.5 rounded"
-                            style="background-color: #ec4899; color: white"
-                            >Completed</span
-                          >
-                        </div>
-                        <p class="text-gray-800 font-medium">Executive Villa</p>
-                        <p class="text-sm text-gray-500">Invoice: INV-003</p>
-                        <p class="text-sm text-gray-500">
-                          Method: Card Payment &nbsp; | &nbsp; Reference:
-                          REF-123456789 &nbsp; | &nbsp; Type: Full Payment
-                        </p>
-                      </div>
-                      <div class="flex flex-col items-end mt-3 sm:mt-0">
-                        <p class="text-green-600 font-semibold">₦500,000</p>
-                        <p class="text-xs text-gray-400">10/5/2024</p>
-                        <button
-                          class="mt-2 flex items-center gap-1 border rounded px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M12 4v16m8-8H4"
-                            />
-                          </svg>
-                          Receipt
-                        </button>
-                      </div>
-                    </div>
-
-                    <!-- Payment Item -->
-                    <div
-                      class="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        border: 1px solid rgb(216, 210, 210);
-                      "
-                    >
-                      <div>
-                        <div class="flex items-center gap-2 mb-1">
-                          <span class="text-sm font-semibold text-gray-700"
-                            >PAY-002</span
-                          >
-                          <span
-                            class="border border-red-500 text-red-500 text-xs px-2 py-0.5 rounded"
-                            style="background-color: #ec4899; color: white"
-                            >Completed</span
-                          >
-                          <span
-                            class="border text-red-500 text-xs px-2 py-0.5 rounded"
-                            style="border: 1px solid #ec4899; color: #ec4899"
-                            >Partial</span
-                          >
-                        </div>
-                        <p class="text-gray-800 font-medium">
-                          Ocean View Apartment
-                        </p>
-                        <p class="text-sm text-gray-500">Invoice: INV-001</p>
-                        <p class="text-sm text-gray-500">
-                          Method: Bank Transfer &nbsp; | &nbsp; Reference:
-                          REF-987654321 &nbsp; | &nbsp; Type: Partial Payment (1
-                          of 2)
-                        </p>
-                      </div>
-                      <div class="flex flex-col items-end mt-3 sm:mt-0">
-                        <p class="text-green-600 font-semibold">₦125,000</p>
-                        <p class="text-xs text-gray-400">9/15/2024</p>
-                        <button
-                          class="mt-2 flex items-center gap-1 border rounded px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M12 4v16m8-8H4"
-                            />
-                          </svg>
-                          Receipt
-                        </button>
-                      </div>
-                    </div>
-
-                    <!-- Payment Item -->
-                    <div
-                      class="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between"
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        border: 1px solid rgb(216, 210, 210);
-                      "
-                    >
-                      <div>
-                        <div class="flex items-center gap-2 mb-1">
-                          <span class="text-sm font-semibold text-gray-700"
-                            >PAY-003</span
-                          >
-                          <span
-                            class="border border-0 text-red-500 text-xs px-2 py-0.5 rounded"
-                            style="background-color: #ec4899; color: white"
-                            >Completed</span
-                          >
-                          <span
-                            class="border border-red-500 text-red-500 text-xs px-2 py-0.5 rounded"
-                            style="border: 1px solid #ec4899; color: #ec4899"
-                            >Partial</span
-                          >
-                        </div>
-                        <p class="text-gray-800 font-medium">
-                          Ocean View Apartment
-                        </p>
-                        <p class="text-sm text-gray-500">Invoice: INV-002</p>
-                        <p class="text-sm text-gray-500">
-                          Method: Card Payment &nbsp; | &nbsp; Reference:
-                          REF-456789123 &nbsp; | &nbsp; Type: Partial Payment (1
-                          of 3)
-                        </p>
-                      </div>
-                      <div class="flex flex-col items-end mt-3 sm:mt-0">
-                        <p class="text-green-600 font-semibold">₦100,000</p>
-                        <p class="text-xs text-gray-400">10/10/2024</p>
-                        <button
-                          class="mt-2 flex items-center gap-1 border rounded px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M12 4v16m8-8H4"
-                            />
-                          </svg>
-                          Receipt
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </main>
           </div>
           <!-- Footer -->
           <footer class="footer">
-            <!-- Container -->
+            <!-- Container 
             <div class="kt-container-fixed">
               <div
                 class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 py-5"
               >
                 <div class="flex order-2 md:order-1 gap-2 font-normal text-sm">
-                  <span class="text-muted-foreground"> </span>
+                  <span class="text-muted-foreground"> 2025© </span>
                   <a
                     class="text-secondary-foreground hover:text-primary"
                     href="https://keenthemes.com/"
                   >
+                    Keenthemes Inc.
                   </a>
                 </div>
                 <nav
@@ -2426,26 +2509,31 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     class="hover:text-primary"
                     href="https://keenthemes.com/metronic/tailwind/docs"
                   >
+                    Docs
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://1.envato.market/Vm7VRE"
                   >
+                    Purchase
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
                   >
+                    FAQ
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://devs.keenthemes.com/"
                   >
+                    Support
                   </a>
                   <a
                     class="hover:text-primary"
                     href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
                   >
+                    License
                   </a>
                 </nav>
               </div>
@@ -2461,511 +2549,202 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <!-- End of Base -->
     <div id="headhtmlll"></div>
     <!-- Share Profile Modal -->
-    <div class="kt-modal" data-kt-modal="true" id="share_profile_modal">
-      <div class="kt-modal-content max-w-[500px] top-5 lg:top-[15%]">
-        <div class="kt-modal-header">
-          <h3 class="kt-modal-title">Share Profile</h3>
-          <button
-            class="kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost shrink-0"
-            data-kt-modal-dismiss="true"
+    <el-dialog>
+      <dialog
+        id="paymentDialog"
+        aria-labelledby="payment-title"
+        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
+        style="
+          position: fixed;
+          inset: 0;
+          width: auto;
+          height: auto;
+          max-height: none;
+          max-width: none;
+          overflow-y: auto;
+          background-color: transparent;
+          backdrop-filter: none;
+          z-index: 50;
+        "
+      >
+        <!-- Backdrop -->
+        <el-dialog-backdrop
+          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
+          style="
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease-out;
+            opacity: 1;
+          "
+        ></el-dialog-backdrop>
+
+        <!-- Modal Content -->
+        <div
+          tabindex="0"
+          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
+          style="
+            display: flex;
+            min-height: 100%;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 1rem;
+            text-align: center;
+            outline: none;
+          "
+        >
+          <el-dialog-panel
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
+            style="
+              position: relative;
+              transform: translateY(0);
+              overflow: hidden;
+              border-radius: 0.5rem;
+              background-color: #ffffff;
+              text-align: left;
+              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+              transition: all 0.3s ease-out;
+              width: 100%;
+              max-width: 32rem;
+            "
           >
-            <i class="ki-filled ki-cross"> </i>
-          </button>
-        </div>
-        <div class="kt-modal-body grid gap-5 px-0 py-5">
-          <div class="flex flex-col px-5 gap-2.5">
-            <div class="flex flex-center gap-1">
-              <label class="text-mono font-semibold text-sm">
-                Share read-only link
-              </label>
-              <i
-                class="ki-filled ki-information-2 text-muted-foreground text-sm"
-              >
-              </i>
-            </div>
-            <label class="kt-input">
-              <input
-                type="text"
-                value="https://metronic.com/profiles/x7g2vA3kZ5"
-              />
-              <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost -me-2">
-                <i class="ki-filled ki-copy"> </i>
-              </button>
-            </label>
-          </div>
-          <div class="border-b border-b-border"></div>
-          <div class="flex flex-col px-5 gap-2.5">
-            <div class="flex flex-center gap-1">
-              <label class="text-mono font-semibold text-sm">
-                Share via email
-              </label>
-              <i
-                class="ki-filled ki-information-2 text-muted-foreground text-sm"
-              >
-              </i>
-            </div>
-            <div class="flex flex-center gap-2.5">
-              <label class="kt-input">
-                <input type="text" value="miles.turner@gmail.com" />
-              </label>
-              <button class="kt-btn kt-btn-primary">Share</button>
-            </div>
-          </div>
-          <div class="kt-scrollable-y-auto max-h-[300px]">
-            <div class="flex flex-col px-5 gap-3">
-              <div class="flex items-center flex-wrap gap-2">
-                <div class="flex items-center grow gap-2.5">
-                  <img
-                    alt=""
-                    class="rounded-full size-9 shrink-0"
-                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-3.png"
-                  />
-                  <div class="flex flex-col">
-                    <a
-                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
-                      href="#"
-                    >
-                      Tyler Hero
-                    </a>
-                    <a
-                      class="hover:text-primary text-2sm text-secondary-foreground"
-                      href="#"
-                    >
-                      tyler.hero@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <select class="kt-select max-w-24" data-kt-select="true">
-                  <option selected="">Owner</option>
-                  <option>Editor</option>
-                  <option>Viewer</option>
-                </select>
-              </div>
-              <div class="flex items-center flex-wrap gap-2">
-                <div class="flex items-center grow gap-2.5">
-                  <img
-                    alt=""
-                    class="rounded-full size-9 shrink-0"
-                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
-                  />
-                  <div class="flex flex-col">
-                    <a
-                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
-                      href="#"
-                    >
-                      Esther Howard
-                    </a>
-                    <a
-                      class="hover:text-primary text-2sm text-secondary-foreground"
-                      href="#"
-                    >
-                      esther.howard@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <select class="kt-select max-w-24" data-kt-select="true">
-                  <option>Owner</option>
-                  <option selected="">Editor</option>
-                  <option>Viewer</option>
-                </select>
-              </div>
-              <div class="flex items-center flex-wrap gap-2">
-                <div class="flex items-center grow gap-2.5">
-                  <img
-                    alt=""
-                    class="rounded-full size-9 shrink-0"
-                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-11.png"
-                  />
-                  <div class="flex flex-col">
-                    <a
-                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
-                      href="#"
-                    >
-                      Jacob Jones
-                    </a>
-                    <a
-                      class="hover:text-primary text-2sm text-secondary-foreground"
-                      href="#"
-                    >
-                      jacob.jones@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <select class="kt-select max-w-24" data-kt-select="true">
-                  <option>Owner</option>
-                  <option>Editor</option>
-                  <option selected="">Viewer</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="border-b border-b-border"></div>
-          <div class="flex flex-col px-5 gap-4">
-            <label class="text-mono font-semibold text-sm"> Settings </label>
-            <div class="flex flex-center justify-between flex-wrap gap-2">
-              <div class="flex flex-center gap-1.5">
-                <i class="ki-filled ki-user text-muted-foreground"> </i>
-                <div
-                  class="flex flex-center text-secondary-foreground font-medium text-xs"
-                >
-                  Anyone at
-                  <a class="text-xs font-medium link mx-1" href="#">
-                    KeenThemes
-                  </a>
-                  can view
-                </div>
-              </div>
-              <button
-                class="kt-link kt-link-sm kt-link-underlined kt-link-dashed"
-              >
-                Change Access
-              </button>
-            </div>
+            <!-- Header -->
             <div
-              class="flex flex-center justify-between flex-wrap gap-2 mb-2.5"
+              class="flex items-center justify-between border-b px-6 py-4 my-header"
+              style="
+                border-bottom: 1px solid #eee;
+                padding: 1.5rem 1.5rem;
+                margin: 0;
+              "
             >
-              <div class="flex flex-center gap-1.5">
-                <i class="ki-filled ki-icon text-muted-foreground"> </i>
-                <div
-                  class="flex flex-center text-secondary-foreground font-medium text-xs"
-                >
-                  Anyone with link can edit
-                </div>
-              </div>
-              <button
-                class="kt-link kt-link-sm kt-link-underlined kt-link-dashed"
+              <h3
+                id="payment-title"
+                class="text-lg font-semibold text-gray-900"
+                style="
+                  font-size: 1.125rem;
+                  line-height: 1.75rem;
+                  font-weight: 600;
+                  color: #111827;
+                  margin: 0;
+                  padding: 0;
+                  line-height: 1;
+                  margin: 0;
+                "
               >
-                Set Password
+                Payment Details
+              </h3>
+              <button
+                command="close"
+                commandfor="paymentDialog"
+                class="text-gray-400 hover:text-gray-600 my-link"
+                style="
+                  color: #9ca3af;
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                "
+              >
+                ✕
               </button>
             </div>
-            <button class="kt-btn kt-btn-primary justify-center">Done</button>
-          </div>
+
+            <!-- Body -->
+            <div
+              class="px-6 py-4 space-y-4 my-section"
+              style="padding: 1.5rem 1.5rem; space-y: 1rem"
+            >
+              <p class="text-sm text-gray-500">Payment PAY-001 – Jane Smith</p>
+
+              <div
+                class="grid grid-cols-2 gap-4 text-sm"
+                style="
+                  grid-template-columns: repeat(2, minmax(0, 1fr));
+                  gap: 1rem;
+                  font-size: 0.875rem;
+                "
+              >
+                <div>
+                  <p class="font-medium text-gray-600">Payment ID</p>
+                  <p class="text-gray-900">PAY-001</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Status</p>
+                  <span
+                    class="inline-block rounded-full bg-red-100 px-2 py-1 text-xs font-semibold text-red-600"
+                    style="background-color: #f3e9e9; color: #b22222"
+                  >
+                    Completed
+                  </span>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Client</p>
+                  <p class="text-gray-900">Jane Smith</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Invoice</p>
+                  <p class="text-gray-900">INV-003</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Amount</p>
+                  <p class="text-gray-900 font-semibold">₦300,000</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Transaction Fee</p>
+                  <p class="text-gray-900">₦3,000</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Payment Method</p>
+                  <p class="text-gray-900">Card Payment</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Date</p>
+                  <p class="text-gray-900">10/5/2024</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Reference</p>
+                  <p class="text-gray-900">REF-123456789</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Card</p>
+                  <p class="text-gray-900">**** **** **** 4567</p>
+                </div>
+                <div class="col-span-2">
+                  <p class="font-medium text-gray-600">Payment Type</p>
+                  <p class="text-gray-900">Full Payment</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div
+              class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4"
+              style="border-top: 1px solid #eee; background-color: #f9fafb"
+            >
+              <button
+                command="close"
+                commandfor="paymentDialog"
+                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                style="border: 1px solid #d1d5db; color: #374151"
+              >
+                Close
+              </button>
+              <button
+                class="rounded-md bg-red-600 px-3 py-2 text-sm text-white hover:bg-red-700 mr-4"
+                style="background-color: #dc2626; color: #ffffff"
+              >
+                Download Receipt
+              </button>
+            </div>
+          </el-dialog-panel>
         </div>
-      </div>
-    </div>
+      </dialog>
+    </el-dialog>
     <!-- End of Share Profile Modal -->
-    <div class="kt-modal" data-kt-modal="true" id="give_award_modal">
-      <div class="kt-modal-content max-w-[500px] top-[15%]">
-        <div class="kt-modal-header pr-2.5">
-          <h3 class="kt-modal-title">Give Award</h3>
-          <button
-            class="kt-btn kt-btn-icon kt-btn-ghost shrink-0"
-            data-kt-modal-dismiss="true"
-          >
-            <i class="ki-filled ki-black-left"> </i>
-          </button>
-        </div>
-        <div class="kt-modal-body grid gap-5 px-0 py-5">
-          <div class="flex flex-col px-5 gap-2.5">
-            <div class="flex flex-center gap-1">
-              <label class="text-mono font-semibold text-sm">
-                Share read-only link
-              </label>
-              <i
-                class="ki-filled ki-information-2 text-muted-foreground text-sm"
-              >
-              </i>
-            </div>
-            <label class="kt-input">
-              <input
-                type="text"
-                value="https://metronic.com/profiles/x7g2vA3kZ5"
-              />
-              <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost -me-2">
-                <i class="ki-filled ki-copy"> </i>
-              </button>
-            </label>
-          </div>
-          <div class="border-b border-b-border"></div>
-          <div class="flex flex-col px-5 gap-2.5">
-            <div class="flex flex-center gap-1">
-              <label class="text-mono font-semibold text-sm">
-                Share via email
-              </label>
-              <i
-                class="ki-filled ki-information-2 text-muted-foreground text-sm"
-              >
-              </i>
-            </div>
-            <div class="flex flex-center gap-2.5">
-              <label class="kt-input">
-                <input type="text" value="miles.turner@gmail.com" />
-              </label>
-              <button class="kt-btn kt-btn-primary">Share</button>
-            </div>
-          </div>
-          <div class="kt-scrollable-y-auto max-h-[300px]">
-            <div class="flex flex-col px-5 gap-3">
-              <div class="flex items-center flex-wrap gap-2">
-                <div class="flex items-center grow gap-2.5">
-                  <img
-                    alt=""
-                    class="rounded-full size-9 shrink-0"
-                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-3.png"
-                  />
-                  <div class="flex flex-col">
-                    <a
-                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
-                      href="#"
-                    >
-                      Tyler Hero
-                    </a>
-                    <a
-                      class="hover:text-primary text-2sm text-secondary-foreground"
-                      href="#"
-                    >
-                      tyler.hero@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <select class="kt-select max-w-24" data-kt-select="true">
-                  <option selected="">Owner</option>
-                  <option>Editor</option>
-                  <option>Viewer</option>
-                </select>
-              </div>
-              <div class="flex items-center flex-wrap gap-2">
-                <div class="flex items-center grow gap-2.5">
-                  <img
-                    alt=""
-                    class="rounded-full size-9 shrink-0"
-                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
-                  />
-                  <div class="flex flex-col">
-                    <a
-                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
-                      href="#"
-                    >
-                      Esther Howard
-                    </a>
-                    <a
-                      class="hover:text-primary text-2sm text-secondary-foreground"
-                      href="#"
-                    >
-                      esther.howard@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <select class="kt-select max-w-24" data-kt-select="true">
-                  <option>Owner</option>
-                  <option selected="">Editor</option>
-                  <option>Viewer</option>
-                </select>
-              </div>
-              <div class="flex items-center flex-wrap gap-2">
-                <div class="flex items-center grow gap-2.5">
-                  <img
-                    alt=""
-                    class="rounded-full size-9 shrink-0"
-                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-11.png"
-                  />
-                  <div class="flex flex-col">
-                    <a
-                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
-                      href="#"
-                    >
-                      Jacob Jones
-                    </a>
-                    <a
-                      class="hover:text-primary text-2sm text-secondary-foreground"
-                      href="#"
-                    >
-                      jacob.jones@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <select class="kt-select max-w-24" data-kt-select="true">
-                  <option>Owner</option>
-                  <option>Editor</option>
-                  <option selected="">Viewer</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="border-b border-b-border"></div>
-          <div class="flex flex-col px-5 gap-4">
-            <label class="text-mono font-semibold text-sm"> Settings </label>
-            <div class="flex flex-center justify-between flex-wrap gap-2">
-              <div class="flex flex-center gap-1.5">
-                <i class="ki-filled ki-user text-muted-foreground"> </i>
-                <div
-                  class="flex flex-center text-secondary-foreground font-medium text-xs"
-                >
-                  Anyone at
-                  <a class="text-xs font-medium link mx-1" href="#">
-                    KeenThemes
-                  </a>
-                  can view
-                </div>
-              </div>
-              <button
-                class="kt-link kt-link-sm kt-link-underlined kt-link-dashed"
-              >
-                Change Access
-              </button>
-            </div>
-            <div
-              class="flex flex-center justify-between flex-wrap gap-2 mb-2.5"
-            >
-              <div class="flex flex-center gap-1.5">
-                <i class="ki-filled ki-icon text-muted-foreground"> </i>
-                <div
-                  class="flex flex-center text-secondary-foreground font-medium text-xs"
-                >
-                  Anyone with link can edit
-                </div>
-              </div>
-              <button
-                class="kt-link kt-link-sm kt-link-underlined kt-link-dashed"
-              >
-                Set Password
-              </button>
-            </div>
-            <button class="kt-btn kt-btn-primary justify-center">Done</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="kt-modal" data-kt-modal="true" id="report_user_modal">
-      <div class="kt-modal-content max-w-[500px] top-[15%]">
-        <div class="kt-modal-header">
-          <h3 class="kt-modal-title">Report User</h3>
-          <button
-            class="kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost shrink-0"
-            data-kt-modal-dismiss="true"
-          >
-            <i class="ki-filled ki-cross"> </i>
-          </button>
-        </div>
-        <div class="kt-modal-body p-0">
-          <div class="p-5">
-            <div class="grid place-items-center gap-1">
-              <div class="flex justify-center items-center rounded-full">
-                <img
-                  class="rounded-full max-h-[55px] max-w-full"
-                  src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
-                />
-              </div>
-              <div class="flex items-center justify-center gap-1">
-                <a
-                  class="hover:text-primary text-sm leading-5 font-semibold text-mono"
-                  href="#"
-                >
-                  Jenny Klabber
-                </a>
-                <svg
-                  class="text-primary"
-                  fill="none"
-                  height="13"
-                  viewbox="0 0 15 16"
-                  width="13"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.5425 6.89749L13.5 5.83999C13.4273 5.76877 13.3699 5.6835 13.3312 5.58937C13.2925 5.49525 13.2734 5.39424 13.275 5.29249V3.79249C13.274 3.58699 13.2324 3.38371 13.1527 3.19432C13.0729 3.00494 12.9565 2.83318 12.8101 2.68892C12.6638 2.54466 12.4904 2.43073 12.2998 2.35369C12.1093 2.27665 11.9055 2.23801 11.7 2.23999H10.2C10.0982 2.24159 9.99722 2.22247 9.9031 2.18378C9.80898 2.1451 9.72371 2.08767 9.65249 2.01499L8.60249 0.957487C8.30998 0.665289 7.91344 0.50116 7.49999 0.50116C7.08654 0.50116 6.68999 0.665289 6.39749 0.957487L5.33999 1.99999C5.26876 2.07267 5.1835 2.1301 5.08937 2.16879C4.99525 2.20747 4.89424 2.22659 4.79249 2.22499H3.29249C3.08699 2.22597 2.88371 2.26754 2.69432 2.34731C2.50494 2.42709 2.33318 2.54349 2.18892 2.68985C2.04466 2.8362 1.93073 3.00961 1.85369 3.20013C1.77665 3.39064 1.73801 3.5945 1.73999 3.79999V5.29999C1.74159 5.40174 1.72247 5.50275 1.68378 5.59687C1.6451 5.691 1.58767 5.77627 1.51499 5.84749L0.457487 6.89749C0.165289 7.19 0.00115967 7.58654 0.00115967 7.99999C0.00115967 8.41344 0.165289 8.80998 0.457487 9.10249L1.49999 10.16C1.57267 10.2312 1.6301 10.3165 1.66878 10.4106C1.70747 10.5047 1.72659 10.6057 1.72499 10.7075V12.2075C1.72597 12.413 1.76754 12.6163 1.84731 12.8056C1.92709 12.995 2.04349 13.1668 2.18985 13.3111C2.3362 13.4553 2.50961 13.5692 2.70013 13.6463C2.89064 13.7233 3.0945 13.762 3.29999 13.76H4.79999C4.90174 13.7584 5.00275 13.7775 5.09687 13.8162C5.191 13.8549 5.27627 13.9123 5.34749 13.985L6.40499 15.0425C6.69749 15.3347 7.09404 15.4988 7.50749 15.4988C7.92094 15.4988 8.31748 15.3347 8.60999 15.0425L9.65999 14C9.73121 13.9273 9.81647 13.8699 9.9106 13.8312C10.0047 13.7925 10.1057 13.7734 10.2075 13.775H11.7075C12.1212 13.775 12.518 13.6106 12.8106 13.3181C13.1031 13.0255 13.2675 12.6287 13.2675 12.215V10.715C13.2659 10.6132 13.285 10.5122 13.3237 10.4181C13.3624 10.324 13.4198 10.2387 13.4925 10.1675L14.55 9.10999C14.6953 8.96452 14.8104 8.79176 14.8887 8.60164C14.9671 8.41152 15.007 8.20779 15.0063 8.00218C15.0056 7.79656 14.9643 7.59311 14.8847 7.40353C14.8051 7.21394 14.6888 7.04197 14.5425 6.89749ZM10.635 6.64999L6.95249 10.25C6.90055 10.3026 6.83864 10.3443 6.77038 10.3726C6.70212 10.4009 6.62889 10.4153 6.55499 10.415C6.48062 10.4139 6.40719 10.3982 6.33896 10.3685C6.27073 10.3389 6.20905 10.2961 6.15749 10.2425L4.37999 8.44249C4.32532 8.39044 4.28169 8.32793 4.25169 8.25867C4.22169 8.18941 4.20593 8.11482 4.20536 8.03934C4.20479 7.96387 4.21941 7.88905 4.24836 7.81934C4.27731 7.74964 4.31999 7.68647 4.37387 7.63361C4.42774 7.58074 4.4917 7.53926 4.56194 7.51163C4.63218 7.484 4.70726 7.47079 4.78271 7.47278C4.85816 7.47478 4.93244 7.49194 5.00112 7.52324C5.0698 7.55454 5.13148 7.59935 5.18249 7.65499L6.56249 9.05749L9.84749 5.84749C9.95296 5.74215 10.0959 5.68298 10.245 5.68298C10.394 5.68298 10.537 5.74215 10.6425 5.84749C10.6953 5.90034 10.737 5.96318 10.7653 6.03234C10.7935 6.1015 10.8077 6.1756 10.807 6.25031C10.8063 6.32502 10.7908 6.39884 10.7612 6.46746C10.7317 6.53608 10.6888 6.59813 10.635 6.64999Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="border-b border-b-border"></div>
-          <div class="flex flex-col gap-5 p-5">
-            <div class="text-sm text-mono font-semibold">
-              Let us know why you’re reporing this person
-            </div>
-            <div class="flex flex-col gap-3.5">
-              <label class="kt-form-label flex items-center gap-2.5">
-                <input
-                  checked=""
-                  class="kt-radio radio-sm"
-                  name="report-option"
-                  type="radio"
-                  value="1"
-                />
-                <div class="flex flex-col gap-0.5">
-                  <div class="text-sm font-semibold text-mono">
-                    Impersonation
-                  </div>
-                  <div class="text-sm font-medium text-secondary-foreground">
-                    It looks like this profile might be impersonating someone
-                    else
-                  </div>
-                </div>
-              </label>
-              <label class="kt-form-label flex items-center gap-2.5">
-                <input
-                  checked=""
-                  class="kt-radio radio-sm"
-                  name="report-option"
-                  type="radio"
-                  value="2"
-                />
-                <div class="flex flex-col gap-0.5">
-                  <div class="text-sm font-semibold text-mono">Spammy</div>
-                  <div class="text-sm font-medium text-secondary-foreground">
-                    This person profile, comments or posts contain misleading
-                    text
-                  </div>
-                </div>
-              </label>
-              <label class="kt-form-label flex items-center gap-2.5">
-                <input
-                  checked=""
-                  class="kt-radio radio-sm"
-                  name="report-option"
-                  type="radio"
-                  value="3"
-                />
-                <div class="flex flex-col gap-0.5">
-                  <div class="text-sm font-semibold text-mono">
-                    Off bumble behavior
-                  </div>
-                  <div class="text-sm font-medium text-secondary-foreground">
-                    This person has engaged in behavior that is abusive,
-                    bullying
-                  </div>
-                </div>
-              </label>
-              <label class="kt-form-label flex items-center gap-2.5">
-                <input
-                  checked=""
-                  class="kt-radio radio-sm"
-                  name="report-option"
-                  type="radio"
-                  value="4"
-                />
-                <div class="flex flex-col gap-0.5">
-                  <div class="text-sm font-semibold text-mono">
-                    Something else
-                  </div>
-                  <div class="text-sm font-medium text-secondary-foreground">
-                    None of the reasons listed above are suitable
-                  </div>
-                </div>
-              </label>
-            </div>
-          </div>
-          <div class="border-b border-b-border"></div>
-          <div class="text-2sm font-medium text-center text-foreground p-5">
-            Don't worry, your report is completely anonymous; the person you're
-            <br />
-            reporting will not be informed that you've submitted it
-          </div>
-          <div class="border-b border-b-border"></div>
-          <div
-            class="flex items-center gap-2.5 justify-end p-5"
-            id="report_user_modal"
-          >
-            <button class="kt-btn kt-btn-primary">Report this person</button>
-            <button class="kt-btn kt-btn-outline" data-kt-modal-dismiss="true">
-              Cancel
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Page Loader -->
+
     <!-- End of Page -->
+
     <!-- Scripts -->
     <script src="../../../../../static/metronic/tailwind/dist/assets/my-js/sidebar2.js"></script>
     <script src="../../../../../static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
@@ -2973,6 +2752,5 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <script src="../../../../../static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.min.js"></script>
     <!-- End of Scripts -->
   </body>
-
-  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list?dir=ltr by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:40:25 GMT -->
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:38:41 GMT -->
 </html>

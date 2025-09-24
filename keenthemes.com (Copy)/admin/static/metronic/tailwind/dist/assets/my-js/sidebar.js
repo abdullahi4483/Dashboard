@@ -47,7 +47,7 @@ const sideHtml = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Boards
+                    Dashboard
                   </span>
                 </a>
               </div>
@@ -55,7 +55,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="properties.html"
+                  href="client.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -66,7 +66,7 @@ const sideHtml = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Properties
+                    Clients
                   </span>
                 </a>
               </div>
@@ -84,24 +84,7 @@ const sideHtml = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    My invoice
-                  </span>
-                </a>
-              </div>
-              <div class="kt-menu-item">
-                <a
-                  class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="public-profile/campaigns/create-invoice.html"
-                >
-                  <span
-                    class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
-                  >
-                    <i class="ki-filled ki-file ki-plus text-xl"></i>
-                  </span>
-                  <span
-                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
-                  >
-                    Create invoice
+                    invoices
                   </span>
                 </a>
               </div>
@@ -113,12 +96,29 @@ const sideHtml = `<div
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
                   >
+                    <i class="ki-filled ki-file ki-plus text-xl"></i>
+                  </span>
+                  <span
+                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                  >
+                    Payments
+                  </span>
+                </a>
+              </div>
+              <div class="kt-menu-item">
+                <a
+                  class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
+                  href="public-profile/campaigns/properties.html"
+                >
+                  <span
+                    class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
+                  >
                     <i class="ki-filled ki-bank text-xl"></i>
                   </span>
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Payment
+                    Properties
                   </span>
                 </a>
               </div>
