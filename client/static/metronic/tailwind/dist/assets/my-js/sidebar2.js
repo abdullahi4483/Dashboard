@@ -99,7 +99,7 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Create invoice
+                    Invoice buyers
                   </span>
                 </a>
               </div>
