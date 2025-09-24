@@ -1,0 +1,4009 @@
+<!--
+Product: Metronic is a toolkit of UI components built with Tailwind CSS for developing scalable web applications quickly and efficiently
+Version: v9.2.7
+Author: Keenthemes
+Contact: support@keenthemes.com
+Website: https://www.keenthemes.com
+Support: https://devs.keenthemes.com
+Follow: https://www.twitter.com/keenthemes
+License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
+-->
+<!DOCTYPE html>
+<html
+  class="h-full"
+  data-kt-theme="true"
+  data-kt-theme-mode="light"
+  dir="ltr"
+  lang="en"
+>
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:37:06 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <title>Promiseland</title>
+    <meta charset="utf-8" />
+    <meta content="follow, index" name="robots" />
+    <link href="index.html" rel="canonical" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <meta
+      content="Tailwind CSS based HTML and JavaScript toolkit for building modern and scalable web applications"
+      name="description"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../static/metronic/tailwind/dist/assets/vendors/keenicons/styles.bundle.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../static/metronic/tailwind/dist/assets/css/styles.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-52YZ3XGZJ6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-52YZ3XGZJ6");
+    </script>
+  </head>
+  <body
+    class="antialiased flex h-full text-base text-foreground bg-background [--header-height:60px] [--sidebar-width:90px] bg-muted"
+  >
+    <!-- Theme Mode -->
+    <script>
+      const defaultThemeMode = "light"; // light|dark|system
+      let themeMode;
+
+      if (document.documentElement) {
+        if (localStorage.getItem("kt-theme")) {
+          themeMode = localStorage.getItem("kt-theme");
+        } else if (
+          document.documentElement.hasAttribute("data-kt-theme-mode")
+        ) {
+          themeMode =
+            document.documentElement.getAttribute("data-kt-theme-mode");
+        } else {
+          themeMode = defaultThemeMode;
+        }
+
+        if (themeMode === "system") {
+          themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        document.documentElement.classList.add(themeMode);
+      }
+    </script>
+    <!-- End of Theme Mode -->
+    <!-- Page -->
+    <!-- Base -->
+    <div class="flex grow">
+      <!-- Header -->
+      <header
+        class="flex lg:hidden items-center fixed z-10 top-0 start-0 end-0 shrink-0 bg-muted h-(--header-height)"
+        id="header"
+      >
+        <!-- Container -->
+        <div
+          class="kt-container-fixed flex items-center justify-between flex-wrap gap-3"
+        >
+          <a href="index.html">
+            <img
+              class="dark:hidden min-h-[30px]"
+              src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-gray.svg"
+            />
+            <img
+              class="hidden dark:block min-h-[30px]"
+              src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-gray-dark.svg"
+            />
+          </a>
+          <button
+            class="kt-btn kt-btn-icon kt-btn-ghost -me-1"
+            data-kt-drawer-toggle="#sidebar"
+          >
+            <i class="ki-filled ki-menu"> </i>
+          </button>
+        </div>
+        <!-- End of Container -->
+      </header>
+      <!-- End of Header -->
+      <!-- Wrapper -->
+      <div class="flex flex-col lg:flex-row grow pt-(--header-height) lg:pt-0">
+        <!-- Sidebar -->
+        <div id="sideHtml"></div>
+        <!-- End of Sidebar -->
+        <!-- Main -->
+        <div
+          class="flex flex-col grow rounded-xl bg-background border border-input lg:ms-(--sidebar-width) mt-0 lg:mt-5 m-5"
+        >
+          <div
+            class="flex flex-col grow kt-scrollable-y-auto lg:[--scrollbar-width:auto] pt-5"
+            id="scrollable_content"
+          >
+            <main class="grow" role="content">
+              <!-- Toolbar -->
+              <div class="pb-5">
+                <!-- Container -->
+                <div
+                  class="kt-container-fixed flex items-center justify-between flex-wrap gap-3"
+                >
+                  <div class="flex items-center flex-wrap gap-1 lg:gap-5">
+                    <h1
+                      class="font-medium text-2x1 text-mono"
+                      style="font-size: 30px"
+                    >
+                      Dashboard
+                    </h1>
+                  </div>
+                  <div class="flex items-center flex-wrap gap-1.5 lg:gap-2.5">
+                    <!-- Search -->
+                    <button
+                      class="group kt-btn kt-btn-ghost kt-btn-icon size-9 hover:bg-primary/10 hover:[&amp;_i]:text-primary"
+                      data-kt-modal-toggle="#search_modal"
+                    >
+                      <i
+                        class="ki-filled ki-magnifier text-lg group-hover:text-primary"
+                      >
+                      </i>
+                    </button>
+                    <!-- End of Search -->
+                    <!-- Notifications -->
+                    <button
+                      class="kt-btn kt-btn-ghost kt-btn-icon size-9 hover:bg-primary/10 hover:[&amp;_i]:text-primary"
+                      data-kt-drawer-toggle="#notifications_drawer"
+                    >
+                      <i class="ki-filled ki-notification-status text-lg"> </i>
+                    </button>
+                    <!--Notifications Drawer
+                    <div
+                      class="hidden kt-drawer kt-drawer-end card flex-col max-w-[90%] w-[450px] top-5 bottom-5 end-5 rounded-xl border border-border"
+                      data-kt-drawer="true"
+                      data-kt-drawer-container="body"
+                      id="notifications_drawer"
+                    >
+                      <div
+                        class="flex items-center justify-between gap-2.5 text-sm text-mono font-semibold px-5 py-2.5 border-b border-b-border"
+                        id="notifications_header"
+                      >
+                        Notifications
+                        <button
+                          class="kt-btn kt-btn-sm kt-btn-icon kt-btn-dim shrink-0"
+                          data-kt-drawer-dismiss="true"
+                        >
+                          <i class="ki-filled ki-cross"> </i>
+                        </button>
+                      </div>
+                      <div
+                        class="kt-tabs kt-tabs-line justify-between px-5 mb-2"
+                        data-kt-tabs="true"
+                        id="notifications_tabs"
+                      >
+                        <div class="flex items-center gap-5">
+                          <button
+                            class="kt-tab-toggle py-3 active"
+                            data-kt-tab-toggle="#notifications_tab_all"
+                          >
+                            All
+                          </button>
+                          <button
+                            class="kt-tab-toggle py-3 relative"
+                            data-kt-tab-toggle="#notifications_tab_inbox"
+                          >
+                            Inbox
+                            <span
+                              class="rounded-full bg-green-500 size-[5px] absolute top-2 rtl:start-0 end-0 transform translate-y-1/2 translate-x-full"
+                            >
+                            </span>
+                          </button>
+                          <button
+                            class="kt-tab-toggle py-3"
+                            data-kt-tab-toggle="#notifications_tab_team"
+                          >
+                            Team
+                          </button>
+                          <button
+                            class="kt-tab-toggle py-3"
+                            data-kt-tab-toggle="#notifications_tab_following"
+                          >
+                            Following
+                          </button>
+                        </div>
+                        <div class="kt-menu" data-kt-menu="true">
+                          <div
+                            class="kt-menu-item"
+                            data-kt-menu-item-offset="0,10px"
+                            data-kt-menu-item-placement="bottom-end"
+                            data-kt-menu-item-placement-rtl="bottom-start"
+                            data-kt-menu-item-toggle="dropdown"
+                            data-kt-menu-item-trigger="click|lg:hover"
+                          >
+                            <button
+                              class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-ghost"
+                            >
+                              <i class="ki-filled ki-setting-2"> </i>
+                            </button>
+                            <div
+                              class="kt-menu-dropdown kt-menu-default w-full max-w-[175px]"
+                              data-kt-menu-dismiss="true"
+                            >
+                              <div class="kt-menu-item">
+                                <a class="kt-menu-link" href="#">
+                                  <span class="kt-menu-icon">
+                                    <i class="ki-filled ki-document"> </i>
+                                  </span>
+                                  <span class="kt-menu-title"> View </span>
+                                </a>
+                              </div>
+                              <div
+                                class="kt-menu-item"
+                                data-kt-menu-item-offset="-15px, 0"
+                                data-kt-menu-item-placement="right-start"
+                                data-kt-menu-item-toggle="dropdown"
+                                data-kt-menu-item-trigger="click|lg:hover"
+                              >
+                                <div class="kt-menu-link">
+                                  <span class="kt-menu-icon">
+                                    <i class="ki-filled ki-notification-status">
+                                    </i>
+                                  </span>
+                                  <span class="kt-menu-title"> Export </span>
+                                  <span class="kt-menu-arrow">
+                                    <i
+                                      class="ki-filled ki-right text-xs rtl:transform rtl:rotate-180"
+                                    >
+                                    </i>
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-menu-dropdown kt-menu-default w-full max-w-[175px]"
+                                >
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link">
+                                      <span class="kt-menu-icon">
+                                        <i class="ki-filled ki-sms"> </i>
+                                      </span>
+                                      <span class="kt-menu-title"> Email </span>
+                                    </a>
+                                  </div>
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link">
+                                      <span class="kt-menu-icon">
+                                        <i class="ki-filled ki-message-notify">
+                                        </i>
+                                      </span>
+                                      <span class="kt-menu-title"> SMS </span>
+                                    </a>
+                                  </div>
+                                  <div class="kt-menu-item">
+                                    <a class="kt-menu-link">
+                                      <span class="kt-menu-icon">
+                                        <i
+                                          class="ki-filled ki-notification-status"
+                                        >
+                                        </i>
+                                      </span>
+                                      <span class="kt-menu-title"> Push </span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="kt-menu-item">
+                                <a class="kt-menu-link" href="#">
+                                  <span class="kt-menu-icon">
+                                    <i class="ki-filled ki-pencil"> </i>
+                                  </span>
+                                  <span class="kt-menu-title"> Edit </span>
+                                </a>
+                              </div>
+                              <div class="kt-menu-item">
+                                <a class="kt-menu-link" href="#">
+                                  <span class="kt-menu-icon">
+                                    <i class="ki-filled ki-trash"> </i>
+                                  </span>
+                                  <span class="kt-menu-title"> Delete </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="grow flex flex-col"
+                        id="notifications_tab_all"
+                      >
+                        <div
+                          class="grow kt-scrollable-y-auto"
+                          data-kt-scrollable="true"
+                          data-kt-scrollable-dependencies="#header"
+                          data-kt-scrollable-max-height="auto"
+                          data-kt-scrollable-offset="150px"
+                        >
+                          <div
+                            class="grow flex flex-col gap-5 pt-3 pb-4 divider-y divider-border"
+                          >
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-4.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Joe Lincoln
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      mentioned you in
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                      Latest Trends
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      topic
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    18 mins ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Web Design 2024
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex flex-col gap-2.5 p-3.5 rounded-lg bg-muted/70"
+                                >
+                                  <div
+                                    class="text-sm font-semibold text-secondary-foreground mb-px"
+                                  >
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      @Cody
+                                    </a>
+                                    <span
+                                      class="text-secondary-foreground font-medium"
+                                    >
+                                      For an expert opinion, check out what Mike
+                                      has to say on this topic!
+                                    </span>
+                                  </div>
+                                  <div class="kt-input">
+                                    <input
+                                      placeholder="Reply"
+                                      type="text"
+                                      value=""
+                                    />
+                                    <button
+                                      class="kt-btn kt-btn-ghost kt-btn-icon size-6 -me-1.5"
+                                    >
+                                      <i class="ki-filled ki-picture"> </i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-5.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Leslie Alexander
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      added new tags to
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                      Web Redesign 2024
+                                    </a>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    53 mins ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    ACME
+                                  </span>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <span
+                                    class="kt-badge kt-badge-sm kt-badge-info kt-badge-outline"
+                                  >
+                                    Client-Request
+                                  </span>
+                                  <span
+                                    class="kt-badge kt-badge-sm kt-badge-warning kt-badge-outline"
+                                  >
+                                    Figma
+                                  </span>
+                                  <span
+                                    class="kt-badge kt-badge-sm kt-badge-secondary kt-badge-outline"
+                                  >
+                                    Redesign
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div
+                              class="flex grow gap-2.5 px-5"
+                              id="notification_request_3"
+                            >
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-27.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Guy Hawkins
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      requested access to
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                      AirSpace
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      project
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    14 hours ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Dev Team
+                                  </span>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-outline kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Decline
+                                  </button>
+                                  <button
+                                    class="kt-btn kt-btn-mono kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Accept
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-10.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-offline size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5 grow">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Jane Perez
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      invites you to review a file.
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    3 hours ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    742kb
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center flex-row gap-1.5 p-2.5 rounded-lg bg-muted/70"
+                                >
+                                  <img
+                                    class="h-5"
+                                    src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/file-types/pdf.svg"
+                                  />
+                                  <a
+                                    class="hover:text-primary font-medium text-secondary-foreground text-xs me-1"
+                                  >
+                                    Launch_nov24.pptx
+                                  </a>
+                                  <span
+                                    class="font-medium text-muted-foreground text-xs"
+                                  >
+                                    Edited 39 mins ago
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-11.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                <div class="text-sm font-medium mb-px">
+                                  <a
+                                    class="hover:text-primary text-mono font-semibold"
+                                  >
+                                    Raymond Pawell
+                                  </a>
+                                  <span class="text-secondary-foreground">
+                                    posted a new article
+                                  </span>
+                                  <a class="hover:text-primary text-primary">
+                                    2024 Roadmap
+                                  </a>
+                                </div>
+                                <span
+                                  class="flex items-center text-xs font-medium text-muted-foreground"
+                                >
+                                  1 hour ago
+                                  <span
+                                    class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                  >
+                                  </span>
+                                  Roadmap
+                                </span>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-14.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-offline size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5 grow">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Tyler Hero
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      wants to view your design project
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    3 day ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Metronic Launcher mockups
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center flex-row gap-1.5 p-2.5 rounded-lg bg-muted/70"
+                                >
+                                  <div
+                                    class="flex items-center justify-center w-[26px] h-[30px] shrink-0 bg-background rounded-sm border border-border"
+                                  >
+                                    <img
+                                      class="h-5"
+                                      src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/file-types/figma.svg"
+                                    />
+                                  </div>
+                                  <a
+                                    class="hover:text-primary font-medium text-secondary-foreground text-xs me-1"
+                                  >
+                                    Launcher-UIkit.fig
+                                  </a>
+                                  <span
+                                    class="font-medium text-muted-foreground text-xs"
+                                  >
+                                    Edited 2 mins ago
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border-b border-b-border"></div>
+                        <div
+                          class="grid grid-cols-2 p-5 gap-2.5"
+                          id="notifications_all_footer"
+                        >
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Archive all
+                          </button>
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Mark all as read
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="grow flex flex-col hidden"
+                        id="notifications_tab_inbox"
+                      >
+                        <div
+                          class="grow kt-scrollable-y-auto"
+                          data-kt-scrollable="true"
+                          data-kt-scrollable-dependencies="#header"
+                          data-kt-scrollable-max-height="auto"
+                          data-kt-scrollable-offset="150px"
+                        >
+                          <div class="flex flex-col gap-5 pt-3 pb-4">
+                            <div
+                              class="flex grow gap-2.5 px-5"
+                              id="notification_request_13"
+                            >
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-25.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5 grow">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Samuel Lee
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      requested to add user to
+                                    </span>
+                                    <a
+                                      class="hover:text-primary text-primary font-semibold"
+                                    >
+                                      TechSynergy
+                                    </a>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    22 hours ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Dev Team
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center flex-row justify-between gap-1.5 px-2.5 py-2 rounded-lg bg-muted/70"
+                                >
+                                  <div class="flex flex-col">
+                                    <a
+                                      class="hover:text-primary font-medium text-mono text-xs"
+                                    >
+                                      Ronald Richards
+                                    </a>
+                                    <a
+                                      class="hover:text-primary text-muted-foreground font-medium text-xs"
+                                    >
+                                      ronald.richards@gmail.com
+                                    </a>
+                                  </div>
+                                  <a
+                                    class="hover:text-primary text-secondary-foreground font-medium text-xs"
+                                  >
+                                    Go to profile
+                                  </a>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-outline kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_13"
+                                  >
+                                    Decline
+                                  </button>
+                                  <button
+                                    class="kt-btn kt-btn-mono kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_13"
+                                  >
+                                    Accept
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex items-center grow gap-2.5 px-5">
+                              <div
+                                class="flex items-center justify-center size-8 bg-green-50 rounded-full border border-green-200 dark:border-green-950"
+                              >
+                                <i
+                                  class="ki-filled ki-check text-lg text-green-500"
+                                >
+                                </i>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                <span
+                                  class="text-sm font-medium text-secondary-foreground"
+                                >
+                                  You have succesfully verified your account
+                                </span>
+                                <span
+                                  class="font-medium text-muted-foreground text-xs"
+                                >
+                                  2 days ago
+                                </span>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-34.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5 grow">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Ava Peterson
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      uploaded attachment
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    3 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    ACME
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center justify-between flex-row gap-1.5 p-2.5 rounded-lg bg-muted/70"
+                                >
+                                  <div class="flex items-center gap-1.5">
+                                    <img
+                                      class="h-6"
+                                      src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/file-types/xls.svg"
+                                    />
+                                    <div class="flex flex-col gap-0.5">
+                                      <a
+                                        class="hover:text-primary font-medium text-secondary-foreground text-xs"
+                                      >
+                                        Redesign-2024.xls
+                                      </a>
+                                      <span
+                                        class="font-medium text-muted-foreground text-xs"
+                                      >
+                                        2.6 MB
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <button
+                                    class="kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost"
+                                  >
+                                    <svg
+                                      fill="none"
+                                      height="14"
+                                      viewbox="0 0 14 14"
+                                      width="14"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M6.63821 2.60467C4.81926 2.60467 3.32474 3.99623 3.16201 5.77252C3.1386 6.02803 2.92413 6.22253 2.66871 6.22227C1.74915 6.22149 0.976744 6.9868 0.976744 7.90442C0.976744 8.83344 1.72988 9.58657 2.65891 9.58657H3.09302C3.36274 9.58657 3.5814 9.80523 3.5814 10.0749C3.5814 10.3447 3.36274 10.5633 3.09302 10.5633H2.65891C1.19044 10.5633 0 9.37292 0 7.90442C0 6.58614 0.986948 5.48438 2.24496 5.27965C2.62863 3.20165 4.44941 1.62793 6.63821 1.62793C8.26781 1.62793 9.69282 2.50042 10.4729 3.80193C12.3411 3.72829 14 5.2564 14 7.18091C14 8.93508 12.665 10.3769 10.9552 10.5466C10.6868 10.5733 10.4476 10.3773 10.421 10.1089C10.3943 9.84052 10.5903 9.60135 10.8587 9.57465C12.0739 9.45406 13.0233 8.42802 13.0233 7.18091C13.0233 5.74002 11.6905 4.59666 10.2728 4.79968C10.0642 4.82957 9.85672 4.72382 9.76028 4.53181C9.18608 3.38796 8.00318 2.60467 6.63821 2.60467Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M6.99909 8.01611L8.28162 9.29864C8.47235 9.48937 8.78158 9.48937 8.97231 9.29864C9.16303 9.10792 9.16303 8.79874 8.97231 8.60802L7.57465 7.2103C7.25675 6.89247 6.74143 6.89247 6.42353 7.2103L5.02585 8.60802C4.83513 8.79874 4.83513 9.10792 5.02585 9.29864C5.21657 9.48937 5.5258 9.48937 5.71649 9.29864L6.99909 8.01611Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M7.00009 12.372C7.2698 12.372 7.48846 12.1533 7.48846 11.8836V7.97665C7.48846 7.70694 7.2698 7.48828 7.00009 7.48828C6.73038 7.48828 6.51172 7.70694 6.51172 7.97665V11.8836C6.51172 12.1533 6.73038 12.372 7.00009 12.372Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-29.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3 grow">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Ethan Parker
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      created a new tasks to
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                      Site Sculpt
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      project
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    3 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Web Designer
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none p-3.5 gap-3.5 rounded-lg bg-muted/70"
+                                >
+                                  <div
+                                    class="flex items-center justify-between flex-wrap gap-2.5"
+                                  >
+                                    <div class="flex flex-col gap-1">
+                                      <span
+                                        class="font-medium text-mono text-xs"
+                                      >
+                                        Location history is erased after Logging
+                                        In
+                                      </span>
+                                      <span
+                                        class="font-medium text-muted-foreground text-xs"
+                                      >
+                                        Due Date: 15 May, 2024
+                                      </span>
+                                    </div>
+                                    <div class="flex -space-x-2">
+                                      <div class="flex">
+                                        <img
+                                          class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-6"
+                                          src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-3.png"
+                                        />
+                                      </div>
+                                      <div class="flex">
+                                        <img
+                                          class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-6"
+                                          src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="flex items-center gap-2.5">
+                                    <span
+                                      class="kt-badge kt-badge-sm kt-badge-success kt-badge-outline"
+                                    >
+                                      Improvement
+                                    </span>
+                                    <span
+                                      class="kt-badge kt-badge-sm kt-badge-destructive kt-badge-outline"
+                                    >
+                                      Bug
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div
+                              class="flex grow gap-2.5 px-5"
+                              id="notification_request_3"
+                            >
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-30.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Benjamin Harris
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      requested to upgrade plan
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    4 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Marketing
+                                  </span>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-outline kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Decline
+                                  </button>
+                                  <button
+                                    class="kt-btn kt-btn-mono kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Accept
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-24.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                <div class="text-sm font-medium mb-px">
+                                  <a
+                                    class="hover:text-primary text-mono font-semibold"
+                                  >
+                                    Isaac Morgan
+                                  </a>
+                                  <span class="text-secondary-foreground">
+                                    mentioned you in
+                                  </span>
+                                  <a class="hover:text-primary text-primary">
+                                    Data Transmission
+                                  </a>
+                                  topic
+                                </div>
+                                <span
+                                  class="flex items-center text-xs font-medium text-muted-foreground"
+                                >
+                                  6 days ago
+                                  <span
+                                    class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                  >
+                                  </span>
+                                  Dev Team
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border-b border-b-border"></div>
+                        <div
+                          class="grid grid-cols-2 p-5 gap-2.5"
+                          id="notifications_inbox_footer"
+                        >
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Archive all
+                          </button>
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Mark all as read
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="grow flex flex-col hidden"
+                        id="notifications_tab_team"
+                      >
+                        <div
+                          class="grow kt-scrollable-y-auto"
+                          data-kt-scrollable="true"
+                          data-kt-scrollable-dependencies="#header"
+                          data-kt-scrollable-max-height="auto"
+                          data-kt-scrollable-offset="150px"
+                        >
+                          <div class="flex flex-col gap-5 pt-3 pb-4">
+                            <div class="flex grow gap-2 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-15.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div
+                                class="flex flex-col gap-3 grow"
+                                id="notification_request_10"
+                              >
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Nova Hawthorne
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      sent you an meeting invation
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    2 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Dev Team
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none p-2.5 rounded-lg bg-muted/70"
+                                >
+                                  <div
+                                    class="flex items-center justify-between flex-wrap gap-2.5"
+                                  >
+                                    <div class="flex items-center gap-2.5">
+                                      <div
+                                        class="border border-primary/10 rounded-lg"
+                                      >
+                                        <div
+                                          class="flex items-center justify-center border-b border-b-primary/10 bg-primary/10 rounded-t-lg"
+                                        >
+                                          <span
+                                            class="text-xs text-primary fw-medium p-1.5"
+                                          >
+                                            Apr
+                                          </span>
+                                        </div>
+                                        <div
+                                          class="flex items-center justify-center size-9"
+                                        >
+                                          <span
+                                            class="fw-semibold text-mono text-md tracking-tight"
+                                          >
+                                            12
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="flex flex-col gap-1.5">
+                                        <a
+                                          class="hover:text-primary font-medium text-secondary-foreground text-xs"
+                                        >
+                                          Peparation For Release
+                                        </a>
+                                        <span
+                                          class="font-medium text-secondary-foreground text-xs"
+                                        >
+                                          9:00 PM - 10:00 PM
+                                        </span>
+                                      </div>
+                                    </div>
+                                    <div class="flex -space-x-2">
+                                      <div class="flex">
+                                        <img
+                                          class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-6"
+                                          src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-4.png"
+                                        />
+                                      </div>
+                                      <div class="flex">
+                                        <img
+                                          class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-6"
+                                          src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
+                                        />
+                                      </div>
+                                      <div class="flex">
+                                        <img
+                                          class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-6"
+                                          src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                                        />
+                                      </div>
+                                      <div class="flex">
+                                        <span
+                                          class="hover:z-5 relative inline-flex items-center justify-center shrink-0 rounded-full ring-1 font-semibold leading-none text-2xs size-6 text-white size-6 ring-background bg-green-500"
+                                        >
+                                          +3
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-outline kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_10"
+                                  >
+                                    Decline
+                                  </button>
+                                  <button
+                                    class="kt-btn kt-btn-mono kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_10"
+                                  >
+                                    Accept
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-6.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                <div class="text-sm font-medium mb-px">
+                                  <a
+                                    class="hover:text-primary text-mono font-semibold"
+                                  >
+                                    Adrian Vale
+                                  </a>
+                                  <span class="text-secondary-foreground">
+                                    change the due date of
+                                  </span>
+                                  <a class="hover:text-primary text-primary">
+                                    Marketing
+                                  </a>
+                                  to 13 May
+                                </div>
+                                <span
+                                  class="flex items-center text-xs font-medium text-muted-foreground"
+                                >
+                                  2 days ago
+                                  <span
+                                    class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                  >
+                                  </span>
+                                  Marketing
+                                </span>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-12.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5 grow">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Skylar Frost
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      uploaded 2 attachments
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    3 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Web Design
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center justify-between flex-row gap-1.5 p-2.5 rounded-lg bg-muted/70"
+                                >
+                                  <div class="flex items-center gap-1.5">
+                                    <img
+                                      class="h-6"
+                                      src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/file-types/word.svg"
+                                    />
+                                    <div class="flex flex-col gap-0.5">
+                                      <a
+                                        class="hover:text-primary font-medium text-secondary-foreground text-xs"
+                                      >
+                                        Landing-page.docx
+                                      </a>
+                                      <span
+                                        class="font-medium text-muted-foreground text-xs"
+                                      >
+                                        1.9 MB
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <button
+                                    class="kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost"
+                                  >
+                                    <svg
+                                      fill="none"
+                                      height="14"
+                                      viewbox="0 0 14 14"
+                                      width="14"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M6.63821 2.60467C4.81926 2.60467 3.32474 3.99623 3.16201 5.77252C3.1386 6.02803 2.92413 6.22253 2.66871 6.22227C1.74915 6.22149 0.976744 6.9868 0.976744 7.90442C0.976744 8.83344 1.72988 9.58657 2.65891 9.58657H3.09302C3.36274 9.58657 3.5814 9.80523 3.5814 10.0749C3.5814 10.3447 3.36274 10.5633 3.09302 10.5633H2.65891C1.19044 10.5633 0 9.37292 0 7.90442C0 6.58614 0.986948 5.48438 2.24496 5.27965C2.62863 3.20165 4.44941 1.62793 6.63821 1.62793C8.26781 1.62793 9.69282 2.50042 10.4729 3.80193C12.3411 3.72829 14 5.2564 14 7.18091C14 8.93508 12.665 10.3769 10.9552 10.5466C10.6868 10.5733 10.4476 10.3773 10.421 10.1089C10.3943 9.84052 10.5903 9.60135 10.8587 9.57465C12.0739 9.45406 13.0233 8.42802 13.0233 7.18091C13.0233 5.74002 11.6905 4.59666 10.2728 4.79968C10.0642 4.82957 9.85672 4.72382 9.76028 4.53181C9.18608 3.38796 8.00318 2.60467 6.63821 2.60467Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M6.99909 8.01611L8.28162 9.29864C8.47235 9.48937 8.78158 9.48937 8.97231 9.29864C9.16303 9.10792 9.16303 8.79874 8.97231 8.60802L7.57465 7.2103C7.25675 6.89247 6.74143 6.89247 6.42353 7.2103L5.02585 8.60802C4.83513 8.79874 4.83513 9.10792 5.02585 9.29864C5.21657 9.48937 5.5258 9.48937 5.71649 9.29864L6.99909 8.01611Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M7.00009 12.372C7.2698 12.372 7.48846 12.1533 7.48846 11.8836V7.97665C7.48846 7.70694 7.2698 7.48828 7.00009 7.48828C6.73038 7.48828 6.51172 7.70694 6.51172 7.97665V11.8836C6.51172 12.1533 6.73038 12.372 7.00009 12.372Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </button>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center justify-between flex-row gap-1.5 p-2.5 rounded-lg bg-muted/70"
+                                >
+                                  <div class="flex items-center gap-1.5">
+                                    <img
+                                      class="h-6"
+                                      src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/file-types/svg.svg"
+                                    />
+                                    <div class="flex flex-col gap-0.5">
+                                      <a
+                                        class="hover:text-primary font-medium text-secondary-foreground text-xs"
+                                        href="#"
+                                      >
+                                        New-icon.svg
+                                      </a>
+                                      <span
+                                        class="font-medium text-muted-foreground text-xs"
+                                      >
+                                        2.3 MB
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <button
+                                    class="kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost"
+                                  >
+                                    <svg
+                                      fill="none"
+                                      height="14"
+                                      viewbox="0 0 14 14"
+                                      width="14"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M6.63821 2.60467C4.81926 2.60467 3.32474 3.99623 3.16201 5.77252C3.1386 6.02803 2.92413 6.22253 2.66871 6.22227C1.74915 6.22149 0.976744 6.9868 0.976744 7.90442C0.976744 8.83344 1.72988 9.58657 2.65891 9.58657H3.09302C3.36274 9.58657 3.5814 9.80523 3.5814 10.0749C3.5814 10.3447 3.36274 10.5633 3.09302 10.5633H2.65891C1.19044 10.5633 0 9.37292 0 7.90442C0 6.58614 0.986948 5.48438 2.24496 5.27965C2.62863 3.20165 4.44941 1.62793 6.63821 1.62793C8.26781 1.62793 9.69282 2.50042 10.4729 3.80193C12.3411 3.72829 14 5.2564 14 7.18091C14 8.93508 12.665 10.3769 10.9552 10.5466C10.6868 10.5733 10.4476 10.3773 10.421 10.1089C10.3943 9.84052 10.5903 9.60135 10.8587 9.57465C12.0739 9.45406 13.0233 8.42802 13.0233 7.18091C13.0233 5.74002 11.6905 4.59666 10.2728 4.79968C10.0642 4.82957 9.85672 4.72382 9.76028 4.53181C9.18608 3.38796 8.00318 2.60467 6.63821 2.60467Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M6.99909 8.01611L8.28162 9.29864C8.47235 9.48937 8.78158 9.48937 8.97231 9.29864C9.16303 9.10792 9.16303 8.79874 8.97231 8.60802L7.57465 7.2103C7.25675 6.89247 6.74143 6.89247 6.42353 7.2103L5.02585 8.60802C4.83513 8.79874 4.83513 9.10792 5.02585 9.29864C5.21657 9.48937 5.5258 9.48937 5.71649 9.29864L6.99909 8.01611Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M7.00009 12.372C7.2698 12.372 7.48846 12.1533 7.48846 11.8836V7.97665C7.48846 7.70694 7.2698 7.48828 7.00009 7.48828C6.73038 7.48828 6.51172 7.70694 6.51172 7.97665V11.8836C6.51172 12.1533 6.73038 12.372 7.00009 12.372Z"
+                                        fill="#99A1B7"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-21.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Selene Silverleaf
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      commented on
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                      SiteSculpt
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    4 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Manager
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex flex-col gap-2.5 p-3.5 rounded-lg bg-muted/70"
+                                >
+                                  <div
+                                    class="text-sm font-semibold text-secondary-foreground mb-px"
+                                  >
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      @Cody
+                                    </a>
+                                    <span
+                                      class="text-secondary-foreground font-medium"
+                                    >
+                                      This design is simply stunning! From
+                                      layout to color, it's a work of art!
+                                    </span>
+                                  </div>
+                                  <div class="kt-input">
+                                    <input
+                                      placeholder="Reply"
+                                      type="text"
+                                      value=""
+                                    />
+                                    <button
+                                      class="kt-btn kt-btn-ghost kt-btn-icon size-6 -me-1.5"
+                                    >
+                                      <i class="ki-filled ki-picture"> </i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div
+                              class="flex grow gap-2.5 px-5"
+                              id="notification_request_3"
+                            >
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-13.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Thalia Fox
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      has invited you to join
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                      Design Research
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    4 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Dev Team
+                                  </span>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-outline kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Decline
+                                  </button>
+                                  <button
+                                    class="kt-btn kt-btn-mono kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Accept
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border-b border-b-border"></div>
+                        <div
+                          class="grid grid-cols-2 p-5 gap-2.5"
+                          id="notifications_team_footer"
+                        >
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Archive all
+                          </button>
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Mark all as read
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="grow flex flex-col hidden"
+                        id="notifications_tab_following"
+                      >
+                        <div
+                          class="grow kt-scrollable-y-auto"
+                          data-kt-scrollable="true"
+                          data-kt-scrollable-dependencies="#header"
+                          data-kt-scrollable-max-height="auto"
+                          data-kt-scrollable-offset="150px"
+                        >
+                          <div class="flex flex-col gap-5 pt-3 pb-4">
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-2.5 grow">
+                                <div class="flex flex-col gap-1 mb-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Jane Perez
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      added 2 new works to
+                                    </span>
+                                    <a
+                                      class="hover:text-primary text-primary font-semibold"
+                                    >
+                                      Inspirations 2024
+                                    </a>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    23 hours ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Craftwork Design
+                                  </span>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                  <div
+                                    class="kt-card shadow-none flex flex-col gap-3.5 bg-muted/70 w-40"
+                                  >
+                                    <div
+                                      class="bg-cover bg-no-repeat kt-card-rounded-t shrink-0 h-24"
+                                      style="
+                                        background-image: url('../../../static/metronic/tailwind/dist/assets/media/images/600x600/6.jpg');
+                                      "
+                                    ></div>
+                                    <div class="px-2.5 pb-2">
+                                      <a
+                                        class="font-medium block text-secondary-foreground hover:text-primary text-xs leading-4 mb-0.5"
+                                      >
+                                        Geometric Patterns
+                                      </a>
+                                      <div
+                                        class="text-xs font-medium text-muted-foreground"
+                                      >
+                                        Token ID:
+                                        <span
+                                          class="text-xs font-medium text-secondary-foreground"
+                                        >
+                                          81023
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="kt-card shadow-none flex flex-col gap-3.5 bg-muted/70 w-40"
+                                  >
+                                    <div
+                                      class="bg-cover bg-no-repeat kt-card-rounded-t shrink-0 h-24"
+                                      style="
+                                        background-image: url('../../../static/metronic/tailwind/dist/assets/media/images/600x600/1.jpg');
+                                      "
+                                    ></div>
+                                    <div class="px-2.5 pb-2">
+                                      <a
+                                        class="font-medium block text-secondary-foreground hover:text-primary text-xs leading-4 mb-0.5"
+                                        href="#"
+                                      >
+                                        Artistic Expressions
+                                      </a>
+                                      <div
+                                        class="text-xs font-medium text-muted-foreground"
+                                      >
+                                        Token ID:
+                                        <span
+                                          class="text-xs font-medium text-secondary-foreground"
+                                        >
+                                          67890
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div
+                              class="flex grow gap-2.5 px-5"
+                              id="notification_request_17"
+                            >
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-19.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-2.5 grow">
+                                <div class="flex flex-col gap-1 mb-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Natalie Wood
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      wants to edit marketing project
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    1 day ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Designer
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center flex-row gap-1.5 p-2.5 rounded-lg bg-muted/70"
+                                >
+                                  <div
+                                    class="flex items-center justify-center w-[26px] h-[30px] shrink-0 bg-white rounded-sm border border-border"
+                                  >
+                                    <img
+                                      class="h-5"
+                                      src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/brand-logos/jira.svg"
+                                    />
+                                  </div>
+                                  <a
+                                    class="hover:text-primary font-medium text-secondary-foreground text-xs me-1"
+                                  >
+                                    User-feedback.jira
+                                  </a>
+                                  <span
+                                    class="font-medium text-muted-foreground text-xs"
+                                  >
+                                    Edited 1 hour ago
+                                  </span>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-outline kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_17"
+                                  >
+                                    Decline
+                                  </button>
+                                  <button
+                                    class="kt-btn kt-btn-mono kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_17"
+                                  >
+                                    Accept
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-17.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-2.5 grow">
+                                <div class="flex flex-col gap-1 mb-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Aaron Foster
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      requested to view
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    3 day ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Larsen Ltd
+                                  </span>
+                                </div>
+                                <div
+                                  class="kt-card shadow-none flex items-center flex-row gap-1.5 px-2.5 py-1.5 rounded-lg bg-muted/70"
+                                >
+                                  <i
+                                    class="ki-filled ki-user-tick text-green-500 text-base"
+                                  >
+                                  </i>
+                                  <span
+                                    class="font-medium text-green-500 text-sm"
+                                  >
+                                    You allowed Aaron to view
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-34.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                <div class="text-sm font-medium mb-px">
+                                  <a
+                                    class="hover:text-primary text-mono font-semibold"
+                                  >
+                                    Chloe Morgan
+                                  </a>
+                                  <span class="text-secondary-foreground">
+                                    posted a new article
+                                  </span>
+                                  <a class="hover:text-primary text-primary">
+                                    User Experience
+                                  </a>
+                                </div>
+                                <span
+                                  class="flex items-center text-xs font-medium text-muted-foreground"
+                                >
+                                  1 day ago
+                                  <span
+                                    class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                  >
+                                  </span>
+                                  Nexus
+                                </span>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div class="flex grow gap-2.5 px-5">
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-9.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-2.5 grow">
+                                <div class="flex flex-col gap-1 mb-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Gabriel Bennett
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      started connect you
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    3 day ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Development
+                                  </span>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-sm kt-btn-outline"
+                                  >
+                                    <i class="ki-filled ki-check-circle"> </i>
+                                    Connected
+                                  </button>
+                                  <button class="kt-btn kt-btn-mono kt-btn-sm">
+                                    Go to profile
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-b border-b-border"></div>
+                            <div
+                              class="flex grow gap-2.5 px-5"
+                              id="notification_request_3"
+                            >
+                              <div class="kt-avatar size-8">
+                                <div class="kt-avatar-image">
+                                  <img
+                                    alt="avatar"
+                                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-13.png"
+                                  />
+                                </div>
+                                <div
+                                  class="kt-avatar-indicator -end-2 -bottom-2"
+                                >
+                                  <div
+                                    class="kt-avatar-status kt-avatar-status-online size-2.5"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="flex flex-col gap-3.5">
+                                <div class="flex flex-col gap-1">
+                                  <div class="text-sm font-medium mb-px">
+                                    <a
+                                      class="hover:text-primary text-mono font-semibold"
+                                    >
+                                      Thalia Fox
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                      has invited you to join
+                                    </span>
+                                    <a class="hover:text-primary text-primary">
+                                      Design Research
+                                    </a>
+                                    <span class="text-secondary-foreground">
+                                    </span>
+                                  </div>
+                                  <span
+                                    class="flex items-center text-xs font-medium text-muted-foreground"
+                                  >
+                                    4 days ago
+                                    <span
+                                      class="rounded-full size-1 bg-mono/30 mx-1.5"
+                                    >
+                                    </span>
+                                    Dev Team
+                                  </span>
+                                </div>
+                                <div class="flex flex-wrap gap-2.5">
+                                  <button
+                                    class="kt-btn kt-btn-outline kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Decline
+                                  </button>
+                                  <button
+                                    class="kt-btn kt-btn-mono kt-btn-sm"
+                                    data-kt-dismiss="#notification_request_3"
+                                  >
+                                    Accept
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border-b border-b-border"></div>
+                        <div
+                          class="grid grid-cols-2 p-5 gap-2.5"
+                          id="notifications_following_footer"
+                        >
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Archive all
+                          </button>
+                          <button class="kt-btn kt-btn-outline justify-center">
+                            Mark all as read
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End of Notifications Drawer-->
+                    <!-- End of Notifications -->
+                    <a class="kt-btn kt-btn-sm kt-btn-outline">
+                      <i class="ki-filled ki-exit-down text-base!"> </i>
+                      Export
+                    </a>
+                  </div>
+                </div>
+                <!-- End of Container -->
+              </div>
+
+              <!-- End of Toolbar -->
+              <!-- Container -->
+              <div class="kt-container-fixed">
+                <div class="grid gap-5 lg:gap-7.5">
+                  <!-- begin: grid -->
+                  <div
+                    class="grid grid-cols- sm:grid-cols-2 xl:grid-cols-4 gap-4"
+                  >
+                    <!-- Total Properties -->
+                    <div
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Total Properties
+                        </h2>
+                        <i class="fi fi-rr-building text-gray-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-gray-800">2</p>
+                        <p class="text-sm text-gray-500">Active properties</p>
+                      </div>
+                    </div>
+
+                    <!-- Buyers & Tenants -->
+                    <div
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Buyers & Tenants
+                        </h2>
+                        <i class="fi fi-rr-users text-blue-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-blue-600">3</p>
+                        <p class="text-sm text-gray-500">Active clients</p>
+                      </div>
+                    </div>
+
+                    <!-- Revenue Collected -->
+                    <div
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Revenue Collected
+                        </h2>
+                        <i class="fi fi-rr-dollar text-green-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-green-600">
+                          ₦1,125,000
+                        </p>
+                        <p class="text-sm text-gray-500">
+                          From invoices created
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Pending Collections -->
+                    <div
+                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Pending Collections
+                        </h2>
+                        <i class="fi fi-rr-time-check text-yellow-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-yellow-600">2</p>
+                        <p class="text-sm text-gray-500">Awaiting payment</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end: grid -->
+                  <!-- begin: grid -->
+                  <div
+                    class="grid lg:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
+                  >
+                    <div class="lg:col-span-3">
+                      <div
+                        class="bg-white p-6 rounded-xl shadow border border-gray-200 max-w-5xl mx-auto"
+                      >
+                        <!-- Title -->
+                        <h2 class="text-lg font-semibold">Payment Overview</h2>
+                        <p class="text-sm text-gray-500 mb-6">
+                          Your overall payment progress across all properties
+                        </p>
+
+                        <!-- Cards -->
+                        <div
+                          class="grid grid-cols sm:grid-cols-2 xl:grid-cols-3 gap-4 mb-6"
+                        >
+                          <!-- Total Invoiced -->
+                          <div class="bg-gray-50 rounded-xl p-6 text-center">
+                            <p class="text-gray-600">Total Invoiced</p>
+                            <p class="text-2xl font-bold text-gray-800">
+                              ₦2,250,000
+                            </p>
+                          </div>
+
+                          <!-- Total Paid -->
+                          <div
+                            class="bg-green-50 border border-green-200 rounded-xl p-6 text-center"
+                          >
+                            <p class="text-green-600">Total Paid</p>
+                            <p class="text-2xl font-bold text-green-600">
+                              ₦1,875,000
+                            </p>
+                          </div>
+
+                          <!-- Outstanding -->
+                          <div
+                            class="bg-red-50 border rounded-xl p-6 text-center"
+                            style="
+                              background-color: #fef2f2;
+                              border: 1px rgba(238, 25, 25, 0.877) solid;
+                            "
+                          >
+                            <p style="color: rgba(238, 25, 25, 0.877)">
+                              Outstanding
+                            </p>
+                            <p
+                              class="text-2xl font-bold"
+                              style="color: rgba(238, 25, 25, 0.877)"
+                            >
+                              ₦375,000
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Progress bar -->
+                        <div>
+                          <p class="text-sm font-medium text-gray-700 mb-2">
+                            Overall Progress
+                          </p>
+                          <div
+                            class="w-full bg-pink-100 rounded-full h-3"
+                            style="background-color: rgb(226, 113, 132)"
+                          >
+                            <div
+                              class="bg-pink-500 h-3 rounded-full"
+                              style="
+                                width: 83%;
+                                background-color: rgba(207, 37, 65, 0.945);
+                              "
+                            ></div>
+                          </div>
+                          <p class="text-right text-sm font-medium mt-1">83%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end: grid -->
+                  <!-- begin: grid -->
+                  <div
+                    class="grid lg:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
+                  >
+                    <div class="lg:col-span-3">
+                      <div
+                        class="bg-white p-6 rounded-xl shadow border border-gray-200 max-w-5xl mx-auto"
+                      >
+                        <!-- Header -->
+                        <h2 class="text-lg font-semibold">Recent Invoices</h2>
+                        <p class="text-sm text-gray-500 mb-6">
+                          Your latest billing information with payment options
+                        </p>
+
+                        <!-- Invoice List -->
+                        <div class="space-y-4">
+                          <!-- Invoice Item 1 -->
+                          <div
+                            class="p-4 border-0 rounded-lg"
+                            style="border: 1px solid #e5e7eb"
+                          >
+                            <div
+                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
+                              style="
+                                display: flex;
+                                justify-content: space-between;
+                              "
+                            >
+                              <div>
+                                <div class="flex items-center space-x-2">
+                                  <p class="font-semibold text-gray-700">
+                                    INV-001
+                                  </p>
+                                  <span
+                                    class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                                    style="
+                                      background-color: rgb(172, 228, 172);
+                                      color: green;
+                                    "
+                                    >Partially Paid</span
+                                  >
+                                </div>
+                                <p class="text-gray-600">
+                                  Ocean View Apartment
+                                </p>
+                                <p class="text-xs text-gray-500">
+                                  Due: 9/30/2024
+                                </p>
+                                <p class="text-sm text-green-600 mt-1">
+                                  Paid: ₦125,000
+                                </p>
+                              </div>
+                              <div class="text-right mt-3 sm:mt-0">
+                                <p class="font-bold text-gray-800">₦250,000</p>
+                                <p class="text-xs text-red-500">
+                                  ₦125,000 remaining
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="mt-3">
+                              <div class="w-full bg-pink-100 rounded-full h-2">
+                                <div
+                                  class="bg-pink-500 h-2 rounded-full"
+                                  style="width: 50%; background-color: #ec4899"
+                                ></div>
+                              </div>
+                              <p class="text-xs text-right mt-1">50%</p>
+                            </div>
+                            <!-- Actions -->
+                            <div class="flex flex-wrap gap-2 mt-3">
+                              <button
+                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
+                                style="border: 1px solid #e5e7eb"
+                                command="show-modal"
+                                commandfor="invoiceDialog"
+                              >
+                                👁 View Details
+                              </button>
+                              <button
+                                class="flex items-center px-3 py-1 bg-pink-500 text-white rounded-lg text-sm"
+                                style="background-color: #ec4899"
+                                command="show-modal"
+                                commandfor="invoiceDialoggg"
+                              >
+                                💳 Make Payment
+                              </button>
+                              <button
+                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
+                                style="border: 1px solid #e5e7eb"
+                                command="show-modal"
+                                commandfor="invoiceDialogggg"
+                              >
+                                📜 Payment History
+                              </button>
+                            </div>
+                          </div>
+
+                          <!-- Invoice Item 2 -->
+                          <div
+                            class="p-4 border-0 rounded-lg"
+                            style="border: 1px solid #e5e7eb"
+                          >
+                            <div
+                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
+                              style="
+                                display: flex;
+                                justify-content: space-between;
+                              "
+                            >
+                              <div>
+                                <div class="flex items-center space-x-2">
+                                  <p class="font-semibold text-gray-700">
+                                    INV-002
+                                  </p>
+                                  <span
+                                    class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
+                                    style="
+                                      background-color: rgb(172, 228, 172);
+                                      color: green;
+                                    "
+                                    >Partially Paid</span
+                                  >
+                                </div>
+                                <p class="text-gray-600">
+                                  Ocean View Apartment
+                                </p>
+                                <p class="text-xs text-gray-500">
+                                  Due: 10/31/2024
+                                </p>
+                                <p class="text-sm text-green-600 mt-1">
+                                  Paid: ₦100,000
+                                </p>
+                              </div>
+                              <div class="text-right mt-3 sm:mt-0">
+                                <p class="font-bold text-gray-800">₦250,000</p>
+                                <p class="text-xs text-red-500">
+                                  ₦150,000 remaining
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="mt-3">
+                              <div
+                                class="w-full bg-pink-100 rounded-full h-2"
+                                style="
+                                  width: 100%; /* w-full */
+                                  background-color: #fce7f3; /* bg-pink-100 */
+                                  border-radius: 9999px; /* rounded-full */
+                                  height: 0.5rem;
+                                "
+                              >
+                                <div
+                                  class="bg-pink-500 h-2 rounded-full"
+                                  style="width: 40%; background-color: #ec4899"
+                                ></div>
+                              </div>
+                              <p class="text-xs text-right mt-1">40%</p>
+                            </div>
+                            <!-- Actions -->
+                            <div class="flex flex-wrap gap-2 mt-3">
+                              <button
+                                class="flex items-center px-3 py-1 border-o rounded-lg text-sm text-gray-700"
+                                style="border: 1px solid #e5e7eb"
+                                command="show-modal"
+                                commandfor="invoiceDialog"
+                              >
+                                👁 View Details
+                              </button>
+                              <button
+                                class="flex items-center px-3 py-1 bg-pink-500 text-white rounded-lg text-sm"
+                                style="background-color: #ec4899"
+                                command="show-modal"
+                                commandfor="invoiceDialoggg"
+                              >
+                                💳 Make Payment
+                              </button>
+                              <button
+                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
+                                style="border: 1px solid #e5e7eb"
+                                command="show-modal"
+                                commandfor="invoiceDialogggg"
+                              >
+                                📜 Payment History
+                              </button>
+                            </div>
+                          </div>
+
+                          <!-- Invoice Item 3 -->
+                          <div
+                            class="p-4 border rounded-lg"
+                            style="border: 1px solid #e5e7eb"
+                          >
+                            <div
+                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
+                              style="
+                                display: flex;
+                                justify-content: space-between;
+                              "
+                            >
+                              <div>
+                                <div class="flex items-center space-x-2">
+                                  <p class="font-semibold text-gray-700">
+                                    INV-003
+                                  </p>
+                                  <span
+                                    class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full"
+                                    style="
+                                      background-color: #e2cbe2;
+                                      color: #ec4899;
+                                    "
+                                    >Paid</span
+                                  >
+                                </div>
+                                <p class="text-gray-600">Executive Villa</p>
+                                <p class="text-xs text-gray-500">
+                                  Due: 10/31/2024
+                                </p>
+                              </div>
+                              <div class="text-right mt-3 sm:mt-0">
+                                <p class="font-bold text-gray-800">₦500,000</p>
+                              </div>
+                            </div>
+                            <!-- Actions -->
+                            <div class="flex flex-wrap gap-2 mt-3">
+                              <button
+                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
+                                style="border: 1px solid #e5e7eb"
+                                command="show-modal"
+                                commandfor="invoiceDialog"
+                              >
+                                👁 View Details
+                              </button>
+                              <button
+                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
+                                style="border: 1px solid #e5e7eb"
+                                command="show-modal"
+                                commandfor="invoiceDialogggg"
+                              >
+                                📜 Payment History
+                              </button>
+                            </div>
+                          </div>
+
+                          <!-- Invoice Item 4 -->
+                          <div
+                            class="p-4 border rounded-lg"
+                            style="border: 1px solid #e5e7eb"
+                          >
+                            <div
+                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
+                              style="
+                                display: flex;
+                                justify-content: space-between;
+                              "
+                            >
+                              <div>
+                                <div class="flex items-center space-x-2">
+                                  <p class="font-semibold text-gray-700">
+                                    INV-004
+                                  </p>
+                                  <span
+                                    class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full"
+                                    style="
+                                      background-color: #eec790;
+                                      color: #a16207;
+                                    "
+                                    >Pending</span
+                                  >
+                                </div>
+                                <p class="text-gray-600">
+                                  Ocean View Apartment
+                                </p>
+                                <p class="text-xs text-gray-500">
+                                  Due: 11/30/2024
+                                </p>
+                              </div>
+                              <div class="text-right mt-3 sm:mt-0">
+                                <p class="font-bold text-gray-800">₦250,000</p>
+                              </div>
+                            </div>
+                            <!-- Actions -->
+                            <div class="flex flex-wrap gap-2 mt-3">
+                              <button
+                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
+                                style="border: 1px solid #e5e7eb"
+                                command="show-modal"
+                                commandfor="invoiceDialog"
+                              >
+                                👁 View Details
+                              </button>
+                              <button
+                                class="flex items-center px-3 py-1 bg-pink-500 text-white rounded-lg text-sm"
+                                style="background-color: #ec4899"
+                                command="show-modal"
+                                commandfor="invoiceDialoggg"
+                              >
+                                💳 Make Payment
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- end: grid -->
+                </div>
+                <div
+                  class="bg-white p-6 mt-7 rounded-xl shadow border border-gray-200 max-w-7xl mx-auto"
+                >
+                  <!-- Section Header -->
+                  <h2 class="text-lg font-semibold">Your Buyers & Tenants</h2>
+                  <p class="text-sm text-gray-500 mb-6">
+                    People you've invoiced for your properties
+                  </p>
+
+                  <!-- Cards Grid -->
+                  <div class="lg:col-span-3">
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
+                    >
+                      <!-- Card 1 -->
+                      <div
+                        class="border-0 rounded-lg p-5"
+                        style="border: 1px solid #e5e7eb"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div class="flex items-center space-x-3">
+                            <div
+                              class="w-10 h-10 mr-4 flex items-center justify-center rounded-full bg-pink-500 text-white font-bold"
+                              style="background-color: #ec4899"
+                            >
+                              J
+                            </div>
+                            <div>
+                              <p class="font-semibold text-gray-800">
+                                John Adebayo
+                              </p>
+                              <p class="text-sm text-gray-500">
+                                Ocean View Apartment
+                              </p>
+                            </div>
+                          </div>
+                          <span
+                            class="bg-pink-500 text-white text-xs px-3 py-1 rounded-full"
+                            >Buyer</span
+                          >
+                        </div>
+
+                        <div class="mt-4 space-y-1">
+                          <p class="text-sm text-gray-700">
+                            Total Invoiced
+                            <span class="font-semibold">₦5,000,000</span>
+                          </p>
+                          <p class="text-sm">
+                            Total Paid
+                            <span class="font-semibold text-green-600"
+                              >₦2,500,000</span
+                            >
+                          </p>
+                          <p class="text-sm">
+                            Outstanding
+                            <span class="font-semibold text-red-600"
+                              >₦2,500,000</span
+                            >
+                          </p>
+                        </div>
+
+                        <!-- Progress -->
+                        <div class="mt-3">
+                          <div
+                            style="
+                              max-width: 100%; /* w-full */
+                              background-color: #ebcfdf; /* bg-pink-100 */
+                              border-radius: 9999px; /* rounded-full */
+                              height: 0.5rem;
+                            "
+                          >
+                            <div
+                              class="bg-pink-500 h-2 rounded-full"
+                              style="width: 50%; background-color: #ec4899"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card 2 -->
+                      <div
+                        class="border-0 rounded-lg p-5"
+                        style="border: 1px solid #e5e7eb"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div class="flex items-center space-x-3">
+                            <div
+                              class="w-10 mr-4 h-10 flex items-center justify-center rounded-full bg-pink-500 text-white font-bold"
+                              style="background-color: #ec4899"
+                            >
+                              S
+                            </div>
+                            <div>
+                              <p class="font-semibold text-gray-800">
+                                Sarah Okafor
+                              </p>
+                              <p class="text-sm text-gray-500">
+                                Executive Villa
+                              </p>
+                            </div>
+                          </div>
+                          <span
+                            class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full"
+                            >Tenant</span
+                          >
+                        </div>
+
+                        <div class="mt-4 space-y-1">
+                          <p class="text-sm text-gray-700">
+                            Total Invoiced
+                            <span class="font-semibold">₦1,500,000</span>
+                          </p>
+                          <p class="text-sm">
+                            Total Paid
+                            <span class="font-semibold text-green-600"
+                              >₦1,500,000</span
+                            >
+                          </p>
+                          <p class="text-sm">
+                            Outstanding
+                            <span class="font-semibold text-red-600">₦0</span>
+                          </p>
+                        </div>
+
+                        <!-- Progress -->
+                        <div class="mt-3">
+                          <div
+                            class="w-full bg-pink-100 rounded-full h-2"
+                            style="
+                              width: 100%; /* w-full */
+                              background-color: #fce7f3; /* bg-pink-100 */
+                              border-radius: 9999px; /* rounded-full */
+                              height: 0.5rem;
+                            "
+                          >
+                            <div
+                              class="bg-pink-500 h-2 rounded-full"
+                              style="width: 100%; background-color: #ec4899"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card 3 -->
+                      <div
+                        class="border-0 rounded-lg p-5"
+                        style="border: 1px solid #e5e7eb"
+                      >
+                        <div class="flex items-start justify-between">
+                          <div class="flex items-center space-x-3">
+                            <div
+                              class="w-10 mr-4 h-10 flex items-center justify-center rounded-full bg-pink-500 text-white font-bold"
+                              style="background-color: #ec4899"
+                            >
+                              M
+                            </div>
+                            <div>
+                              <p class="font-semibold text-gray-800">
+                                Michael Okoro
+                              </p>
+                              <p class="text-sm text-gray-500">
+                                Ocean View Apartment
+                              </p>
+                            </div>
+                          </div>
+                          <span
+                            class="bg-pink-500 text-white text-xs px-3 py-1 rounded-full"
+                            >Buyer</span
+                          >
+                        </div>
+
+                        <div class="mt-4 space-y-1">
+                          <p class="text-sm text-gray-700">
+                            Total Invoiced
+                            <span class="font-semibold">₦1,000,000</span>
+                          </p>
+                          <p class="text-sm">
+                            Total Paid
+                            <span class="font-semibold text-green-600"
+                              >₦250,000</span
+                            >
+                          </p>
+                          <p class="text-sm">
+                            Outstanding
+                            <span class="font-semibold text-red-600"
+                              >₦750,000</span
+                            >
+                          </p>
+                        </div>
+
+                        <!-- Progress -->
+                        <div class="mt-3">
+                          <div
+                            class="w-full bg-pink-100 rounded-full h-2"
+                            style="
+                              width: 100%; /* w-full */
+                              background-color: #fce7f3; /* bg-pink-100 */
+                              border-radius: 9999px; /* rounded-full */
+                              height: 0.5rem;
+                            "
+                          >
+                            <div
+                              class="bg-pink-500 h-2 rounded-full"
+                              style="width: 25%; background-color: #ec4899"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full p-4">
+                  <div class="bg-white border border-gray-200 rounded-lg p-6">
+                    <!-- Header -->
+                    <h2 class="text-lg font-semibold">Your Properties</h2>
+                    <p class="text-sm text-gray-500 mb-4">
+                      Properties under your management with payment status
+                    </p>
+
+                    <!-- Cards Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <!-- Property Card 1 -->
+                      <div
+                        class="border border-gray-200 rounded-lg overflow-hidden"
+                      >
+                        <!-- Image -->
+                        <div class="relative">
+                          <iframe
+                            src="https://drive.google.com/file/d/1Acj4IK0cvJ2R1ILai7n9VUf1CLViOH1F/preview"
+                            width="640"
+                            height="480"
+                            allow="autoplay"
+                          ></iframe>
+                          <span
+                            class="absolute top-2 right-2 bg-gray-100 text-xs font-semibold px-2 py-1 rounded-full"
+                            >Active</span
+                          >
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-4">
+                          <h3 class="text-base font-semibold">
+                            Ocean View Apartment
+                          </h3>
+                          <p class="text-sm text-gray-500">
+                            123 Marina Bay, Lagos
+                          </p>
+
+                          <div class="flex justify-between text-sm mt-3">
+                            <p>
+                              <span class="font-semibold">Type</span><br />
+                              Apartment
+                            </p>
+                            <p>
+                              <span class="font-semibold">Monthly Fee</span
+                              ><br />
+                              ₦250,000
+                            </p>
+                          </div>
+
+                          <!-- Payment Progress -->
+                          <div class="mt-3">
+                            <p class="text-sm font-medium text-gray-700">
+                              Payment Progress
+                            </p>
+                            <div
+                              class="w-full bg-pink-100 rounded-full h-2 mt-1"
+                              style="background-color: #e0c4d2"
+                            >
+                              <div
+                                class="bg-pink-500 h-2 rounded-full w-1/2"
+                                style="background-color: #ec4899; width: 50%"
+                              ></div>
+                            </div>
+                            <div
+                              class="flex justify-between text-xs text-gray-500 mt-1"
+                            >
+                              <span>Paid: ₦375,000</span>
+                              <span>50%</span>
+                              <span>Outstanding: ₦375,000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Property Card 2 -->
+                      <div
+                        class="border border-gray-200 rounded-lg overflow-hidden"
+                      >
+                        <!-- Image -->
+                        <div class="relative">
+                          <iframe
+                            src="https://drive.google.com/file/d/175bclNLlpNnQ1Zt7Kz0sWp5DySDAvWiI/preview"
+                            width="640"
+                            height="480"
+                            allow="autoplay"
+                          ></iframe>
+                          <span
+                            class="absolute top-2 right-2 bg-gray-100 text-xs font-semibold px-2 py-1 rounded-full"
+                            >Active</span
+                          >
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-4">
+                          <h3 class="text-base font-semibold">
+                            Executive Villa
+                          </h3>
+                          <p class="text-sm text-gray-500">
+                            456 Victoria Island, Lagos
+                          </p>
+
+                          <div class="flex justify-between text-sm mt-3">
+                            <p>
+                              <span class="font-semibold">Type</span><br />
+                              Villa
+                            </p>
+                            <p>
+                              <span class="font-semibold">Monthly Fee</span
+                              ><br />
+                              ₦500,000
+                            </p>
+                          </div>
+
+                          <!-- Payment Progress -->
+                          <div class="mt-3">
+                            <p class="text-sm font-medium text-gray-700">
+                              Payment Progress
+                            </p>
+                            <div
+                              class="w-full bg-pink-100 rounded-full h-2 mt-1"
+                              style="
+                                width: 100%; /* w-full */
+                                background-color: #fce7f3; /* bg-pink-100 */
+                                border-radius: 9999px; /* rounded-full */
+                                height: 0.5rem;
+                              "
+                            >
+                              <div
+                                class="bg-pink-500 h-2 rounded-full w-full"
+                                style="background-color: #ec4899"
+                              ></div>
+                            </div>
+                            <div
+                              class="flex justify-between text-xs text-gray-500 mt-1"
+                            >
+                              <span>Paid: ₦1,500,000</span>
+                              <span>100%</span>
+                              <span>Outstanding: ₦0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Container -->
+            </main>
+          </div>
+          <!-- Footer -->
+          <footer class="footer">
+            <!-- Container -->
+            <div class="kt-container-fixed">
+              <div
+                class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 py-5"
+              >
+                <div class="flex order-2 md:order-1 gap-2 font-normal text-sm">
+                  <span class="text-muted-foreground"> </span>
+                  <a
+                    class="text-secondary-foreground hover:text-primary"
+                    href="https://keenthemes.com/"
+                  >
+                  </a>
+                </div>
+                <nav
+                  class="flex order-1 md:order-2 gap-4 font-normal text-sm text-secondary-foreground"
+                >
+                  <a
+                    class="hover:text-primary"
+                    href="https://keenthemes.com/metronic/tailwind/docs"
+                  >
+                  </a>
+                  <a
+                    class="hover:text-primary"
+                    href="https://1.envato.market/Vm7VRE"
+                  >
+                  </a>
+                  <a
+                    class="hover:text-primary"
+                    href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
+                  >
+                  </a>
+                  <a
+                    class="hover:text-primary"
+                    href="https://devs.keenthemes.com/"
+                  >
+                  </a>
+                  <a
+                    class="hover:text-primary"
+                    href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
+                  >
+                  </a>
+                </nav>
+              </div>
+            </div>
+            <!-- End of Container -->
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!-- End of Main -->
+      </div>
+      <!-- End of Wrapper -->
+    </div>
+    <!-- End of Base -->
+    <div id="headhtml"></div>
+    <!-- Share Profile Modal 
+    <div class="kt-modal" data-kt-modal="true" id="share_profile_modal">
+      <div class="kt-modal-content max-w-[500px] top-5 lg:top-[15%]">
+        <div class="kt-modal-header">
+          <h3 class="kt-modal-title">Share Profile</h3>
+          <button
+            class="kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost shrink-0"
+            data-kt-modal-dismiss="true"
+          >
+            <i class="ki-filled ki-cross"> </i>
+          </button>
+        </div>
+        <div class="kt-modal-body grid gap-5 px-0 py-5">
+          <div class="flex flex-col px-5 gap-2.5">
+            <div class="flex flex-center gap-1">
+              <label class="text-mono font-semibold text-sm">
+                Share read-only link
+              </label>
+              <i
+                class="ki-filled ki-information-2 text-muted-foreground text-sm"
+              >
+              </i>
+            </div>
+            <label class="kt-input">
+              <input
+                type="text"
+                value="https://metronic.com/profiles/x7g2vA3kZ5"
+              />
+              <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost -me-2">
+                <i class="ki-filled ki-copy"> </i>
+              </button>
+            </label>
+          </div>
+          <div class="border-b border-b-border"></div>
+          <div class="flex flex-col px-5 gap-2.5">
+            <div class="flex flex-center gap-1">
+              <label class="text-mono font-semibold text-sm">
+                Share via email
+              </label>
+              <i
+                class="ki-filled ki-information-2 text-muted-foreground text-sm"
+              >
+              </i>
+            </div>
+            <div class="flex flex-center gap-2.5">
+              <label class="kt-input">
+                <input type="text" value="miles.turner@gmail.com" />
+              </label>
+              <button class="kt-btn kt-btn-primary">Share</button>
+            </div>
+          </div>
+          <div class="kt-scrollable-y-auto max-h-[300px]">
+            <div class="flex flex-col px-5 gap-3">
+              <div class="flex items-center flex-wrap gap-2">
+                <div class="flex items-center grow gap-2.5">
+                  <img
+                    alt=""
+                    class="rounded-full size-9 shrink-0"
+                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-3.png"
+                  />
+                  <div class="flex flex-col">
+                    <a
+                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
+                      href="#"
+                    >
+                      Tyler Hero
+                    </a>
+                    <a
+                      class="hover:text-primary text-2sm text-secondary-foreground"
+                      href="#"
+                    >
+                      tyler.hero@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <select class="kt-select max-w-24" data-kt-select="true">
+                  <option selected="">Owner</option>
+                  <option>Editor</option>
+                  <option>Viewer</option>
+                </select>
+              </div>
+              <div class="flex items-center flex-wrap gap-2">
+                <div class="flex items-center grow gap-2.5">
+                  <img
+                    alt=""
+                    class="rounded-full size-9 shrink-0"
+                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
+                  />
+                  <div class="flex flex-col">
+                    <a
+                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
+                      href="#"
+                    >
+                      Esther Howard
+                    </a>
+                    <a
+                      class="hover:text-primary text-2sm text-secondary-foreground"
+                      href="#"
+                    >
+                      esther.howard@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <select class="kt-select max-w-24" data-kt-select="true">
+                  <option>Owner</option>
+                  <option selected="">Editor</option>
+                  <option>Viewer</option>
+                </select>
+              </div>
+              <div class="flex items-center flex-wrap gap-2">
+                <div class="flex items-center grow gap-2.5">
+                  <img
+                    alt=""
+                    class="rounded-full size-9 shrink-0"
+                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-11.png"
+                  />
+                  <div class="flex flex-col">
+                    <a
+                      class="text-sm font-semibold text-mono hover:text-primary mb-px"
+                      href="#"
+                    >
+                      Jacob Jones
+                    </a>
+                    <a
+                      class="hover:text-primary text-2sm text-secondary-foreground"
+                      href="#"
+                    >
+                      jacob.jones@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <select class="kt-select max-w-24" data-kt-select="true">
+                  <option>Owner</option>
+                  <option>Editor</option>
+                  <option selected="">Viewer</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="border-b border-b-border"></div>
+          <div class="flex flex-col px-5 gap-4">
+            <label class="text-mono font-semibold text-sm"> Settings </label>
+            <div class="flex flex-center justify-between flex-wrap gap-2">
+              <div class="flex flex-center gap-1.5">
+                <i class="ki-filled ki-user text-muted-foreground"> </i>
+                <div
+                  class="flex flex-center text-secondary-foreground font-medium text-xs"
+                >
+                  Anyone at
+                  <a class="text-xs font-medium link mx-1" href="#">
+                    KeenThemes
+                  </a>
+                  can view
+                </div>
+              </div>
+              <button
+                class="kt-link kt-link-sm kt-link-underlined kt-link-dashed"
+              >
+                Change Access
+              </button>
+            </div>
+            <div
+              class="flex flex-center justify-between flex-wrap gap-2 mb-2.5"
+            >
+              <div class="flex flex-center gap-1.5">
+                <i class="ki-filled ki-icon text-muted-foreground"> </i>
+                <div
+                  class="flex flex-center text-secondary-foreground font-medium text-xs"
+                >
+                  Anyone with link can edit
+                </div>
+              </div>
+              <button
+                class="kt-link kt-link-sm kt-link-underlined kt-link-dashed"
+              >
+                Set Password
+              </button>
+            </div>
+            <button class="kt-btn kt-btn-primary justify-center">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Share Profile Modal -->
+    <!-- Modal -->
+    <el-dialog>
+      <dialog
+        id="invoiceDialog"
+        aria-labelledby="invoice-title"
+        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
+        style="
+          position: fixed; /* fixed */
+          inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
+          width: auto; /* size-auto → width:auto */
+          height: auto; /* size-auto → height:auto */
+          max-height: none; /* max-h-none */
+          max-width: none; /* max-w-none */
+          overflow-y: auto; /* overflow-y-auto */
+          background-color: transparent; /* bg-transparent */
+          backdrop-filter: none; /* backdrop:bg-transparent (no backdrop color) */
+          z-index: 50;
+        "
+      >
+        <!-- Backdrop -->
+        <el-dialog-backdrop
+          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
+        >
+        </el-dialog-backdrop>
+
+        <!-- Modal Content -->
+        <div
+          tabindex="0"
+          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
+        >
+          <el-dialog-panel
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-2xl data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
+          >
+            <!-- Header -->
+            <div
+              class="flex items-center justify-between border-b px-6 py-4 my-header"
+            >
+              <h3my-panel
+                id="invoice-title"
+                class="text-lg font-semibold text-gray-900"
+                style="
+                  font-size: 1.125rem; /* text-lg → 18px */
+                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
+                  font-weight: 600; /* font-semibold */
+                  color: #111827;
+                "
+              >
+                Invoice Details
+              </h3my-panel>
+              <button
+                command="close"
+                commandfor="invoiceDialog"
+                class="text-gray-400 hover:text-gray-600 my-link"
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Body -->
+            <div class="px-6 py-4 space-y-4 my-section">
+              <p
+                class="text-sm text-gray-500"
+                style="
+                  font-size: 0.875rem; /* text-sm → 14px */
+                  line-height: 1.25rem; /* Tailwind's default for text-sm */
+                  color: #6b7280;
+                "
+              >
+                Invoice INV-001 for Ocean View Apartment
+              </p>
+
+              <div
+                class="grid grid-cols-2 gap-4 text-sm"
+                style="
+                  display: grid; /* grid */
+                  grid-template-columns: repeat(
+                    2,
+                    minmax(0, 1fr)
+                  ); /* grid-cols-2 */
+                  gap: 1rem; /* gap-4 → 16px */
+                  font-size: 0.875rem; /* text-sm → 14px */
+                  line-height: 1.25rem;
+                "
+              >
+                <div>
+                  <p
+                    class="font-medium text-gray-600"
+                    style="font-weight: 500; /* font-medium */ color: #4b5563"
+                  >
+                    Invoice ID
+                  </p>
+                  <p class="text-gray-900" style="color: #111827">INV-001</p>
+                </div>
+                <div>
+                  <p
+                    class="font-medium text-gray-600"
+                    style="font-weight: 500; /* font-medium */ color: #4b5563"
+                  >
+                    Status
+                  </p>
+                  <p
+                    class="text-yellow-600 font-semibold"
+                    style="
+                      color: #ca8a04; /* text-yellow-600 */
+                      font-weight: 600;
+                    "
+                  >
+                    Partially Paid
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="font-medium text-gray-600"
+                    style="font-weight: 500; /* font-medium */ color: #4b5563"
+                  >
+                    Issue Date
+                  </p>
+                  <p class="text-gray-900" style="color: #111827">9/1/2024</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Due Date</p>
+                  <p class="text-gray-900">9/30/2024</p>
+                </div>
+              </div>
+
+              <hr class="border-gray-200" />
+
+              <div>
+                <p class="font-medium text-gray-700">Description</p>
+                <p class="text-sm text-gray-500">
+                  Monthly Service Charge - September 2024
+                </p>
+              </div>
+
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span>Service Charge</span>
+                  <span class="font-medium">₦200,000</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Security Fee</span>
+                  <span class="font-medium">₦30,000</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Maintenance Fee</span>
+                  <span class="font-medium">₦20,000</span>
+                </div>
+              </div>
+
+              <hr class="border-gray-200" />
+
+              <div class="flex justify-between font-semibold text-gray-900">
+                <span>Total Amount</span>
+                <span>₦250,000</span>
+              </div>
+
+              <div class="flex justify-between text-sm">
+                <span class="text-green-600 font-semibold">Paid Amount</span>
+                <span class="text-green-600 font-semibold">₦125,000</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-red-600 font-semibold">Remaining Amount</span>
+                <span class="text-red-600 font-semibold">₦125,000</span>
+              </div>
+
+              <div class="pt-2">
+                <div class="flex justify-between text-xs text-gray-600 mb-1">
+                  <span>Payment Progress</span>
+                  <span>50%</span>
+                </div>
+                <div
+                  class="w-full bg-gray-200 h-2"
+                  style="
+                    width: 100%; /* w-full */
+                    background-color: #e5e7eb;
+                    border-radius: 9999px; /* rounded-full */
+                    height: 0.5rem;
+                  "
+                >
+                  <div
+                    class="bg-red-500 h-2 rounded-full w-1/2"
+                    style="
+                      background-color: #ec4899; /* bg-red-500 */
+                      height: 0.5rem; /* h-2 */
+                      border-radius: 9999px; /* rounded-full */
+                      width: 50%;
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
+              <button
+                command="close"
+                commandfor="invoiceDialog"
+                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                Close
+              </button>
+              <button
+                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                Download
+              </button>
+              <button
+                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                History
+              </button>
+              <button class="my-danger-btn">Make Payment</button>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+    <!-- End of Modal -->
+    <!-- Modal -->
+    <el-dialog>
+      <dialog
+        id="invoiceDialoggg"
+        aria-labelledby="invoice-title"
+        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
+        style="
+          position: fixed;
+          inset: 0;
+          width: auto;
+          height: auto;
+          max-height: none;
+          max-width: none;
+          overflow-y: auto;
+          background-color: transparent;
+          backdrop-filter: none;
+          z-index: 50;
+        "
+      >
+        <!-- Backdrop -->
+        <el-dialog-backdrop
+          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
+        >
+        </el-dialog-backdrop>
+
+        <!-- Modal Content -->
+        <div
+          tabindex="0"
+          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
+        >
+          <el-dialog-panel
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
+          >
+            <!-- Header -->
+            <div
+              class="flex items-center justify-between border-b px-6 py-4"
+              style="
+                display: flex;
+                align-items: center; /* items-center */
+                justify-content: space-between; /* justify-between */
+                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
+                padding-left: 1.5rem; /* px-6 → 24px */
+                padding-right: 1.5rem;
+                padding-top: 1rem; /* py-4 → 16px */
+                padding-bottom: 1rem;
+              "
+            >
+              <h3
+                id="invoice-title"
+                class="text-lg font-semibold text-gray-900"
+                style="
+                  font-size: 1.125rem; /* text-lg → 18px */
+                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
+                  font-weight: 600; /* font-semibold */
+                  color: #111827;
+                "
+              >
+                Make Payment
+              </h3>
+              <button
+                command="close"
+                commandfor="invoiceDialoggg"
+                class="text-gray-400 hover:text-gray-600"
+                style="
+                  color: #9ca3af; /* text-gray-400 */
+                  transition: color 0.2s ease-in-out; /* smooth hover effect */
+                "
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Body -->
+            <div
+              class="px-6 py-4 space-y-4"
+              style="
+                padding-left: 1.5rem; /* px-6 → 24px */
+                padding-right: 1.5rem;
+              "
+            >
+              <!-- Invoice summary -->
+              <div
+                class="bg-gray-50 rounded-md p-4 grid grid-cols-2 gap-4 text-sm"
+                style="
+                  background-color: #f9fafb;
+                  border-radius: 0.375rem;
+                  padding: 1rem;
+                  display: grid;
+                  grid-template-columns: repeat(2, minmax(0, 1fr));
+                  gap: 1rem;
+                  font-size: 0.875rem;
+                  line-height: 1.25rem;
+                "
+              >
+                <div>
+                  <p class="font-medium text-gray-600">Invoice Amount</p>
+                  <p class="font-semibold text-gray-900">₦250,000</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Paid Amount</p>
+                  <p class="font-semibold text-green-600">₦125,000</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Remaining Amount</p>
+                  <p class="font-semibold text-red-600">₦125,000</p>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-600">Progress</p>
+                  <p class="font-semibold text-gray-900">50% paid</p>
+                </div>
+              </div>
+
+              <!-- Progress bar -->
+              <div class="pt-2">
+                <div class="w-full bg-gray-200 h-2 rounded-full">
+                  <div
+                    class="bg-green-500 h-2 rounded-full"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Payment Amount -->
+              <div>
+                <label class="font-medium text-gray-700"
+                  >Payment Amount (₦)</label
+                >
+                <input
+                  type="number"
+                  placeholder="Enter amount (Max: ₦125,000)"
+                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
+                  style="max-width: 100%"
+                />
+                <div class="flex gap-2 mt-2">
+                  <button class="px-3 py-1 text-sm rounded-md border">
+                    25%
+                  </button>
+                  <button class="px-3 py-1 text-sm rounded-md border">
+                    50%
+                  </button>
+                  <button class="px-3 py-1 text-sm rounded-md border">
+                    75%
+                  </button>
+                  <button class="px-3 py-1 text-sm rounded-md border">
+                    Full
+                  </button>
+                </div>
+              </div>
+
+              <!-- Payment Method -->
+              <div>
+                <p class="font-medium text-gray-700">Payment Method</p>
+                <div class="mt-1 flex items-center gap-2">
+                  <input type="radio" name="payment-method" />
+                  <span>Card Payment</span>
+                </div>
+              </div>
+
+              <!-- Notes -->
+              <div>
+                <p class="font-medium text-gray-700">Notes (Optional)</p>
+                <textarea
+                  placeholder="Add any payment notes..."
+                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
+                ></textarea>
+              </div>
+
+              <!-- Secure payment notice -->
+              <div
+                class="border border-blue-200 bg-blue-50 rounded-md p-3 text-xs text-blue-700"
+              >
+                <strong>Secure Payment:</strong> Your payment will be processed
+                securely. You’ll receive a confirmation receipt via email.
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
+              <button
+                command="close"
+                commandfor="invoiceDialoggg"
+                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                style="
+                  border-radius: 0.375rem; /* rounded-md */
+                  border: 1px solid #d1d5db; /* border-gray-300 */
+                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+                  font-size: 0.875rem; /* text-sm */
+                  color: #374151; /* text-gray-700 */
+                  transition: background-color 0.2s ease;
+                "
+              >
+                Cancel
+              </button>
+              <button
+                class="rounded-md bg-red-600 text-white px-3 py-2 text-sm font-medium hover:bg-red-700"
+                style="
+                  border-radius: 0.375rem; /* rounded-md */
+                  background-color: #dc2626; /* bg-red-600 */
+                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+                  font-size: 0.875rem; /* text-sm */
+                  font-weight: 500; /* font-medium */
+                  color: #ffffff; /* text-white */
+                  cursor: pointer;
+                  transition: background-color 0.2s ease;
+                "
+              >
+                Pay ₦0
+              </button>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+
+    <!-- End of Modal -->
+    <el-dialog>
+      <dialog
+        id="invoiceDialogggg"
+        aria-labelledby="invoice-title"
+        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
+        style="
+          position: fixed;
+          inset: 0;
+          width: auto;
+          height: auto;
+          max-height: none;
+          max-width: none;
+          overflow-y: auto;
+          background-color: transparent;
+          backdrop-filter: none;
+          z-index: 50;
+        "
+      >
+        <!-- Backdrop -->
+        <el-dialog-backdrop
+          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
+          style="
+            position: fixed; /* fixed */
+            inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
+            background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
+            transition: opacity 0.3s ease-out; /* smooth fade-in/out */
+            opacity: 1; /* fully visible by default */
+          "
+        ></el-dialog-backdrop>
+
+        <!-- Modal Content -->
+        <div
+          tabindex="0"
+          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
+          style="
+            display: flex; /* flex */
+            min-height: 100%; /* min-h-full */
+            align-items: flex-end; /* items-end */
+            justify-content: center; /* justify-center */
+            padding: 1rem; /* p-4 → 16px */
+            text-align: center; /* text-center */
+            outline: none; /* focus:outline-none */
+          "
+        >
+          <el-dialog-panel
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl"
+            style="
+              position: relative; /* relative */
+              transform: translateY(0) scale(1); /* initial state */
+              overflow: hidden; /* overflow-hidden */
+              border-radius: 0.5rem; /* rounded-lg */
+              background-color: #ffffff; /* bg-white */
+              text-align: left; /* text-left */
+              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+              transition: all 0.3s ease-out; /* smooth transition */
+              margin-top: 2rem; /* sm:my-8 → margin vertical on small screens */
+              margin-bottom: 2rem;
+              width: 100%; /* sm:w-full */
+              max-width: 32rem; /* sm:max-w-2xl → max-width: 768px */
+            "
+          >
+            <!-- Header -->
+            <div
+              class="flex items-center justify-between border-b px-6 py-4"
+              style="
+                display: flex;
+                align-items: center; /* items-center */
+                justify-content: space-between; /* justify-between */
+                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
+                padding-left: 1.5rem; /* px-6 → 24px */
+                padding-right: 1.5rem;
+                padding-top: 1rem; /* py-4 → 16px */
+                padding-bottom: 1rem;
+              "
+            >
+              <h3
+                id="invoice-title"
+                class="text-lg font-semibold text-gray-900"
+                style="
+                  font-size: 1.125rem;
+                  line-height: 1.75rem;
+                  font-weight: 600;
+                  color: #111827;
+                "
+              >
+                Payment History
+              </h3>
+              <button
+                command="close"
+                commandfor="invoiceDialogggg"
+                class="text-gray-400 hover:text-gray-600"
+                style="
+                  color: #9ca3af; /* text-gray-400 */
+                  transition: color 0.2s ease-in-out; /* smooth hover effect */
+                "
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Body -->
+            <div
+              class="px-6 py-4 space-y-4"
+              style="
+                padding-left: 1.5rem; /* px-6 → 24px */
+                padding-right: 1.5rem;
+                padding-top: 1rem; /* py-4 → 16px */
+                padding-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem; /* space-y-4 → vertical spacing */
+              "
+            >
+              <p
+                class="text-sm text-gray-500"
+                style="
+                  font-size: 0.875rem; /* text-sm → 14px */
+                  line-height: 1.25rem; /* Tailwind's default for text-sm */
+                  color: #6b7280;
+                "
+              >
+                All payments for invoice INV-001
+              </p>
+
+              <!-- Summary -->
+              <div class="grid grid-cols-3 gap-4 text-center text-sm">
+                <div>
+                  <p class="font-semibold text-gray-900">Total Invoice</p>
+                  <p class="font-bold text-black">₦250,000</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900">Total Paid</p>
+                  <p class="font-bold text-green-600">₦125,000</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900">Balance Due</p>
+                  <p class="font-bold text-red-600">₦125,000</p>
+                </div>
+              </div>
+
+              <!-- Progress bar -->
+              <div class="pt-2" style="padding-top: 0.5rem; /* pt-2 */">
+                <div
+                  class="flex justify-between text-xs text-gray-600 mb-1"
+                  style="margin-bottom: 0.25rem; /* mb-1 */"
+                >
+                  <span>50% completed</span>
+                </div>
+                <div class="w-full bg-gray-200 h-2 rounded-full">
+                  <div
+                    class="bg-red-500 h-2 rounded-full"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Payment Record -->
+              <div
+                class="border rounded-lg p-4 flex justify-between items-center"
+                style="
+                  border: 1px solid #e5e7eb; /* light gray border */
+                  border-radius: 0.375rem; /* rounded-lg */
+                  padding: 1rem; /* p-4 */
+                  display: flex; /* flex */
+                  justify-content: space-between; /* justify-between */
+                  align-items: center; /* items-center */
+                "
+              >
+                <div>
+                  <p class="font-semibold">
+                    PAY-002
+                    <span
+                      class="bg-red-100 text-red-600 text-xs font-medium px-2 py-1 rounded-full ml-2"
+                      style="
+                        background-color: #fee2e2; /* bg-red-100 */
+                        color: #dc2626; /* text-red-600 */
+                        font-size: 0.75rem; /* text-xs */
+                        font-weight: 500; /* font-medium */
+                        padding: 0.25rem 0.5rem; /* px-2 py-1 */
+                        border-radius: 9999px; /* rounded-full */
+                        margin-left: 0.5rem; /* ml-2 */
+                      "
+                    >
+                      Completed
+                    </span>
+                  </p>
+                  <p class="text-sm text-gray-600">Method: Bank Transfer</p>
+                  <p class="text-xs text-gray-400">Reference: REF-987654321</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-green-600 font-bold">₦125,000</p>
+                  <p class="text-xs text-gray-500">9/15/2024</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div
+              class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4"
+              style="
+                display: flex; /* flex */
+                justify-content: flex-end; /* justify-end */
+                gap: 0.5rem; /* gap-2 → 8px */
+                border-top: 1px solid #e5e7eb; /* border-t */
+                background-color: #f9fafb; /* bg-gray-50 */
+                padding-left: 1.5rem; /* px-6 → 24px */
+                padding-right: 1.5rem;
+                padding-top: 1rem; /* py-4 → 16px */
+                padding-bottom: 1rem;
+              "
+            >
+              <button
+                command="close"
+                commandfor="invoiceDialogggg"
+                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                style="
+                  border-radius: 0.375rem; /* rounded-md */
+                  border: 1px solid #d1d5db; /* border-gray-300 */
+                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+                  font-size: 0.875rem; /* text-sm */
+                  color: #374151; /* text-gray-700 */
+                  transition: background-color 0.2s ease;
+                "
+              >
+                Close
+              </button>
+              <button
+                class="rounded-md bg-pink-600 text-white px-4 py-2 text-sm font-medium hover:bg-pink-700 flex items-center gap-1"
+                style="
+                  border-radius: 0.375rem; /* rounded-md */
+                  background-color: #ec4899; /* bg-red-500 */
+                  padding: 0.5rem 1rem; /* px-4 py-2 */
+                  font-size: 0.875rem; /* text-sm */
+                  font-weight: 500; /* font-medium */
+                  color: #ffffff; /* text-white */
+                  cursor: pointer;
+                  transition: background-color 0.2s ease;
+                  display: flex; /* flex */
+                  align-items: center; /* items-center */
+                  gap: 0.25rem; /* gap-1 → 4px */
+                "
+                command="show-modal"
+                commandfor="invoiceDialoggg"
+              >
+                <span>＋</span> Make Payment
+              </button>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+    <!-- End of Modal -->
+
+    <!-- Styles -->
+
+    <style>
+      .my-danger-btn {
+        border-radius: 0.375rem; /* rounded-md */
+        background-color: #ec4899; /* bg-red-500 */
+        padding: 0.5rem 0.75rem; /* px-3 py-2 */
+        font-size: 0.875rem; /* text-sm */
+        font-weight: 600; /* font-semibold */
+        color: #ffffff; /* text-white */
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .my-danger-btn:hover {
+        background-color: #f87171; /* hover:bg-red-400 */
+      }
+
+      .my-section {
+        padding-left: 1.5rem; /* px-6 → 24px */
+        padding-right: 1.5rem;
+        padding-top: 1rem; /* py-4 → 16px */
+        padding-bottom: 1rem;
+      }
+
+      /* space-y-4 → adds vertical spacing between children */
+      .my-section > * + * {
+        margin-top: 1rem; /* 16px */
+      }
+
+      .my-link {
+        color: #9ca3af; /* text-gray-400 */
+        transition: color 0.2s ease-in-out; /* smooth hover effect */
+      }
+
+      .my-link:hover {
+        color: #4b5563; /* text-gray-600 */
+      }
+
+      .my-backdrop {
+        position: fixed; /* fixed */
+        inset: 0; /* inset-0 → top:0; right:0; bottom:0; left:0 */
+        background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
+        transition-property: opacity; /* transition-opacity */
+        transition-duration: 150ms; /* default Tailwind duration */
+        transition-timing-function: ease-in-out; /* default easing */
+      }
+
+      /* State when dialog is closed */
+      .my-backdrop[data-closed] {
+        opacity: 0; /* data-closed:opacity-0 */
+      }
+
+      /* Enter transition */
+      .my-backdrop[data-enter] {
+        transition-duration: 300ms; /* data-enter:duration-300 */
+        transition-timing-function: ease-out; /* data-enter:ease-out */
+      }
+
+      /* Leave transition */
+      .my-backdrop[data-leave] {
+        transition-duration: 200ms; /* data-leave:duration-200 */
+        transition-timing-function: ease-in; /* data-leave:ease-in */
+      }
+
+      .my-container {
+        display: flex; /* flex */
+        min-height: 100%; /* min-h-full */
+        align-items: flex-end; /* items-end */
+        justify-content: center; /* justify-center */
+        padding: 1rem; /* p-4 */
+        text-align: center; /* text-center */
+        outline: none; /* focus:outline-none */
+      }
+
+      /* Small screens and up (sm:) */
+      @media (min-width: 640px) {
+        .my-container {
+          align-items: center; /* sm:items-center */
+          padding: 0; /* sm:p-0 */
+        }
+      }
+      .my-panel {
+        position: relative; /* relative */
+        transform: translate(0, 0); /* transform (baseline) */
+        overflow: hidden; /* overflow-hidden */
+        border-radius: 0.5rem; /* rounded-lg (8px radius) */
+        background-color: #ffffff; /* bg-white */
+        text-align: left; /* text-left */
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+        transition-property: all; /* transition-all */
+        transition-duration: 150ms; /* default Tailwind duration */
+        transition-timing-function: ease-in-out; /* default ease */
+        opacity: 1; /* default visible */
+        margin: 0; /* reset */
+      }
+
+      /* Closed state */
+      .my-panel[data-closed] {
+        transform: translateY(1rem); /* data-closed:translate-y-4 (16px down) */
+        opacity: 0; /* data-closed:opacity-0 */
+      }
+
+      @media (min-width: 640px) {
+        .my-panel {
+          margin-top: 2rem; /* sm:my-8 (32px vertical margin) */
+          margin-bottom: 2rem;
+          width: 100%; /* sm:w-full */
+          max-width: 42rem; /* sm:max-w-2xl (672px) */
+        }
+
+        .my-panel[data-closed] {
+          transform: translateY(0) scale(0.95);
+          /* data-closed:sm:translate-y-0 + data-closed:sm:scale-95 */
+        }
+      }
+
+      /* Enter transition */
+      .my-panel[data-enter] {
+        transition-duration: 300ms; /* data-enter:duration-300 */
+        transition-timing-function: ease-out; /* data-enter:ease-out */
+      }
+
+      /* Leave transition */
+      .my-panel[data-leave] {
+        transition-duration: 200ms; /* data-leave:duration-200 */
+        transition-timing-function: ease-in; /* data-leave:ease-in */
+      }
+      .my-header {
+        display: flex; /* flex */
+        align-items: center; /* items-center */
+        justify-content: space-between; /* justify-between */
+        border-bottom: 1px solid #e5e7eb; /* border-b (Tailwind gray-200 default) */
+        padding-left: 1.5rem; /* px-6 → 24px */
+        padding-right: 1.5rem;
+        padding-top: 1rem; /* py-4 → 16px */
+        padding-bottom: 1rem;
+      }
+      .my-rounded-btn {
+        border-radius: 0.375rem; /* rounded-md */
+        border: 1px solid #d1d5db; /* border-gray-300 */
+        padding: 0.5rem 0.75rem; /* px-3 py-2 */
+        font-size: 0.875rem; /* text-sm */
+        color: #374151; /* text-gray-700 */
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .my-rounded-btn:hover {
+        background-color: #f3f4f6; /* hover:bg-gray-100 */
+      }
+    </style>
+    <!-- End of Page -->
+    <!-- Scripts -->
+    <script src="../../../static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
+    <script src="../../../static/metronic/tailwind/dist/assets/vendors/ktui/ktui.min.js"></script>
+    <script src="../../../static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="../../../static/metronic/tailwind/dist/assets/js/widgets/general.js"></script>
+    <script src="../../../static/metronic/tailwind/dist/assets/my-js/sidebar.js"></script>
+    <!-- End of Scripts -->
+  </body>
+
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:37:57 GMT -->
+</html>
