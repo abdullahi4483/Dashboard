@@ -1,0 +1,299 @@
+/* Section */
+.featured-properties {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}
+.featured-properties .section-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+.featured-properties .section-header p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Grid */
+.properties-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  .properties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card */
+.property-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.property-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.property-image {
+  position: relative;
+}
+.property-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.badge {
+  position: absolute;
+  top: 8px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.badge.featured {
+  left: 8px;
+  background: #db2777;
+  color: #fff;
+}
+.badge.available {
+  top: auto;
+  bottom: 8px;
+  height: 24px;
+  left: 8px;
+  background: #16a34a;
+  color: #fff;
+}
+.favorite {
+  top: 8px;
+  right: 8px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Content */
+.property-content {
+  padding: 16px;
+  flex-grow: 1;
+}
+.property-content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+.property-content .location {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.price {
+  color: #db2777;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.rating {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+.rating .count {
+  color: #9ca3af;
+}
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: #374151;
+}
+.description {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 8px;
+}
+.agent {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+.down-payment {
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+.payment-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.payment-options span {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  background: #f9fafb;
+  color: #374151;
+}
+
+/* Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+.details-btn {
+  font-size: 0.875rem;
+  color: #374151;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.details-btn:hover {
+  color: #111827;
+}
+.apply-btn {
+  font-size: 0.875rem;
+  color: #fff;
+  background: #db2777;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.apply-btn:hover {
+  background: #be185d;
+}
+/* list */
+.applications {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  font-family: sans-serif;
+}
+
+.applications-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.applications-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0 16px;
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.application-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  transition: background 0.2s;
+}
+
+.application-card:hover {
+  background: #f9fafb;
+}
+
+.application-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.application-info img {
+  width: 80px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.application-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  color: #111827;
+}
+
+.application-info .date {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 2px 0 6px;
+}
+
+.status-price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.badge {
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.badge-review {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.view-btn {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #fff;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.view-btn:hover {
+  background: #f3f4f6;
+}

@@ -60,7 +60,7 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
                   >
-                    <i class="ki-filled ki-home text-xl"></i>
+                    <i class="ki-filled ki-users text-xl"></i>
                   </span>
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
@@ -94,7 +94,7 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
                   >
-                    <i class="ki-filled ki-file ki-plus text-xl"></i>
+                    <i class="ki-filled ki-dollar text-xl"></i>
                   </span>
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
