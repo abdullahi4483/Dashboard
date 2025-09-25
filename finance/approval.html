@@ -16,7 +16,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   dir="ltr"
   lang="en"
 >
-  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:37:06 GMT -->
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list?dir=ltr by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:40:25 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=utf-8"
@@ -25,24 +25,24 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <title>Promiseland</title>
     <meta charset="utf-8" />
     <meta content="follow, index" name="robots" />
-    <link href="index.html" rel="canonical" />
+    <link href="list.html" rel="canonical" />
     <meta
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
       name="viewport"
     />
     <meta
-      content="Tailwind CSS based HTML and JavaScript toolkit for building modern and scalable web applications"
+      content="Campaigns in list layout, powered by Tailwind CSS"
       name="description"
     />
     <meta content="@keenthemes" name="twitter:site" />
     <meta content="@keenthemes" name="twitter:creator" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta
-      content="Metronic - Tailwind CSS Light Sidebar"
+      content="Metronic - Tailwind CSS Campaigns - List"
       name="twitter:title"
     />
     <meta
-      content="Tailwind CSS based HTML and JavaScript toolkit for building modern and scalable web applications"
+      content="Campaigns in list layout, powered by Tailwind CSS"
       name="twitter:description"
     />
     <meta
@@ -50,20 +50,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       name="twitter:image"
     />
     <meta
-      content="https://keenthemes.com/metronic/tailwind/demo8/"
+      content="https://keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list"
       property="og:url"
-    />
-    <meta content="en_US" property="og:locale" />
-    <meta content="website" property="og:type" />
-    <meta content="@keenthemes" property="og:site_name" />
-    <meta content="Metronic - Tailwind CSS Light Sidebar" property="og:title" />
-    <meta
-      content="Tailwind CSS based HTML and JavaScript toolkit for building modern and scalable web applications"
-      property="og:description"
-    />
-    <meta
-      content="/static/metronic/tailwind/dist/assets/media/app/og-image.png"
-      property="og:image"
     />
 
     <link
@@ -71,29 +59,43 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       rel="stylesheet"
     />
     <link
-      href="../../../static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.css"
+      href="static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.css"
       rel="stylesheet"
     />
     <link
-      href="../../../static/metronic/tailwind/dist/assets/vendors/keenicons/styles.bundle.css"
+      href="static/metronic/tailwind/dist/assets/vendors/keenicons/styles.bundle.css"
       rel="stylesheet"
     />
     <link
-      href="../../../static/metronic/tailwind/dist/assets/css/styles.css"
+      href="static/metronic/tailwind/dist/assets/css/styles.css"
       rel="stylesheet"
     />
-    <link
-      href="../../../static/metronic/tailwind/dist/assets/my.css"
-      rel="stylesheet"
-    />
+    <!-- Regular Rounded -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
+
+    <!-- Solid Rounded -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+
+    <!-- Regular Straight -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
     <!-- Google tag (gtag.js) -->
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-52YZ3XGZJ6"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -170,7 +172,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       <!-- Wrapper -->
       <div class="flex flex-col lg:flex-row grow pt-(--header-height) lg:pt-0">
         <!-- Sidebar -->
-        <div id="sideHtml"></div>
+        <div id="sideHtmll"></div>
         <!-- End of Sidebar -->
         <!-- Main -->
         <div
@@ -188,13 +190,15 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                   class="kt-container-fixed flex items-center justify-between flex-wrap gap-3"
                 >
                   <div class="flex items-center flex-wrap gap-1 lg:gap-5">
-                    <div class="section-header">
-                      <h2 style="font-weight: bold; font-size: larger">
-                        Dashboard
+                    <div>
+                      <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                        Approvals Management
                       </h2>
+                      <p class="text-sm text-gray-500 mb-6">
+                        Review and approve financial requests
+                      </p>
                     </div>
                   </div>
-
                   <div class="flex items-center flex-wrap gap-1.5 lg:gap-2.5">
                     <!-- Search -->
                     <button
@@ -2116,242 +2120,257 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     </div>
                     <!--End of Notifications Drawer-->
                     <!-- End of Notifications -->
-                    <a class="kt-btn kt-btn-sm kt-btn-outline">
-                      <i class="ki-filled ki-exit-down text-base!"> </i>
-                      Export
-                    </a>
                   </div>
                 </div>
                 <!-- End of Container -->
               </div>
-
               <!-- End of Toolbar -->
+              <style>
+                .hero-bg {
+                  background-image: url("../../../../../static/metronic/tailwind/dist/assets/media/images/2600x1200/bg-1.png");
+                }
+                .dark .hero-bg {
+                  background-image: url("../../../../../static/metronic/tailwind/dist/assets/media/images/2600x1200/bg-1-dark.png");
+                }
+              </style>
+
               <!-- Container -->
-              <div class="kt-container-fixed">
-                <div class="grid gap-5 lg:gap-7.5">
-                  <!-- begin: grid -->
+
+              <!-- End of Container -->
+              <!-- Container -->
+              <div
+                class="p-6 space-y-6 min-h-screen"
+                x-data="{ tab: 'pending' }"
+              >
+                <!-- Header -->
+                <div></div>
+
+                <!-- Summary Cards -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mb-6 gap-4"
+                >
                   <div
-                    class="grid xl:grid-1 ms:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
+                    class="bg-white border-0 rounded-lg p-4 flex items-center justify-between shadow-sm"
+                    style="
+                      border: 1px solid #e0e0e0;
+                      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                      border-radius: 0.5rem;
+                    "
                   >
-                    <!-- Total Properties -->
-                    <div
-                      class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
-                    >
-                      <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">Total Revenue</h2>
-                        <i class="fi fi-rr-money-check text-green-600"></i>
-                      </div>
-                      <div class="mt-4">
-                        <p class="text-2xl font-bold text-gray-800">
-                          ₦5,250,000
-                        </p>
-                        <p class="text-sm text-gray-500" style="color: green">
-                          +8.5% from last month
-                        </p>
-                      </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Pending Approvals</p>
+                      <h3 class="text-2xl font-semibold text-gray-800">2</h3>
                     </div>
-
-                    <!-- Buyers & Tenants -->
-                    <div
-                      class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
-                    >
-                      <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">
-                          Outstanding Receivables
-                        </h2>
-                        <i
-                          class="fi fi-rr-file-invoice-dollar text-red-600"
-                        ></i>
-                      </div>
-                      <div class="mt-4">
-                        <p class="text-2xl font-bold text-blue-600">
-                          ₦1,500,000
-                        </p>
-                        <p class="text-sm text-gray-500">
-                          28.6% of total revenue
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Revenue Collected -->
-                    <div
-                      class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
-                    >
-                      <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">
-                          Collection Rate
-                        </h2>
-                        <i class="fi fi-rr-chart-pie-alt text-blue-600"></i>
-                      </div>
-                      <div class="mt-4">
-                        <p class="text-2xl font-bold text-green-600">85%</p>
-                        <p class="text-sm text-gray-500">
-                          Avg. payment in 12 days
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Pending Collections -->
-
-                    <!-- lastcard -->
+                    <i class="fi fi-rr-time-check text-yellow-500 text-2xl"></i>
                   </div>
-                  <!-- end: grid -->
-                  <!-- begin: grid -->
                   <div
-                    class="grid lg:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
+                    class="bg-white border rounded-lg p-4 flex items-center justify-between shadow-sm"
+                    style="
+                      border: 1px solid #e0e0e0;
+                      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                      border-radius: 0.5rem;
+                    "
                   >
-                    <div class="lg:col-span-3">
-                      <div>
-                        <div
-                          class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"
-                        >
-                          <!-- Header -->
-                          <div class="mb-4">
-                            <h3 class="text-sm font-semibold text-gray-800">
-                              Monthly Target Progress
-                            </h3>
-                            <p class="text-xs text-gray-500">
-                              Revenue progress toward monthly goal
+                    <div>
+                      <p class="text-sm text-gray-500">This Month</p>
+                      <h3 class="text-2xl font-semibold text-gray-800">3</h3>
+                    </div>
+                    <i class="fi fi-rr-document text-blue-500 text-2xl"></i>
+                  </div>
+                  <div
+                    class="bg-white border rounded-lg p-4 flex items-center justify-between shadow-sm"
+                    style="
+                      border: 1px solid #e0e0e0;
+                      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                      border-radius: 0.5rem;
+                    "
+                  >
+                    <div>
+                      <p class="text-sm text-gray-500">Approved</p>
+                      <h3 class="text-2xl font-semibold text-gray-800">1</h3>
+                    </div>
+                    <i
+                      class="fi fi-rr-check-circle text-green-500 text-2xl"
+                    ></i>
+                  </div>
+                </div>
+
+                <!-- Approval Requests with Tabs -->
+                <div
+                  class="bg-white rounded-lg border shadow-sm"
+                  style="
+                    border: 1px solid #e0e0e0;
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                    border-radius: 0.5rem;
+                  "
+                >
+                  <!-- Header -->
+                  <div
+                    class="border-b px-4 py-3"
+                    style="border-bottom: 1px solid #e0e0e0"
+                  >
+                    <h3 class="text-sm font-semibold text-gray-800">
+                      Approval Requests
+                    </h3>
+                    <p class="text-xs text-gray-500">
+                      Review pending financial approvals
+                    </p>
+                  </div>
+
+                  <!-- Tabs -->
+                  <div
+                    class="px-4 py-3 border-b text-sm flex space-x-2"
+                    style="border-bottom: 1px solid #e0e0e0"
+                  >
+                    <button
+                      class="px-3 py-1 rounded-md"
+                      :class="tab === 'pending' ? 'bg-gray-100 font-medium text-gray-700' : 'text-gray-600 hover:bg-gray-50'"
+                      @click="tab = 'pending'"
+                    >
+                      Pending
+                    </button>
+                    <button
+                      class="px-3 py-1 rounded-md"
+                      :class="tab === 'approved' ? 'bg-gray-100 font-medium text-gray-700' : 'text-gray-600 hover:bg-gray-50'"
+                      @click="tab = 'approved'"
+                    >
+                      Approved
+                    </button>
+                    <button
+                      class="px-3 py-1 rounded-md"
+                      :class="tab === 'rejected' ? 'bg-gray-100 font-medium text-gray-700' : 'text-gray-600 hover:bg-gray-50'"
+                      @click="tab = 'rejected'"
+                    >
+                      Rejected
+                    </button>
+                  </div>
+
+                  <!-- Tab Content -->
+                  <div class="p-4">
+                    <!-- Pending -->
+                    <div x-show="tab === 'pending'" class="space-y-4">
+                      <!-- Request 1 -->
+                      <div
+                        class="p-4 border rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                        style="
+                          border: 1px solid #e0e0e0;
+                          display: flex;
+                          justify-content: space-between;
+                        "
+                      >
+                        <div>
+                          <div class="flex items-center gap-2">
+                            <p class="text-sm font-semibold text-gray-800">
+                              DISC-001
                             </p>
+                            <span
+                              class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full"
+                              >Discount</span
+                            >
                           </div>
-
-                          <!-- Current & Target -->
-                          <div class="flex justify-between text-sm mb-2">
-                            <span class="text-gray-700">
-                              Current:
-                              <span class="font-semibold">₦5,250,000</span>
-                            </span>
-                            <span class="text-gray-700">
-                              Target:
-                              <span class="font-semibold">₦6,000,000</span>
-                            </span>
-                          </div>
-
-                          <!-- Progress Bar -->
-                          <div class="w-full bg-gray-200 rounded-full h-2">
-                            <div
-                              class="bg-blue-600 h-2 rounded-full"
-                              style="width: 87.5%"
-                            ></div>
-                          </div>
-
-                          <!-- Footer Text -->
-                          <p class="text-xs text-gray-500 mt-2">
-                            87.5% of monthly target achieved
+                          <p class="text-sm text-gray-700">
+                            Client: John Doe
+                            <span class="ml-6"
+                              >Amount: <strong>₦25,000</strong></span
+                            >
+                          </p>
+                          <p class="text-xs text-gray-500">
+                            Requested by: Sarah Admin
+                            <span class="ml-6">Date: 10/10/2024</span>
+                          </p>
+                          <p class="text-xs text-gray-500">
+                            Reason: Long-term client loyalty discount
                           </p>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end: grid -->
-                  <!-- begin: grid -->
-                  <div class="dashboard-grid">
-                    <!-- Receivables Aging -->
-                    <div class="card">
-                      <h3>Receivables Aging</h3>
-                      <p class="subtitle">Outstanding amounts by age</p>
-
-                      <div class="aging-list">
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot green"></span>
-                            <span>0-30 days</span>
-                          </div>
-                          <div class="aging-info">
-                            <p class="amount">₦750,000</p>
-                            <p class="invoices">15 Invoices</p>
-                          </div>
-                        </div>
-
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot yellow"></span>
-                            <span>31-60 days</span>
-                          </div>
-                          <div class="aging-info">
-                            <p class="amount">₦450,000</p>
-                            <p class="invoices">9 Invoices</p>
-                          </div>
-                        </div>
-
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot orange"></span>
-                            <span>61-90 days</span>
-                          </div>
-                          <div class="aging-info">
-                            <p class="amount">₦225,000</p>
-                            <p class="invoices">4 Invoices</p>
-                          </div>
-                        </div>
-
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot red"></span>
-                            <span>90+ days</span>
-                          </div>
-                          <div class="aging-info">
-                            <p class="amount">₦75,000</p>
-                            <p class="invoices">2 Invoices</p>
-                          </div>
+                        <div class="flex items-center gap-2 mt-3 sm:mt-0">
+                          <button
+                            class="bg-pink-500 text-white text-sm px-3 py-1 rounded-md hover:bg-pink-600"
+                            style="background-color: #ff4081"
+                          >
+                            Approve
+                          </button>
+                          <button
+                            class="border text-gray-600 text-sm px-3 py-1 rounded-md hover:bg-gray-100"
+                            style="border: 1px solid #e0e0e0"
+                          >
+                            Reject
+                          </button>
+                          <button class="p-2 text-gray-500 hover:text-gray-700">
+                            <i class="fi fi-rr-eye"></i>
+                          </button>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- Pending Approvals -->
-                    <div class="card">
-                      <div class="card-header">
+                      <!-- Request 2 -->
+                      <div
+                        class="p-4 border rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between"
+                        style="
+                          display: flex;
+                          justify-content: space-between;
+                          border: 1px solid #e0e0e0;
+                          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+                        "
+                      >
                         <div>
-                          <h3>Pending Approvals</h3>
-                          <p class="subtitle">Items requiring your approval</p>
+                          <div class="flex items-center gap-2">
+                            <p class="text-sm font-semibold text-gray-800">
+                              REF-001
+                            </p>
+                            <span
+                              class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full"
+                              >Refund</span
+                            >
+                          </div>
+                          <p class="text-sm text-gray-700">
+                            Client: Jane Smith
+                            <span class="ml-6"
+                              >Amount: <strong>₦125,000</strong></span
+                            >
+                          </p>
+                          <p class="text-xs text-gray-500">
+                            Requested by: Mike Support
+                            <span class="ml-6">Date: 10/9/2024</span>
+                          </p>
+                          <p class="text-xs text-gray-500">
+                            Reason: Double payment error
+                          </p>
                         </div>
-                        <span class="pending">2 pending</span>
-                      </div>
-
-                      <div class="approvals">
-                        <div class="approval-item">
-                          <div>
-                            <p class="code">
-                              DISC-001 <span class="tag">Discount</span>
-                            </p>
-                            <p class="name">John Doe</p>
-                            <p class="note">
-                              Long-term client loyalty discount
-                            </p>
-                          </div>
-                          <div class="approval-actions">
-                            <p class="amount">₦25,000</p>
-                            <div class="btn-group">
-                              <button class="btn approve">Approve</button>
-                              <button class="btn reject">Reject</button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="approval-item">
-                          <div>
-                            <p class="code">
-                              REF-001 <span class="tag">Refund</span>
-                            </p>
-                            <p class="name">Jane Smith</p>
-                            <p class="note">Double payment error</p>
-                          </div>
-                          <div class="approval-actions">
-                            <p class="amount">₦125,000</p>
-                            <div class="btn-group">
-                              <button class="btn approve">Approve</button>
-                              <button class="btn reject">Reject</button>
-                            </div>
-                          </div>
+                        <div class="flex items-center gap-2 mt-3 sm:mt-0">
+                          <button
+                            class="bg-pink-500 text-white text-sm px-3 py-1 rounded-md hover:bg-pink-600"
+                            style="background-color: #ff4081"
+                          >
+                            Approve
+                          </button>
+                          <button
+                            class="border text-gray-600 text-sm px-3 py-1 rounded-md hover:bg-gray-100"
+                            style="border: 1px solid #e0e0e0"
+                          >
+                            Reject
+                          </button>
+                          <button class="p-2 text-gray-500 hover:text-gray-700">
+                            <i class="fi fi-rr-eye"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- end: grid -->
+                    <!-- Approved -->
+                    <div x-show="tab === 'approved'" class="space-y-4">
+                      <p class="text-sm text-gray-600">
+                        ✅ You have 1 approved request.
+                      </p>
+                    </div>
+
+                    <!-- Rejected -->
+                    <div x-show="tab === 'rejected'" class="space-y-4">
+                      <p class="text-sm text-gray-600">
+                        ❌ No rejected requests.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- End of Container -->
             </main>
           </div>
           <!-- Footer -->
@@ -2409,8 +2428,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       <!-- End of Wrapper -->
     </div>
     <!-- End of Base -->
-    <div id="headhtml"></div>
-    <!-- Share Profile Modal 
+    <div id="headhtmlll"></div>
+    <!-- Share Profile Modal -->
     <div class="kt-modal" data-kt-modal="true" id="share_profile_modal">
       <div class="kt-modal-content max-w-[500px] top-5 lg:top-[15%]">
         <div class="kt-modal-header">
@@ -2468,7 +2487,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                   <img
                     alt=""
                     class="rounded-full size-9 shrink-0"
-                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-3.png"
+                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-3.png"
                   />
                   <div class="flex flex-col">
                     <a
@@ -2496,7 +2515,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                   <img
                     alt=""
                     class="rounded-full size-9 shrink-0"
-                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
+                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-1.png"
                   />
                   <div class="flex flex-col">
                     <a
@@ -2524,7 +2543,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                   <img
                     alt=""
                     class="rounded-full size-9 shrink-0"
-                    src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-11.png"
+                    src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-11.png"
                   />
                   <div class="flex flex-col">
                     <a
@@ -2594,1196 +2613,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       </div>
     </div>
     <!-- End of Share Profile Modal -->
-    <!-- Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialog"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed; /* fixed */
-          inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
-          width: auto; /* size-auto → width:auto */
-          height: auto; /* size-auto → height:auto */
-          max-height: none; /* max-h-none */
-          max-width: none; /* max-w-none */
-          overflow-y: auto; /* overflow-y-auto */
-          background-color: transparent; /* bg-transparent */
-          backdrop-filter: none; /* backdrop:bg-transparent (no backdrop color) */
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-        >
-        </el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-2xl data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4 my-header"
-            >
-              <h3my-panel
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem; /* text-lg → 18px */
-                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
-                  font-weight: 600; /* font-semibold */
-                  color: #111827;
-                "
-              >
-                Invoice Details
-              </h3my-panel>
-              <button
-                command="close"
-                commandfor="invoiceDialog"
-                class="text-gray-400 hover:text-gray-600 my-link"
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div class="px-6 py-4 space-y-4 my-section">
-              <p
-                class="text-sm text-gray-500"
-                style="
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem; /* Tailwind's default for text-sm */
-                  color: #6b7280;
-                "
-              >
-                Invoice INV-001 for Ocean View Apartment
-              </p>
-
-              <div
-                class="grid grid-cols-2 gap-4 text-sm"
-                style="
-                  display: grid; /* grid */
-                  grid-template-columns: repeat(
-                    2,
-                    minmax(0, 1fr)
-                  ); /* grid-cols-2 */
-                  gap: 1rem; /* gap-4 → 16px */
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem;
-                "
-              >
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Invoice ID
-                  </p>
-                  <p class="text-gray-900" style="color: #111827">INV-001</p>
-                </div>
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Status
-                  </p>
-                  <p
-                    class="text-yellow-600 font-semibold"
-                    style="
-                      color: #ca8a04; /* text-yellow-600 */
-                      font-weight: 600;
-                    "
-                  >
-                    Partially Paid
-                  </p>
-                </div>
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Issue Date
-                  </p>
-                  <p class="text-gray-900" style="color: #111827">9/1/2024</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Due Date</p>
-                  <p class="text-gray-900">9/30/2024</p>
-                </div>
-              </div>
-
-              <hr class="border-gray-200" />
-
-              <div>
-                <p class="font-medium text-gray-700">Description</p>
-                <p class="text-sm text-gray-500">
-                  Monthly Service Charge - September 2024
-                </p>
-              </div>
-
-              <div class="space-y-2 text-sm">
-                <div class="flex justify-between">
-                  <span>Service Charge</span>
-                  <span class="font-medium">₦200,000</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Security Fee</span>
-                  <span class="font-medium">₦30,000</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Maintenance Fee</span>
-                  <span class="font-medium">₦20,000</span>
-                </div>
-              </div>
-
-              <hr class="border-gray-200" />
-
-              <div class="flex justify-between font-semibold text-gray-900">
-                <span>Total Amount</span>
-                <span>₦250,000</span>
-              </div>
-
-              <div class="flex justify-between text-sm">
-                <span class="text-green-600 font-semibold">Paid Amount</span>
-                <span class="text-green-600 font-semibold">₦125,000</span>
-              </div>
-              <div class="flex justify-between text-sm">
-                <span class="text-red-600 font-semibold">Remaining Amount</span>
-                <span class="text-red-600 font-semibold">₦125,000</span>
-              </div>
-
-              <div class="pt-2">
-                <div class="flex justify-between text-xs text-gray-600 mb-1">
-                  <span>Payment Progress</span>
-                  <span>50%</span>
-                </div>
-                <div
-                  class="w-full bg-gray-200 h-2"
-                  style="
-                    width: 100%; /* w-full */
-                    background-color: #e5e7eb;
-                    border-radius: 9999px; /* rounded-full */
-                    height: 0.5rem;
-                  "
-                >
-                  <div
-                    class="bg-red-500 h-2 rounded-full w-1/2"
-                    style="
-                      background-color: #ec4899; /* bg-red-500 */
-                      height: 0.5rem; /* h-2 */
-                      border-radius: 9999px; /* rounded-full */
-                      width: 50%;
-                    "
-                  ></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
-              <button
-                command="close"
-                commandfor="invoiceDialog"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                Close
-              </button>
-              <button
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                Download
-              </button>
-              <button
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                History
-              </button>
-              <button class="my-danger-btn">Make Payment</button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-    <!-- End of Modal -->
-    <!-- Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialoggg"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed;
-          inset: 0;
-          width: auto;
-          height: auto;
-          max-height: none;
-          max-width: none;
-          overflow-y: auto;
-          background-color: transparent;
-          backdrop-filter: none;
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-        >
-        </el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4"
-              style="
-                display: flex;
-                align-items: center; /* items-center */
-                justify-content: space-between; /* justify-between */
-                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <h3
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem; /* text-lg → 18px */
-                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
-                  font-weight: 600; /* font-semibold */
-                  color: #111827;
-                "
-              >
-                Make Payment
-              </h3>
-              <button
-                command="close"
-                commandfor="invoiceDialoggg"
-                class="text-gray-400 hover:text-gray-600"
-                style="
-                  color: #9ca3af; /* text-gray-400 */
-                  transition: color 0.2s ease-in-out; /* smooth hover effect */
-                "
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-4"
-              style="
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-              "
-            >
-              <!-- Invoice summary -->
-              <div
-                class="bg-gray-50 rounded-md p-4 grid grid-cols-2 gap-4 text-sm"
-                style="
-                  background-color: #f9fafb;
-                  border-radius: 0.375rem;
-                  padding: 1rem;
-                  display: grid;
-                  grid-template-columns: repeat(2, minmax(0, 1fr));
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                  line-height: 1.25rem;
-                "
-              >
-                <div>
-                  <p class="font-medium text-gray-600">Invoice Amount</p>
-                  <p class="font-semibold text-gray-900">₦250,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Paid Amount</p>
-                  <p class="font-semibold text-green-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Remaining Amount</p>
-                  <p class="font-semibold text-red-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Progress</p>
-                  <p class="font-semibold text-gray-900">50% paid</p>
-                </div>
-              </div>
-
-              <!-- Progress bar -->
-              <div class="pt-2">
-                <div class="w-full bg-gray-200 h-2 rounded-full">
-                  <div
-                    class="bg-green-500 h-2 rounded-full"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Payment Amount -->
-              <div>
-                <label class="font-medium text-gray-700"
-                  >Payment Amount (₦)</label
-                >
-                <input
-                  type="number"
-                  placeholder="Enter amount (Max: ₦125,000)"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
-                  style="max-width: 100%"
-                />
-                <div class="flex gap-2 mt-2">
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    25%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    50%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    75%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    Full
-                  </button>
-                </div>
-              </div>
-
-              <!-- Payment Method -->
-              <div>
-                <p class="font-medium text-gray-700">Payment Method</p>
-                <div class="mt-1 flex items-center gap-2">
-                  <input type="radio" name="payment-method" />
-                  <span>Card Payment</span>
-                </div>
-              </div>
-
-              <!-- Notes -->
-              <div>
-                <p class="font-medium text-gray-700">Notes (Optional)</p>
-                <textarea
-                  placeholder="Add any payment notes..."
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
-                ></textarea>
-              </div>
-
-              <!-- Secure payment notice -->
-              <div
-                class="border border-blue-200 bg-blue-50 rounded-md p-3 text-xs text-blue-700"
-              >
-                <strong>Secure Payment:</strong> Your payment will be processed
-                securely. You’ll receive a confirmation receipt via email.
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
-              <button
-                command="close"
-                commandfor="invoiceDialoggg"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  border: 1px solid #d1d5db; /* border-gray-300 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  color: #374151; /* text-gray-700 */
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Cancel
-              </button>
-              <button
-                class="rounded-md bg-red-600 text-white px-3 py-2 text-sm font-medium hover:bg-red-700"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  background-color: #dc2626; /* bg-red-600 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  font-weight: 500; /* font-medium */
-                  color: #ffffff; /* text-white */
-                  cursor: pointer;
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Pay ₦0
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-
-    <!-- End of Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialogggg"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed;
-          inset: 0;
-          width: auto;
-          height: auto;
-          max-height: none;
-          max-width: none;
-          overflow-y: auto;
-          background-color: transparent;
-          backdrop-filter: none;
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-          style="
-            position: fixed; /* fixed */
-            inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
-            background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
-            transition: opacity 0.3s ease-out; /* smooth fade-in/out */
-            opacity: 1; /* fully visible by default */
-          "
-        ></el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-          style="
-            display: flex; /* flex */
-            min-height: 100%; /* min-h-full */
-            align-items: flex-end; /* items-end */
-            justify-content: center; /* justify-center */
-            padding: 1rem; /* p-4 → 16px */
-            text-align: center; /* text-center */
-            outline: none; /* focus:outline-none */
-          "
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl"
-            style="
-              position: relative; /* relative */
-              transform: translateY(0) scale(1); /* initial state */
-              overflow: hidden; /* overflow-hidden */
-              border-radius: 0.5rem; /* rounded-lg */
-              background-color: #ffffff; /* bg-white */
-              text-align: left; /* text-left */
-              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-                0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
-              transition: all 0.3s ease-out; /* smooth transition */
-              margin-top: 2rem; /* sm:my-8 → margin vertical on small screens */
-              margin-bottom: 2rem;
-              width: 100%; /* sm:w-full */
-              max-width: 32rem; /* sm:max-w-2xl → max-width: 768px */
-            "
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4"
-              style="
-                display: flex;
-                align-items: center; /* items-center */
-                justify-content: space-between; /* justify-between */
-                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <h3
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem;
-                  line-height: 1.75rem;
-                  font-weight: 600;
-                  color: #111827;
-                "
-              >
-                Payment History
-              </h3>
-              <button
-                command="close"
-                commandfor="invoiceDialogggg"
-                class="text-gray-400 hover:text-gray-600"
-                style="
-                  color: #9ca3af; /* text-gray-400 */
-                  transition: color 0.2s ease-in-out; /* smooth hover effect */
-                "
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-4"
-              style="
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem; /* space-y-4 → vertical spacing */
-              "
-            >
-              <p
-                class="text-sm text-gray-500"
-                style="
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem; /* Tailwind's default for text-sm */
-                  color: #6b7280;
-                "
-              >
-                All payments for invoice INV-001
-              </p>
-
-              <!-- Summary -->
-              <div class="grid grid-cols-3 gap-4 text-center text-sm">
-                <div>
-                  <p class="font-semibold text-gray-900">Total Invoice</p>
-                  <p class="font-bold text-black">₦250,000</p>
-                </div>
-                <div>
-                  <p class="font-semibold text-gray-900">Total Paid</p>
-                  <p class="font-bold text-green-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-semibold text-gray-900">Balance Due</p>
-                  <p class="font-bold text-red-600">₦125,000</p>
-                </div>
-              </div>
-
-              <!-- Progress bar -->
-              <div class="pt-2" style="padding-top: 0.5rem; /* pt-2 */">
-                <div
-                  class="flex justify-between text-xs text-gray-600 mb-1"
-                  style="margin-bottom: 0.25rem; /* mb-1 */"
-                >
-                  <span>50% completed</span>
-                </div>
-                <div class="w-full bg-gray-200 h-2 rounded-full">
-                  <div
-                    class="bg-red-500 h-2 rounded-full"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Payment Record -->
-              <div
-                class="border rounded-lg p-4 flex justify-between items-center"
-                style="
-                  border: 1px solid #e5e7eb; /* light gray border */
-                  border-radius: 0.375rem; /* rounded-lg */
-                  padding: 1rem; /* p-4 */
-                  display: flex; /* flex */
-                  justify-content: space-between; /* justify-between */
-                  align-items: center; /* items-center */
-                "
-              >
-                <div>
-                  <p class="font-semibold">
-                    PAY-002
-                    <span
-                      class="bg-red-100 text-red-600 text-xs font-medium px-2 py-1 rounded-full ml-2"
-                      style="
-                        background-color: #fee2e2; /* bg-red-100 */
-                        color: #dc2626; /* text-red-600 */
-                        font-size: 0.75rem; /* text-xs */
-                        font-weight: 500; /* font-medium */
-                        padding: 0.25rem 0.5rem; /* px-2 py-1 */
-                        border-radius: 9999px; /* rounded-full */
-                        margin-left: 0.5rem; /* ml-2 */
-                      "
-                    >
-                      Completed
-                    </span>
-                  </p>
-                  <p class="text-sm text-gray-600">Method: Bank Transfer</p>
-                  <p class="text-xs text-gray-400">Reference: REF-987654321</p>
-                </div>
-                <div class="text-right">
-                  <p class="text-green-600 font-bold">₦125,000</p>
-                  <p class="text-xs text-gray-500">9/15/2024</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div
-              class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4"
-              style="
-                display: flex; /* flex */
-                justify-content: flex-end; /* justify-end */
-                gap: 0.5rem; /* gap-2 → 8px */
-                border-top: 1px solid #e5e7eb; /* border-t */
-                background-color: #f9fafb; /* bg-gray-50 */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <button
-                command="close"
-                commandfor="invoiceDialogggg"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  border: 1px solid #d1d5db; /* border-gray-300 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  color: #374151; /* text-gray-700 */
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Close
-              </button>
-              <button
-                class="rounded-md bg-pink-600 text-white px-4 py-2 text-sm font-medium hover:bg-pink-700 flex items-center gap-1"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  background-color: #ec4899; /* bg-red-500 */
-                  padding: 0.5rem 1rem; /* px-4 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  font-weight: 500; /* font-medium */
-                  color: #ffffff; /* text-white */
-                  cursor: pointer;
-                  transition: background-color 0.2s ease;
-                  display: flex; /* flex */
-                  align-items: center; /* items-center */
-                  gap: 0.25rem; /* gap-1 → 4px */
-                "
-                command="show-modal"
-                commandfor="invoiceDialoggg"
-              >
-                <span>＋</span> Make Payment
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-    <!-- End of Modal -->
-    <el-dialog>
-      <dialog
-        id="clientDialoggg"
-        aria-labelledby="client-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed; /* fixed */
-          top: 0; /* inset-0 */
-          right: 0;
-          bottom: 0;
-          left: 0;
-          width: auto; /* size-auto → width:auto */
-          height: auto; /* size-auto → height:auto */
-          max-height: none; /* max-h-none */
-          max-width: none; /* max-w-none */
-          overflow-y: auto; /* overflow-y-auto */
-          background-color: transparent; /* bg-transparent */
-          backdrop-filter: none; /* backdrop:bg-transparent */
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
-          style="
-            position: fixed;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: opacity 0.3s ease-out;
-          "
-        >
-        </el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0"
-          style="
-            display: flex;
-            min-height: 100%;
-            align-items: flex-end;
-            justify-content: center;
-            padding: 1rem;
-            text-align: center;
-            outline: none;
-          "
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg data-closed:translate-y-4 data-closed:opacity-0 data-closed:sm:translate-y-0 data-closed:sm:scale-95"
-            style="
-              position: relative;
-              transform: none;
-              overflow: hidden;
-              border-radius: 0.5rem;
-              background-color: white;
-              text-align: left;
-              box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-              transition: all 0.3s ease-out;
-              margin: 2rem 0;
-              width: 100%;
-              max-width: 32rem;
-            "
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-bottom: 1px solid #eee;
-                padding: 1rem;
-              "
-            >
-              <h3 id="client-title" class="text-lg font-semibold text-gray-900">
-                Add New Client
-              </h3>
-              <button
-                command="close"
-                commandfor="clientDialoggg"
-                class="text-gray-400 hover:text-gray-600"
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-4"
-              style="padding: 1.5rem; space-y: 1rem"
-            >
-              <p class="text-sm text-gray-500">
-                Create a new client account in the system.
-              </p>
-
-              <!-- Full Name -->
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="John Doe"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-pink-500 focus:ring-pink-500"
-                  style="
-                    display: block;
-                    width: 100%;
-                    border-radius: 0.375rem;
-                    border: 1px solid #d1d5db;
-                    padding: 0.5rem 0.75rem;
-                    font-size: 0.875rem;
-                    line-height: 1.25rem;
-                    color: #374151;
-                    background-color: white;
-                    transition: border-color 0.2s ease-in-out,
-                      box-shadow 0.2s ease-in-out;
-                  "
-                />
-              </div>
-
-              <!-- Email -->
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="john.doe@example.com"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-pink-500 focus:ring-pink-500"
-                  style="
-                    display: block;
-                    width: 100%;
-                    border-radius: 0.375rem;
-                    border: 1px solid #d1d5db;
-                    padding: 0.5rem 0.75rem;
-                    font-size: 0.875rem;
-                    line-height: 1.25rem;
-                    color: #374151;
-                    background-color: white;
-                    transition: border-color 0.2s ease-in-out,
-                      box-shadow 0.2s ease-in-out;
-                  "
-                />
-              </div>
-
-              <!-- Phone -->
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  placeholder="+234 801 234 5678"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-pink-500 focus:ring-pink-500"
-                  style="
-                    display: block;
-                    width: 100%;
-                    border-radius: 0.375rem;
-                    border: 1px solid #d1d5db;
-                    padding: 0.5rem 0.75rem;
-                    font-size: 0.875rem;
-                    line-height: 1.25rem;
-                    color: #374151;
-                    background-color: white;
-                    transition: border-color 0.2s ease-in-out,
-                      box-shadow 0.2s ease-in-out;
-                  "
-                />
-              </div>
-
-              <!-- Address -->
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">
-                  Address
-                </label>
-                <textarea
-                  rows="2"
-                  placeholder="123 Victoria Island, Lagos"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-pink-500 focus:ring-pink-500"
-                  style="
-                    display: block;
-                    width: 100%;
-                    border-radius: 0.375rem;
-                    border: 1px solid #d1d5db;
-                    padding: 0.5rem 0.75rem;
-                    font-size: 0.875rem;
-                    line-height: 1.25rem;
-                    color: #374151;
-                    background-color: white;
-                    transition: border-color 0.2s ease-in-out,
-                      box-shadow 0.2s ease-in-out;
-                  "
-                ></textarea>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div
-              class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4"
-              style="
-                display: flex;
-                justify-content: flex-end;
-                gap: 0.5rem;
-                border-top: 1px solid #eee;
-                background-color: #f9fafb;
-                padding: 1rem;
-              "
-            >
-              <button
-                command="close"
-                commandfor="clientDialoggg"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="background-color: white"
-              >
-                Cancel
-              </button>
-              <button
-                class="rounded-md bg-pink-500 px-3 py-2 text-sm font-medium text-white hover:bg-pink-600"
-                style="background-color: #ec4899; color: white"
-              >
-                Add Client
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-
-    <!-- Styles -->
-    <!-- Tailwind CSS CDN for utility classes -->
-    <el-dialog>
-      <dialog
-        id="createInvoiceDialog"
-        aria-labelledby="create-invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed;
-          inset: 0;
-          width: auto;
-          height: auto;
-          max-height: none;
-          max-width: none;
-          overflow-y: auto;
-          background-color: transparent;
-          backdrop-filter: none;
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-          style="
-            position: fixed;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: opacity 0.3s ease-out;
-            opacity: 1;
-          "
-        >
-        </el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-          style="
-            display: flex;
-            min-height: 100%;
-            align-items: flex-end;
-            justify-content: center;
-            padding: 1rem;
-            text-align: center;
-            outline: none;
-          "
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-panel"
-            style="
-              position: relative;
-              transform: none;
-              overflow: hidden;
-              border-radius: 0.5rem;
-              background-color: white;
-              text-align: left;
-              box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1),
-                0 4px 6px rgba(0, 0, 0, 0.05);
-              transition: all 0.3s ease-out;
-              width: 100%;
-              max-width: 42rem;
-              margin: 2rem 0;
-            "
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4 my-header"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-bottom: 1px solid #e5e7eb;
-                padding: 1rem 1.5rem;
-              "
-            >
-              <h3
-                id="create-invoice-title"
-                class="text-lg font-semibold text-gray-900"
-              >
-                Create New Invoice
-              </h3>
-              <button
-                command="close"
-                commandfor="createInvoiceDialog"
-                class="text-gray-400 hover:text-gray-600"
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-6 my-section"
-              style="padding: 1rem 1.5rem; space-y: 1.5rem"
-            >
-              <p class="text-sm text-gray-500">
-                Generate a new invoice for property rental or services.
-              </p>
-
-              <!-- Form Fields -->
-              <div class="grid grid-cols-2 gap-4 text-sm">
-                <!-- Client -->
-                <div>
-                  <label
-                    for="client"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Client
-                  </label>
-                  <select
-                    id="client"
-                    class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                    style="width: 100%"
-                  >
-                    <option>Select client</option>
-                    <option>John Doe</option>
-                    <option>Jane Smith</option>
-                  </select>
-                </div>
-
-                <!-- Property -->
-                <div>
-                  <label
-                    for="property"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Property
-                  </label>
-                  <select
-                    id="property"
-                    class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                  >
-                    <option>Select property</option>
-                    <option>Ocean View Apartment</option>
-                    <option>Lakefront Villa</option>
-                  </select>
-                </div>
-
-                <!-- Total Amount -->
-                <div>
-                  <label
-                    for="amount"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Total Amount (₦)
-                  </label>
-                  <input
-                    type="number"
-                    id="amount"
-                    value="250000"
-                    class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                    style="width: 100%"
-                  />
-                </div>
-
-                <!-- Due Date -->
-                <div>
-                  <label
-                    for="dueDate"
-                    class="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Due Date
-                  </label>
-                  <input
-                    type="date"
-                    id="dueDate"
-                    class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                    style="width: 100%"
-                  />
-                </div>
-              </div>
-
-              <!-- Description -->
-              <div>
-                <label
-                  for="description"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Description
-                </label>
-                <textarea
-                  id="description"
-                  rows="2"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                  style="width: 100%"
-                  placeholder="Enter description"
-                >
-                Monthly rent payment for October 2024</textarea
-                >
-              </div>
-
-              <!-- Invoice Items -->
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <label class="font-medium text-gray-700">Invoice Items</label>
-                  <button
-                    type="button"
-                    class="flex items-center gap-1 rounded-md border border-gray-300 px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
-                    style="
-                      width: 100%;
-                      max-width: fit-content;
-                      border: 1px solid #d1d5db;
-                      cursor: pointer;
-                      padding: 0.25rem 0.75rem;
-                      font-size: 0.875rem;
-                    "
-                  >
-                    + Add Item
-                  </button>
-                </div>
-
-                <!-- Item Row -->
-                <div
-                  class="flex items-center justify-between rounded-md border border-gray-200 px-3 py-2 text-sm"
-                >
-                  <span>Monthly Rent</span>
-                  <div class="flex items-center gap-2">
-                    <label class="text-gray-500">Amount</label>
-                    <input
-                      type="number"
-                      value="1"
-                      class="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                      style="
-                        width: 4rem;
-                        border-radius: 0.375rem;
-                        border: 1px solid #d1d5db;
-                        padding: 0.25rem 0.5rem;
-                        font-size: 0.875rem;
-                        color: #374151;
-                        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-                        transition: border-color 0.2s ease-in-out,
-                          box-shadow 0.2s ease-in-out;
-                      "
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
-              <button
-                command="close"
-                commandfor="createInvoiceDialog"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="
-                  border: 1px solid #d1d5db;
-                  padding: 0.5rem 0.75rem;
-                  font-size: 0.875rem;
-                  color: #374151;
-                  background-color: white;
-                  cursor: pointer;
-                "
-              >
-                Cancel
-              </button>
-              <button
-                class="rounded-md bg-red-500 px-4 py-2 text-sm font-medium text-white hover:bg-red-600 mr-4"
-                style="
-                  background-color: #ec4899;
-                  padding: 0.5rem 1rem;
-                  font-size: 0.875rem;
-                  color: white;
-                  border: none;
-                  cursor: pointer;
-                "
-              >
-                Create Invoice
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-    <!-- End of Modal -->
-    <!-- properties -->
     <el-dialog>
       <dialog
         id="propertyDialog"
@@ -4203,168 +3032,15 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
         </div>
       </dialog>
     </el-dialog>
-    <!-- End of Modal -->
-    <style>
-      .my-danger-btn {
-        border-radius: 0.375rem; /* rounded-md */
-        background-color: #ec4899; /* bg-red-500 */
-        padding: 0.5rem 0.75rem; /* px-3 py-2 */
-        font-size: 0.875rem; /* text-sm */
-        font-weight: 600; /* font-semibold */
-        color: #ffffff; /* text-white */
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
 
-      .my-danger-btn:hover {
-        background-color: #f87171; /* hover:bg-red-400 */
-      }
-
-      .my-section {
-        padding-left: 1.5rem; /* px-6 → 24px */
-        padding-right: 1.5rem;
-        padding-top: 1rem; /* py-4 → 16px */
-        padding-bottom: 1rem;
-      }
-
-      /* space-y-4 → adds vertical spacing between children */
-      .my-section > * + * {
-        margin-top: 1rem; /* 16px */
-      }
-
-      .my-link {
-        color: #9ca3af; /* text-gray-400 */
-        transition: color 0.2s ease-in-out; /* smooth hover effect */
-      }
-
-      .my-link:hover {
-        color: #4b5563; /* text-gray-600 */
-      }
-
-      .my-backdrop {
-        position: fixed; /* fixed */
-        inset: 0; /* inset-0 → top:0; right:0; bottom:0; left:0 */
-        background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
-        transition-property: opacity; /* transition-opacity */
-        transition-duration: 150ms; /* default Tailwind duration */
-        transition-timing-function: ease-in-out; /* default easing */
-      }
-
-      /* State when dialog is closed */
-      .my-backdrop[data-closed] {
-        opacity: 0; /* data-closed:opacity-0 */
-      }
-
-      /* Enter transition */
-      .my-backdrop[data-enter] {
-        transition-duration: 300ms; /* data-enter:duration-300 */
-        transition-timing-function: ease-out; /* data-enter:ease-out */
-      }
-
-      /* Leave transition */
-      .my-backdrop[data-leave] {
-        transition-duration: 200ms; /* data-leave:duration-200 */
-        transition-timing-function: ease-in; /* data-leave:ease-in */
-      }
-
-      .my-container {
-        display: flex; /* flex */
-        min-height: 100%; /* min-h-full */
-        align-items: flex-end; /* items-end */
-        justify-content: center; /* justify-center */
-        padding: 1rem; /* p-4 */
-        text-align: center; /* text-center */
-        outline: none; /* focus:outline-none */
-      }
-
-      /* Small screens and up (sm:) */
-      @media (min-width: 640px) {
-        .my-container {
-          align-items: center; /* sm:items-center */
-          padding: 0; /* sm:p-0 */
-        }
-      }
-      .my-panel {
-        position: relative; /* relative */
-        transform: translate(0, 0); /* transform (baseline) */
-        overflow: hidden; /* overflow-hidden */
-        border-radius: 0.5rem; /* rounded-lg (8px radius) */
-        background-color: #ffffff; /* bg-white */
-        text-align: left; /* text-left */
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
-        transition-property: all; /* transition-all */
-        transition-duration: 150ms; /* default Tailwind duration */
-        transition-timing-function: ease-in-out; /* default ease */
-        opacity: 1; /* default visible */
-        margin: 0; /* reset */
-      }
-
-      /* Closed state */
-      .my-panel[data-closed] {
-        transform: translateY(1rem); /* data-closed:translate-y-4 (16px down) */
-        opacity: 0; /* data-closed:opacity-0 */
-      }
-
-      @media (min-width: 640px) {
-        .my-panel {
-          margin-top: 2rem; /* sm:my-8 (32px vertical margin) */
-          margin-bottom: 2rem;
-          width: 100%; /* sm:w-full */
-          max-width: 42rem; /* sm:max-w-2xl (672px) */
-        }
-
-        .my-panel[data-closed] {
-          transform: translateY(0) scale(0.95);
-          /* data-closed:sm:translate-y-0 + data-closed:sm:scale-95 */
-        }
-      }
-
-      /* Enter transition */
-      .my-panel[data-enter] {
-        transition-duration: 300ms; /* data-enter:duration-300 */
-        transition-timing-function: ease-out; /* data-enter:ease-out */
-      }
-
-      /* Leave transition */
-      .my-panel[data-leave] {
-        transition-duration: 200ms; /* data-leave:duration-200 */
-        transition-timing-function: ease-in; /* data-leave:ease-in */
-      }
-      .my-header {
-        display: flex; /* flex */
-        align-items: center; /* items-center */
-        justify-content: space-between; /* justify-between */
-        border-bottom: 1px solid #e5e7eb; /* border-b (Tailwind gray-200 default) */
-        padding-left: 1.5rem; /* px-6 → 24px */
-        padding-right: 1.5rem;
-        padding-top: 1rem; /* py-4 → 16px */
-        padding-bottom: 1rem;
-      }
-      .my-rounded-btn {
-        border-radius: 0.375rem; /* rounded-md */
-        border: 1px solid #d1d5db; /* border-gray-300 */
-        padding: 0.5rem 0.75rem; /* px-3 py-2 */
-        font-size: 0.875rem; /* text-sm */
-        color: #374151; /* text-gray-700 */
-        background-color: transparent;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-
-      .my-rounded-btn:hover {
-        background-color: #f3f4f6; /* hover:bg-gray-100 */
-      }
-    </style>
     <!-- End of Page -->
     <!-- Scripts -->
-    <script src="../../../static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
-    <script src="../../../static/metronic/tailwind/dist/assets/vendors/ktui/ktui.min.js"></script>
-    <script src="../../../static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="../../../static/metronic/tailwind/dist/assets/js/widgets/general.js"></script>
-    <script src="../../../static/metronic/tailwind/dist/assets/my-js/sidebar.js"></script>
+    <script src="static/metronic/tailwind/dist/assets/my-js/sidebar2.js"></script>
+    <script src="static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
+    <script src="static/metronic/tailwind/dist/assets/vendors/ktui/ktui.min.js"></script>
+    <script src="static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.min.js"></script>
     <!-- End of Scripts -->
   </body>
 
-  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:37:57 GMT -->
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/list?dir=ltr by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:40:25 GMT -->
 </html>
