@@ -74,7 +74,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="public-profile/campaigns/invoice.html"
+                  href="invoice.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -92,7 +92,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="public-profile/campaigns/payment.html"
+                  href="payment.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -110,7 +110,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="public-profile/campaigns/properties.html"
+                  href="properties.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
