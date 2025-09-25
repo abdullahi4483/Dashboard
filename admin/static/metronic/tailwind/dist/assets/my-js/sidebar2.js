@@ -155,7 +155,7 @@ const sideHtmll = `<div
                 <img
                   alt=""
                   class="size-9 rounded-lg shrink-0"
-                  src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                  src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                 />
               </div>
               <div
@@ -165,11 +165,11 @@ const sideHtmll = `<div
                 <div
                   class="flex items-center justify-between px-2.5 py-1.5 gap-1.5"
                 >
-                                    <div class="flex items-center gap-2">
+                  <div class="flex items-center gap-2">
                     <img
                       alt=""
                       class="size-9 shrink-0 rounded-full border-2 border-green-500"
-                      src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                      src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                     />
                     <div class="flex flex-col gap-1.5">
                       <span

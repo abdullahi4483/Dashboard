@@ -159,7 +159,7 @@ const sideHtml = `<div
                 <img
                   alt=""
                   class="size-9 rounded-lg shrink-0"
-                  src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                  src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                 />
               </div>
               <div
@@ -173,7 +173,7 @@ const sideHtml = `<div
                     <img
                       alt=""
                       class="size-9 shrink-0 rounded-full border-2 border-green-500"
-                      src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                      src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                     />
                     <div class="flex flex-col gap-1.5">
                       <span
