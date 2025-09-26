@@ -74,7 +74,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="public-profile/campaigns/approval.html"
+                  href="approval.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -92,7 +92,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="public-profile/campaigns/report.html"
+                  href="report.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -110,7 +110,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="public-profile/campaigns/analytics.html"
+                  href="analytics.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -161,7 +161,7 @@ const sideHtml = `<div
                 <img
                   alt=""
                   class="size-9 rounded-lg shrink-0"
-                  src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                  src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                 />
               </div>
               <div
@@ -175,7 +175,7 @@ const sideHtml = `<div
                     <img
                       alt=""
                       class="size-9 shrink-0 rounded-full border-2 border-green-500"
-                      src="../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                      src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                     />
                     <div class="flex flex-col gap-1.5">
                       <span

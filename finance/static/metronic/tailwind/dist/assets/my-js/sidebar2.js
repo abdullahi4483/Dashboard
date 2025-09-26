@@ -37,7 +37,7 @@ const sideHtmll = `<div
               <div class="kt-menu-item ">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="../../index.html"
+                  href="index.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -55,7 +55,7 @@ const sideHtmll = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="../../receivable.html"
+                  href="receivable.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -156,7 +156,7 @@ const sideHtmll = `<div
                 <img
                   alt=""
                   class="size-9 rounded-lg shrink-0"
-                  src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                  src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                 />
               </div>
               <div
@@ -166,11 +166,11 @@ const sideHtmll = `<div
                 <div
                   class="flex items-center justify-between px-2.5 py-1.5 gap-1.5"
                 >
-                                    <div class="flex items-center gap-2">
+                  <div class="flex items-center gap-2">
                     <img
                       alt=""
                       class="size-9 shrink-0 rounded-full border-2 border-green-500"
-                      src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                      src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                     />
                     <div class="flex flex-col gap-1.5">
                       <span
