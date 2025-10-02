@@ -87,7 +87,7 @@ const sideHtml = `<div
 
                   </span>
                   <span
-                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium text-center"
                   >
                     My Application
                   </span>
@@ -104,7 +104,7 @@ const sideHtml = `<div
                     <i class="ki-filled ki-clipboard text-xl"></i>
                   </span>
                   <span
-                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium text-center"
                   >
                    My  Invoice
                   </span>
@@ -113,7 +113,7 @@ const sideHtml = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="payment.html"
+                  href="saved-p.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -121,7 +121,7 @@ const sideHtml = `<div
                     <i class="ki-filled ki-bank text-xl"></i>
                   </span>
                   <span
-                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium text-center"
                   >
                     Save properties
                   </span>

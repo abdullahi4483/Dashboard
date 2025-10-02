@@ -74,6 +74,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       defer
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -161,17 +162,17 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
           >
             <main class="grow" role="content">
               <!-- Toolbar -->
-              <div class="pb-5">
+              <div class="pb-0">
                 <!-- Container -->
                 <div
-                  class="kt-container-fixed flex items-center justify-between flex-wrap gap-3"
+                  class="max-w-6xl mx-auto mb-6 flex sm:flex-row gap-4 items-center justify-between flex-wrap gap-3"
                 >
                   <div class="" style="display: flex; flex-direction: column">
                     <h2 class="text-xl font-semibold text-gray-800">
-                      Receivables Management
+                      Property Portfolio
                     </h2>
                     <p class="text-sm text-gray-500">
-                      Monitor and manage outstanding receivables
+                      Strategic overview of all properties
                     </p>
                   </div>
                   <div class="flex items-center flex-wrap gap-1.5 lg:gap-2.5">
@@ -2098,7 +2099,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <!-- End of Toolbar -->
               <!-- Container -->
               <div
-                class="w-full max-w-4xl rounded-lg shadow-sm border-0 p-6 lg:p-8 mx-auto mb-10"
+                class="w-full mt-0 max-w-7xl rounded-lg shadow-sm border-0 p-6 lg:p-8 mx-auto mb-10"
               >
                 <!-- Header -->
                 <div
@@ -2111,256 +2112,706 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                   <!-- Summary Cards -->
                   <div
-                    class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6"
+                    class="max-w-6xl mr-auto mb-6 flex flex-col sm:flex-row gap-4"
                   >
-                    <div
-                      class="bg-white rounded-lg border-0 p-4 text-center shadow-sm"
-                      style="
-                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-                        border: 1px solid rgba(0, 0, 0, 0.1);
-                      "
+                    <!-- Type Filter -->
+                    <select
+                      class="w-full sm:w-48 px-4 py-2 border rounded-lg bg-white shadow-sm focus:ring-2 focus:ring-blue-500"
                     >
-                      <p class="text-sm text-gray-500">0–30 days</p>
-                      <h3 class="text-lg font-semibold text-gray-900">
-                        ₦750,000
-                      </h3>
-                      <p class="text-xs text-gray-500">15 Invoices</p>
-                      <span
-                        class="mt-2 inline-block bg-pink-100 text-pink-600 text-xs font-medium px-3 py-1 rounded-full"
-                        style="background-color: #fde2e8; color: #d92d20"
-                      >
-                        50%
-                      </span>
+                      <option>All Types</option>
+                      <option>Apartment</option>
+                      <option>Villa</option>
+                      <option>Duplex</option>
+                      <option>Bungalow</option>
+                    </select>
+
+                    <!-- Status Filter -->
+                    <select
+                      class="w-full sm:w-48 px-4 py-2 border rounded-lg bg-white shadow-sm focus:ring-2 focus:ring-blue-500"
+                    >
+                      <option>All Status</option>
+                      <option>Active Sales</option>
+                      <option>Sold Out</option>
+                      <option>Coming Soon</option>
+                    </select>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 w-full max-w-7xl p-4"
+                  >
+                    <!-- Total Properties -->
+                    <div
+                      class="bg-white shadow-sm rounded-xl p-4 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <div class="flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Total Properties</p>
+                        <i class="fi fi-rr-building text-blue-500 text-lg"></i>
+                      </div>
+                      <p class="text-2xl font-semibold mt-2">6</p>
                     </div>
+
+                    <!-- Total Units -->
                     <div
-                      class="bg-white rounded-lg border p-4 text-center shadow-sm"
-                      style="
-                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-                        border: 1px solid rgba(0, 0, 0, 0.1);
-                      "
+                      class="bg-white shadow-sm rounded-xl p-4 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
                     >
-                      <p class="text-sm text-gray-500">31–60 days</p>
-                      <h3 class="text-lg font-semibold text-gray-900">
-                        ₦450,000
-                      </h3>
-                      <p class="text-xs text-gray-500">9 Invoices</p>
-                      <span
-                        class="mt-2 inline-block bg-yellow-100 text-yellow-600 text-xs font-medium px-3 py-1 rounded-full"
-                      >
-                        30%
-                      </span>
+                      <div class="flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Total Units</p>
+                        <i
+                          class="fi fi-rr-bullseye-pointer text-gray-600 text-lg"
+                        ></i>
+                      </div>
+                      <p class="text-2xl font-semibold mt-2">164</p>
                     </div>
+
+                    <!-- Units Sold -->
                     <div
-                      class="bg-white rounded-lg border p-4 text-center shadow-sm"
-                      style="
-                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-                        border: 1px solid rgba(0, 0, 0, 0.1);
-                      "
+                      class="bg-white shadow-sm rounded-xl p-4 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
                     >
-                      <p class="text-sm text-gray-500">61–90 days</p>
-                      <h3 class="text-lg font-semibold text-gray-900">
-                        ₦225,000
-                      </h3>
-                      <p class="text-xs text-gray-500">4 Invoices</p>
-                      <span
-                        class="mt-2 inline-block bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full"
-                      >
-                        15%
-                      </span>
+                      <div class="flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Units Sold</p>
+                        <i
+                          class="fi fi-rr-check-circle text-green-500 text-lg"
+                        ></i>
+                      </div>
+                      <p class="text-2xl font-semibold text-green-600 mt-2">
+                        107
+                      </p>
+                      <p class="text-xs text-gray-500">65%</p>
                     </div>
+
+                    <!-- Total Revenue -->
                     <div
-                      class="bg-white rounded-lg border p-4 text-center shadow-sm"
-                      style="
-                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-                        border: 1px solid rgba(0, 0, 0, 0.1);
-                      "
+                      class="bg-white shadow-sm rounded-xl p-4 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
                     >
-                      <p class="text-sm text-gray-500">90+ days</p>
-                      <h3 class="text-lg font-semibold text-gray-900">
-                        ₦75,000
-                      </h3>
-                      <p class="text-xs text-gray-500">2 Invoices</p>
-                      <span
-                        class="mt-2 inline-block bg-red-100 text-red-600 text-xs font-medium px-3 py-1 rounded-full"
-                      >
-                        5%
-                      </span>
+                      <div class="flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Total Revenue</p>
+                        <i class="fi fi-rr-dollar text-gray-600 text-lg"></i>
+                      </div>
+                      <p class="text-2xl font-semibold mt-2">₦1949M</p>
+                    </div>
+
+                    <!-- Collected -->
+                    <div
+                      class="bg-white shadow-sm rounded-xl p-4 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <div class="flex items-center justify-between">
+                        <p class="text-sm text-gray-500">Collected</p>
+                        <i class="fi fi-rr-trend-up text-green-500 text-lg"></i>
+                      </div>
+                      <p class="text-2xl font-semibold text-green-600 mt-2">
+                        ₦1363M
+                      </p>
+                      <p class="text-xs text-gray-500">70%</p>
                     </div>
                   </div>
 
                   <!-- Detailed Aging Report -->
                   <div
-                    class="bg-white rounded-lg border shadow-sm"
-                    style="
-                      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-                      border: 1px solid rgba(0, 0, 0, 0.1);
-                    "
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto"
                   >
-                    <!-- Header -->
-                    <div
-                      class="flex items-center justify-between border-0 px-4 py-3"
-                      style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)"
-                    >
-                      <div>
-                        <h3 class="text-sm font-semibold text-gray-800">
-                          Detailed Aging Report
-                        </h3>
-                        <p class="text-xs text-gray-500">
-                          Complete breakdown of outstanding receivables
-                        </p>
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                      <!-- Image with badge -->
+                      <div class="relative">
+                        <img
+                          src="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+                          alt="Ocean View Luxury Apartments"
+                          class="w-full h-56 object-cover"
+                        />
+                        <span
+                          class="absolute top-3 right-3 bg-teal-500 text-white text-xs px-3 py-1 rounded-full shadow"
+                          >Excellent</span
+                        >
+                        <div
+                          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 px-4 py-2"
+                        >
+                          <h3 class="text-white font-semibold">
+                            Ocean View Luxury Apartments
+                          </h3>
+                          <p class="text-gray-200 text-sm">
+                            Victoria Island, Lagos
+                          </p>
+                        </div>
                       </div>
-                      <div class="flex space-x-2">
-                        <button
-                          class="flex items-center gap-1 border rounded-md px-3 py-1 text-sm text-gray-600 hover:bg-gray-50"
+
+                      <!-- Info Section -->
+                      <div class="p-4 space-y-4">
+                        <!-- Type, Price, Status -->
+                        <div class="flex justify-between text-sm">
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Type</span
+                            >
+                            <p>Apartment</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Price</span
+                            >
+                            <p>₦18.5M</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Status</span
+                            >
+                            <p class="text-green-600 font-medium">
+                              Active Sales
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Progress -->
+                        <div>
+                          <p class="text-sm font-medium text-gray-600 mb-1">
+                            Sales Progress
+                          </p>
+                          <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div
+                              class="bg-blue-600 h-2 rounded-full"
+                              style="width: 75%"
+                            ></div>
+                          </div>
+                          <p class="text-xs text-gray-500 mt-1">
+                            18/24 units (75%)
+                          </p>
+                        </div>
+
+                        <!-- Revenue Section -->
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <p class="text-gray-600">Total Revenue</p>
+                            <p class="font-semibold">₦333.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Collected</p>
+                            <p class="font-semibold text-green-600">₦246.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Outstanding</p>
+                            <p class="font-semibold text-red-500">₦87.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Avg. Sale Duration</p>
+                            <p class="font-semibold">6.5 months</p>
+                          </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div
+                          class="flex items-center justify-between text-sm text-gray-500 border-t pt-3"
                         >
-                          <i class="fi fi-rr-filter"></i> Filter
-                        </button>
-                        <button
-                          class="flex items-center gap-1 border rounded-md px-3 py-1 text-sm text-gray-600 hover:bg-gray-50"
-                        >
-                          <i class="fi fi-rr-download"></i> Export
-                        </button>
+                          <p>Launched 1/15/2024</p>
+                          <button
+                            class="px-4 py-2 rounded-lg border bg-gray-50 hover:bg-gray-100 transition"
+                          >
+                            View Details
+                          </button>
+                        </div>
                       </div>
                     </div>
 
-                    <!-- Tabs -->
-                    <div
-                      class="flex space-x-2 px-4 py-3 border-0 text-sm"
-                      style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)"
-                    >
-                      <button
-                        @click="tab = 'all'"
-                        :class="tab === 'all' ? 'bg-gray-100 text-gray-700 font-medium' : 'text-gray-600 hover:bg-gray-100'"
-                        class="px-3 py-1 rounded-md"
-                      >
-                        All Outstanding
-                      </button>
-                      <button
-                        @click="tab = 'current'"
-                        :class="tab === 'current' ? 'bg-gray-100 text-gray-700 font-medium' : 'text-gray-600 hover:bg-gray-100'"
-                        class="px-3 py-1 rounded-md"
-                      >
-                        Current (0–30)
-                      </button>
-                      <button
-                        @click="tab = 'pastdue'"
-                        :class="tab === 'pastdue' ? 'bg-gray-100 text-gray-700 font-medium' : 'text-gray-600 hover:bg-gray-100'"
-                        class="px-3 py-1 rounded-md"
-                      >
-                        Past Due (30+)
-                      </button>
-                      <button
-                        @click="tab = 'critical'"
-                        :class="tab === 'critical' ? 'bg-gray-100 text-gray-700 font-medium' : 'text-gray-600 hover:bg-gray-100'"
-                        class="px-3 py-1 rounded-md"
-                      >
-                        Critical (90+)
-                      </button>
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                      <!-- Image with badge -->
+                      <div class="relative">
+                        <img
+                          src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"
+                          alt="Executive Villas Estate"
+                          class="w-full h-56 object-cover"
+                        />
+                        <span
+                          class="absolute top-3 right-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full shadow"
+                          >Good</span
+                        >
+                        <div
+                          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 px-4 py-2"
+                        >
+                          <h3 class="text-white font-semibold">
+                            Executive Villas Estate
+                          </h3>
+                          <p class="text-gray-200 text-sm">
+                            Lekki Phase 1, Lagos
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Info Section -->
+                      <div class="p-4 space-y-4">
+                        <!-- Type, Price, Status -->
+                        <div class="flex justify-between text-sm">
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Type</span
+                            >
+                            <p>Villa</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Price</span
+                            >
+                            <p>₦35.0M</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Status</span
+                            >
+                            <p class="text-green-600 font-medium">
+                              Active Sales
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Progress -->
+                        <div>
+                          <p class="text-sm font-medium text-gray-600 mb-1">
+                            Sales Progress
+                          </p>
+                          <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div
+                              class="bg-blue-600 h-2 rounded-full"
+                              style="width: 75%"
+                            ></div>
+                          </div>
+                          <p class="text-xs text-gray-500 mt-1">
+                            9/12 units (75%)
+                          </p>
+                        </div>
+
+                        <!-- Revenue Section -->
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <p class="text-gray-600">Total Revenue</p>
+                            <p class="font-semibold">₦315.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Collected</p>
+                            <p class="font-semibold text-green-600">₦190.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Outstanding</p>
+                            <p class="font-semibold text-red-500">₦125.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Avg. Sale Duration</p>
+                            <p class="font-semibold">8.2 months</p>
+                          </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div
+                          class="flex items-center justify-between text-sm text-gray-500 border-t pt-3"
+                        >
+                          <p>Launched 11/1/2023</p>
+                          <button
+                            class="px-4 py-2 rounded-lg border bg-gray-50 hover:bg-gray-100 transition"
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto"
+                  >
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                      <!-- Image with badge -->
+                      <div class="relative">
+                        <img
+                          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
+                          alt="Ocean View Luxury Apartments"
+                          class="w-full h-56 object-cover"
+                        />
+                        <span
+                          class="absolute top-3 right-3 bg-teal-500 text-white text-xs px-3 py-1 rounded-full shadow"
+                          >Average</span
+                        >
+                        <div
+                          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 px-4 py-2"
+                        >
+                          <h3 class="text-white font-semibold">
+                            Downtown Commercial Plaza
+                          </h3>
+                          <p class="text-gray-200 text-sm">Marina, Lagos</p>
+                        </div>
+                      </div>
+
+                      <!-- Info Section -->
+                      <div class="p-4 space-y-4">
+                        <!-- Type, Price, Status -->
+                        <div class="flex justify-between text-sm">
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Type</span
+                            >
+                            <p>Commercial</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Price</span
+                            >
+                            <p>₦45.0M</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Status</span
+                            >
+                            <p class="text-green-600 font-medium">
+                              Active Sales
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Progress -->
+                        <div>
+                          <p class="text-sm font-medium text-gray-600 mb-1">
+                            Sales Progress
+                          </p>
+                          <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div
+                              class="bg-blue-600 h-2 rounded-full"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                          <p class="text-xs text-gray-500 mt-1">
+                            5/8 units (62.5%)
+                          </p>
+                        </div>
+
+                        <!-- Revenue Section -->
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <p class="text-gray-600">Total Revenue</p>
+                            <p class="font-semibold">₦225.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Collected</p>
+                            <p class="font-semibold text-green-600">₦130.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Outstanding</p>
+                            <p class="font-semibold text-red-500">₦95.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Avg. Sale Duration</p>
+                            <p class="font-semibold">10.5 months</p>
+                          </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div
+                          class="flex items-center justify-between text-sm text-gray-500 border-t pt-3"
+                        >
+                          <p>Launched 03/20/2024</p>
+                          <button
+                            class="px-4 py-2 rounded-lg border bg-gray-50 hover:bg-gray-100 transition"
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
                     </div>
 
-                    <!-- Report List -->
-                    <div class="divide-y">
-                      <!-- All Outstanding -->
-                      <div x-show="tab === 'all'" class="space-y-2">
-                        <div
-                          class="flex items-center justify-between px-4 py-3"
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                      <!-- Image with badge -->
+                      <div class="relative">
+                        <img
+                          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop"
+                          alt="Executive Villas Estate"
+                          class="w-full h-56 object-cover"
+                        />
+                        <span
+                          class="absolute top-3 right-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full shadow"
+                          >Excellent</span
                         >
-                          <div>
-                            <p class="text-sm font-medium text-gray-800">
-                              John Doe
-                            </p>
-                            <p class="text-xs text-gray-500">
-                              Invoice: INV-001
-                            </p>
-                          </div>
-                          <div class="flex items-center space-x-4">
-                            <div style="display: flex; flex-direction: column">
-                              <span class="text-sm font-semibold text-gray-900"
-                                >₦250,000</span
-                              >
-                              <span class="text-xs text-gray-500">45 days</span>
-                            </div>
-                            <span
-                              class="bg-yellow-100 text-yellow-600 text-xs px-2 py-1 rounded-full"
-                              style="background-color: #fef3c7; color: #78350f"
-                              >Past Due</span
-                            >
-                          </div>
-                        </div>
                         <div
-                          class="flex items-center justify-between px-4 py-3"
+                          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 px-4 py-2"
                         >
-                          <div>
-                            <p class="text-sm font-medium text-gray-800">
-                              Jane Smith
-                            </p>
-                            <p class="text-xs text-gray-500">
-                              Invoice: INV-004
-                            </p>
-                          </div>
-                          <div class="flex items-center space-x-4">
-                            <div style="display: flex; flex-direction: column">
-                              <span class="text-sm font-semibold text-gray-900"
-                                >₦300,000</span
-                              >
-                              <span class="text-xs text-gray-500">15 days</span>
-                            </div>
-                            <span
-                              class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full"
-                              style="background-color: #d1fae5; color: #065f46"
-                              >Current</span
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="flex items-center justify-between px-4 py-3"
-                        >
-                          <div>
-                            <p class="text-sm font-medium text-gray-800">
-                              Mike Johnson
-                            </p>
-                            <p class="text-xs text-gray-500">
-                              Invoice: INV-007
-                            </p>
-                          </div>
-                          <div class="flex items-center space-x-4">
-                            <div style="display: flex; flex-direction: column">
-                              <span class="text-sm font-semibold text-gray-900"
-                                >₦125,000</span
-                              >
-                              <span class="text-xs text-gray-500">95 days</span>
-                            </div>
-                            <span
-                              class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full"
-                              style="background-color: #fee2e2; color: #b91c1c"
-                              >Critical</span
-                            >
-                          </div>
+                          <h3 class="text-white font-semibold">
+                            Garden Terrace Apartments
+                          </h3>
+                          <p class="text-gray-200 text-sm">Ikoyi, Lagos</p>
                         </div>
                       </div>
 
-                      <!-- Current (0–30) -->
-                      <div x-show="tab === 'current'" class="px-4 py-3">
-                        <p class="text-sm">
-                          Jane Smith —
-                          <span class="font-semibold">₦300,000</span> (15 days)
-                        </p>
+                      <!-- Info Section -->
+                      <div class="p-4 space-y-4">
+                        <!-- Type, Price, Status -->
+                        <div class="flex justify-between text-sm">
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Type</span
+                            >
+                            <p>Apartment</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Price</span
+                            >
+                            <p>₦22.0M</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Status</span
+                            >
+                            <p class="text-green-600 font-medium">
+                              Under review
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Progress -->
+                        <div>
+                          <p class="text-sm font-medium text-gray-600 mb-1">
+                            Sales Progress
+                          </p>
+                          <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div
+                              class="bg-blue-600 h-2 rounded-full"
+                              style="width: 94%"
+                            ></div>
+                          </div>
+                          <p class="text-xs text-gray-500 mt-1">
+                            28/30 units (93.3%)
+                          </p>
+                        </div>
+
+                        <!-- Revenue Section -->
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <p class="text-gray-600">Total Revenue</p>
+                            <p class="font-semibold">₦616.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Collected</p>
+                            <p class="font-semibold text-green-600">₦585.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Outstanding</p>
+                            <p class="font-semibold text-red-500">₦48.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Avg. Sale Duration</p>
+                            <p class="font-semibold">5.8 months</p>
+                          </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div
+                          class="flex items-center justify-between text-sm text-gray-500 border-t pt-3"
+                        >
+                          <p>Launched 8/10/2023</p>
+                          <button
+                            class="px-4 py-2 rounded-lg border bg-gray-50 hover:bg-gray-100 transition"
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto"
+                  >
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                      <!-- Image with badge -->
+                      <div class="relative">
+                        <img
+                          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop"
+                          alt="Ocean View Luxury Apartments"
+                          class="w-full h-56 object-cover"
+                        />
+                        <span
+                          class="absolute top-3 right-3 bg-teal-500 text-white text-xs px-3 py-1 rounded-full shadow"
+                          >Good</span
+                        >
+                        <div
+                          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 px-4 py-2"
+                        >
+                          <h3 class="text-white font-semibold">
+                            Premium Land Plots
+                          </h3>
+                          <p class="text-gray-200 text-sm">Ajah, Lagos</p>
+                        </div>
                       </div>
 
-                      <!-- Past Due (30+) -->
-                      <div x-show="tab === 'pastdue'" class="px-4 py-3">
-                        <p class="text-sm">
-                          John Doe —
-                          <span class="font-semibold">₦250,000</span> (45 days)
-                        </p>
+                      <!-- Info Section -->
+                      <div class="p-4 space-y-4">
+                        <!-- Type, Price, Status -->
+                        <div class="flex justify-between text-sm">
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Type</span
+                            >
+                            <p>Land</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Price</span
+                            >
+                            <p>₦8.5M</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Status</span
+                            >
+                            <p class="text-green-600 font-medium">
+                              Active Sales
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Progress -->
+                        <div>
+                          <p class="text-sm font-medium text-gray-600 mb-1">
+                            Sales Progress
+                          </p>
+                          <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div
+                              class="bg-blue-600 h-2 rounded-full"
+                              style="width: 65%"
+                            ></div>
+                          </div>
+                          <p class="text-xs text-gray-500 mt-1">
+                            32/50 units (64%)
+                          </p>
+                        </div>
+
+                        <!-- Revenue Section -->
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <p class="text-gray-600">Total Revenue</p>
+                            <p class="font-semibold">₦272.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Collected</p>
+                            <p class="font-semibold text-green-600">₦183.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Outstanding</p>
+                            <p class="font-semibold text-red-500">₦89.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Avg. Sale Duration</p>
+                            <p class="font-semibold">4.2 months</p>
+                          </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div
+                          class="flex items-center justify-between text-sm text-gray-500 border-t pt-3"
+                        >
+                          <p>Launched 2/1/2024</p>
+                          <button
+                            class="px-4 py-2 rounded-lg border bg-gray-50 hover:bg-gray-100 transition"
+                          >
+                            View Details
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                      <!-- Image with badge -->
+                      <div class="relative">
+                        <img
+                          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop"
+                          alt="Executive Villas Estate"
+                          class="w-full h-56 object-cover"
+                        />
+                        <span
+                          class="absolute top-3 right-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full shadow"
+                          >Below Average
+                        </span>
+                        <div
+                          class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 px-4 py-2"
+                        >
+                          <h3 class="text-white font-semibold">
+                            Smart City Condos
+                          </h3>
+                          <p class="text-gray-200 text-sm">Yaba, Lagos</p>
+                        </div>
                       </div>
 
-                      <!-- Critical (90+) -->
-                      <div x-show="tab === 'critical'" class="px-4 py-3">
-                        <p class="text-sm">
-                          Mike Johnson —
-                          <span class="font-semibold">₦125,000</span> (95 days)
-                        </p>
+                      <!-- Info Section -->
+                      <div class="p-4 space-y-4">
+                        <!-- Type, Price, Status -->
+                        <div class="flex justify-between text-sm">
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Type</span
+                            >
+                            <p>Condos</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Price</span
+                            >
+                            <p>₦123.5M</p>
+                          </div>
+                          <div>
+                            <span class="font-semibold text-gray-600"
+                              >Status</span
+                            >
+                            <p class="text-green-600 font-medium">slow Sales</p>
+                          </div>
+                        </div>
+
+                        <!-- Progress -->
+                        <div>
+                          <p class="text-sm font-medium text-gray-600 mb-1">
+                            Sales Progress
+                          </p>
+                          <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div
+                              class="bg-blue-600 h-2 rounded-full"
+                              style="width: 35%"
+                            ></div>
+                          </div>
+                          <p class="text-xs text-gray-500 mt-1">
+                            15/40 units (37.5%)
+                          </p>
+                        </div>
+
+                        <!-- Revenue Section -->
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <p class="text-gray-600">Total Revenue</p>
+                            <p class="font-semibold">₦187.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Collected</p>
+                            <p class="font-semibold text-green-600">₦45.5M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Outstanding</p>
+                            <p class="font-semibold text-red-500">₦142.0M</p>
+                          </div>
+                          <div>
+                            <p class="text-gray-600">Avg. Sale Duration</p>
+                            <p class="font-semibold">12.8 months</p>
+                          </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div
+                          class="flex items-center justify-between text-sm text-gray-500 border-t pt-3"
+                        >
+                          <p>Launched 5/15/2024</p>
+                          <button
+                            class="px-4 py-2 rounded-lg border bg-gray-50 hover:bg-gray-100 transition"
+                          >
+                            View Details
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2369,55 +2820,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <!-- End of Container -->
             </main>
           </div>
-          <!-- Footer -->
-          <footer class="footer">
-            <!-- Container -->
-            <div class="kt-container-fixed">
-              <div
-                class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 py-5"
-              >
-                <div class="flex order-2 md:order-1 gap-2 font-normal text-sm">
-                  <span class="text-muted-foreground"> </span>
-                  <a
-                    class="text-secondary-foreground hover:text-primary"
-                    href="https://keenthemes.com/"
-                  >
-                  </a>
-                </div>
-                <nav
-                  class="flex order-1 md:order-2 gap-4 font-normal text-sm text-secondary-foreground"
-                >
-                  <a
-                    class="hover:text-primary"
-                    href="https://keenthemes.com/metronic/tailwind/docs"
-                  >
-                  </a>
-                  <a
-                    class="hover:text-primary"
-                    href="https://1.envato.market/Vm7VRE"
-                  >
-                  </a>
-                  <a
-                    class="hover:text-primary"
-                    href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
-                  >
-                  </a>
-                  <a
-                    class="hover:text-primary"
-                    href="https://devs.keenthemes.com/"
-                  >
-                  </a>
-                  <a
-                    class="hover:text-primary"
-                    href="https://keenthemes.com/metronic/tailwind/docs/getting-started/license"
-                  >
-                  </a>
-                </nav>
-              </div>
-            </div>
-            <!-- End of Container -->
-          </footer>
-          <!-- End of Footer -->
         </div>
         <!-- End of Main -->
       </div>

@@ -426,6 +426,141 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       </div>
       <!-- End of Wrapper -->
     </div>
+    <dialog
+      id="applicationDialog"
+      class="rounded-lg w-full max-w-lg p-0"
+      style="margin-left: 30%"
+    >
+      <div class="bg-white rounded-lg shadow-xl">
+        <!-- Header -->
+        <div class="flex items-center justify-between border-b px-6 py-4">
+          <h2 class="text-lg font-semibold text-gray-900">
+            Apply for Ocean View Apartment
+          </h2>
+          <button
+            onclick="document.getElementById('applicationDialog').close()"
+            class="text-gray-400 hover:text-gray-600"
+          >
+            ✕
+          </button>
+        </div>
+
+        <!-- Body -->
+        <div class="px-6 py-4 space-y-4">
+          <p class="text-sm text-gray-500">
+            Fill out this application to express your interest in purchasing
+            this property
+          </p>
+
+          <!-- Property Details Card -->
+          <div
+            class="bg-gray-50 p-4 rounded-md border text-sm grid grid-cols-2 gap-4"
+          >
+            <div>
+              <p class="font-medium text-gray-700">Price:</p>
+              <p class="text-gray-900">₦15,000,000</p>
+            </div>
+            <div>
+              <p class="font-medium text-gray-700">Min. Down Payment:</p>
+              <p class="text-gray-900">₦3,000,000</p>
+            </div>
+          </div>
+
+          <!-- Form Inputs -->
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Preferred Payment Plan -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Preferred Payment Plan *</label
+              >
+              <select
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              >
+                <option>Select payment plan</option>
+                <option>Full Payment</option>
+                <option>Monthly Installments</option>
+                <option>Quarterly Installments</option>
+              </select>
+            </div>
+
+            <!-- Down Payment -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Down Payment Amount *</label
+              >
+              <input
+                type="number"
+                placeholder="Min. ₦3,000,000"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <!-- Monthly Income -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Monthly Income *</label
+              >
+              <input
+                type="number"
+                placeholder="Your monthly income"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <!-- Preferred Call Time -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Preferred Call Time</label
+              >
+              <select
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              >
+                <option>Select time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700"
+              >Additional Notes</label
+            >
+            <textarea
+              placeholder="Any additional information or special requests..."
+              class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+            ></textarea>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="flex items-start gap-2">
+            <input type="checkbox" class="mt-1" />
+            <span class="text-sm text-gray-600">
+              I agree to the terms and conditions and authorize Promiseland
+              Properties to process my application and contact me regarding this
+              property purchase.
+            </span>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
+          <button
+            onclick="document.getElementById('applicationDialog').close()"
+            class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          >
+            Cancel
+          </button>
+          <button
+            class="rounded-md bg-blue-700 text-white px-4 py-2 text-sm hover:bg-blue-800"
+          >
+            Submit Application
+          </button>
+        </div>
+      </div>
+    </dialog>
     <!-- End of Base -->
     <div id="headhtmlll"></div>
     <script src="https://unpkg.com/feather-icons"></script>

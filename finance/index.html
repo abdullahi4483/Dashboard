@@ -80,6 +80,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
       gtag("config", "G-52YZ3XGZJ6");
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
     class="antialiased flex h-full text-base text-foreground bg-background [--header-height:60px] [--sidebar-width:90px] bg-muted"
@@ -156,7 +157,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
             class="flex flex-col grow kt-scrollable-y-auto lg:[--scrollbar-width:auto] pt-5"
             id="scrollable_content"
           >
-            <main class="grow" role="content">
+            <main class="grow h-screen-full w-screen-full" role="content">
               <!-- Toolbar -->
               <div class="pb-5">
                 <!-- Container -->
@@ -166,7 +167,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                   <div class="flex items-center flex-wrap gap-1 lg:gap-5">
                     <div class="section-header">
                       <h2 style="font-weight: bold; font-size: larger">
-                        Dashboard
+                        Executive Dashboard
                       </h2>
                     </div>
                   </div>
@@ -2107,22 +2108,25 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 <div class="grid gap-5 lg:gap-7.5">
                   <!-- begin: grid -->
                   <div
-                    class="grid xl:grid-1 ms:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
+                    class="grid xl:grid-1 ms:grid-cols-2 xl:grid-cols-4 gap-5 lg:gap-7.5 items-stretch"
                   >
                     <!-- Total Properties -->
                     <div
                       class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
                     >
                       <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">Total Revenue</h2>
+                        <h2 class="text-gray-700 font-medium">
+                          Total Sales Revenue
+                        </h2>
                         <i class="fi fi-rr-money-check text-green-600"></i>
                       </div>
                       <div class="mt-4">
                         <p class="text-2xl font-bold text-gray-800">
-                          ₦5,250,000
+                          ₦45,750,000
                         </p>
                         <p class="text-sm text-gray-500" style="color: green">
-                          +8.5% from last month
+                          +18.5% quarterly
                         </p>
                       </div>
                     </div>
@@ -2130,21 +2134,20 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     <!-- Buyers & Tenants -->
                     <div
                       class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
                     >
                       <div class="flex justify-between items-start">
                         <h2 class="text-gray-700 font-medium">
-                          Outstanding Receivables
+                          Target Achievement
                         </h2>
                         <i
                           class="fi fi-rr-file-invoice-dollar text-red-600"
                         ></i>
                       </div>
                       <div class="mt-4">
-                        <p class="text-2xl font-bold text-blue-600">
-                          ₦1,500,000
-                        </p>
+                        <p class="text-2xl font-bold text-blue-600">91.5%</p>
                         <p class="text-sm text-gray-500">
-                          28.6% of total revenue
+                          ₦4,250,000 to target
                         </p>
                       </div>
                     </div>
@@ -2152,6 +2155,24 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     <!-- Revenue Collected -->
                     <div
                       class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Property Portfolio
+                        </h2>
+                        <i class="fi fi-rr-chart-pie-alt text-blue-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-green-600">156</p>
+                        <p class="text-sm text-gray-500">89 sold (57%)</p>
+                      </div>
+                    </div>
+
+                    <!-- Pending Collections -->
+                    <div
+                      class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
                     >
                       <div class="flex justify-between items-start">
                         <h2 class="text-gray-700 font-medium">
@@ -2160,10 +2181,70 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                         <i class="fi fi-rr-chart-pie-alt text-blue-600"></i>
                       </div>
                       <div class="mt-4">
-                        <p class="text-2xl font-bold text-green-600">85%</p>
+                        <p class="text-2xl font-bold text-green-600">92.3%</p>
                         <p class="text-sm text-gray-500">
-                          Avg. payment in 12 days
+                          Above industry average
                         </p>
+                      </div>
+                    </div>
+                    <!-- lastcard -->
+                  </div>
+                  <!-- second -->
+                  <div
+                    class="grid xl:grid-1 ms:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
+                  >
+                    <!-- Total Properties -->
+                    <div
+                      class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">Total Buyers</h2>
+                        <i class="fi fi-rr-money-check text-green-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-gray-800">127</p>
+                        <p class="text-sm text-gray-500" style="color: green">
+                          Active purchasers
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Buyers & Tenants -->
+                    <div
+                      class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Completed Sales
+                        </h2>
+                        <i
+                          class="fi fi-rr-file-invoice-dollar text-red-600"
+                        ></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-blue-600">67</p>
+                        <p class="text-sm text-gray-500">
+                          Fully paid properties
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Revenue Collected -->
+                    <div
+                      class="bg-white rounded shadow-sm p-5 flex flex-col justify-between"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <div class="flex justify-between items-start">
+                        <h2 class="text-gray-700 font-medium">
+                          Avg. Sale Price
+                        </h2>
+                        <i class="fi fi-rr-chart-pie-alt text-blue-600"></i>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-2xl font-bold text-green-600">₦18.5M</p>
+                        <p class="text-sm text-gray-500">Per property</p>
                       </div>
                     </div>
 
@@ -2172,6 +2253,231 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     <!-- lastcard -->
                   </div>
                   <!-- end: grid -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Revenue by Property Type -->
+                    <div
+                      class="bg-white rounded-lg shadow p-6"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <h3 class="text-sm font-semibold text-gray-800">
+                        Revenue by Property Type
+                      </h3>
+                      <p class="text-xs text-gray-500 mb-4">
+                        Sales breakdown by property category
+                      </p>
+
+                      <!-- Apartments -->
+                      <div class="mb-4">
+                        <div class="flex justify-between items-center">
+                          <span class="text-gray-700 text-sm">Apartments</span>
+                          <span class="font-semibold text-gray-900"
+                            >₦22,500,000</span
+                          >
+                        </div>
+                        <div
+                          class="w-full bg-gray-200 h-2 rounded mt-2"
+                          style="background-color: gainsboro"
+                        >
+                          <div
+                            class="bg-blue-900 h-2 rounded"
+                            style="width: 49%; background-color: #1e3a8a"
+                          ></div>
+                        </div>
+                        <div
+                          class="flex justify-between text-xs text-gray-500 mt-1"
+                        >
+                          <span>49%</span>
+                          <span class="text-green-600">+15.2% (45 units)</span>
+                        </div>
+                      </div>
+
+                      <!-- Villas -->
+                      <div class="mb-4">
+                        <div class="flex justify-between items-center">
+                          <span class="text-gray-700 text-sm">Villas</span>
+                          <span class="font-semibold text-gray-900"
+                            >₦18,200,000</span
+                          >
+                        </div>
+                        <div
+                          class="w-full bg-gray-200 h-2 rounded mt-2"
+                          style="background-color: gainsboro"
+                        >
+                          <div
+                            class="bg-blue-900 h-2 rounded"
+                            style="width: 40%; background-color: #1e3a8a"
+                          ></div>
+                        </div>
+                        <div
+                          class="flex justify-between text-xs text-gray-500 mt-1"
+                        >
+                          <span>40%</span>
+                          <span class="text-green-600">+22.7% (28 units)</span>
+                        </div>
+                      </div>
+
+                      <!-- Land Plots -->
+                      <div class="mb-4">
+                        <div class="flex justify-between items-center">
+                          <span class="text-gray-700 text-sm">Land Plots</span>
+                          <span class="font-semibold text-gray-900"
+                            >₦3,850,000</span
+                          >
+                        </div>
+                        <div
+                          class="w-full bg-gray-200 h-2 rounded mt-2"
+                          style="background-color: gainsboro"
+                        >
+                          <div
+                            class="bg-blue-900 h-2 rounded"
+                            style="width: 8%; background-color: #1e3a8a"
+                          ></div>
+                        </div>
+                        <div
+                          class="flex justify-between text-xs text-gray-500 mt-1"
+                        >
+                          <span>8%</span>
+                          <span class="text-green-600">+8.3% (12 units)</span>
+                        </div>
+                      </div>
+
+                      <!-- Commercial -->
+                      <div>
+                        <div class="flex justify-between items-center">
+                          <span class="text-gray-700 text-sm">Commercial</span>
+                          <span class="font-semibold text-gray-900"
+                            >₦1,200,000</span
+                          >
+                        </div>
+                        <div
+                          class="w-full bg-gray-200 h-2 rounded mt-2"
+                          style="background-color: gainsboro"
+                        >
+                          <div
+                            class="bg-blue-900 h-2 rounded"
+                            style="width: 3%; background-color: #1e3a8a"
+                          ></div>
+                        </div>
+                        <div
+                          class="flex justify-between text-xs text-gray-500 mt-1"
+                        >
+                          <span>3%</span>
+                          <span class="text-green-600">+5.1% (4 units)</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Performance vs Targets -->
+                    <div
+                      class="bg-white rounded-lg shadow p-6"
+                      style="border: 1px solid gainsboro"
+                    >
+                      <h3 class="text-sm font-semibold text-gray-800">
+                        Performance vs Targets
+                      </h3>
+                      <p class="text-xs text-gray-500 mb-4">
+                        Key metrics against set targets
+                      </p>
+
+                      <ul class="space-y-4 text-sm">
+                        <!-- Sales Revenue Growth -->
+                        <li class="flex items-center justify-between">
+                          <div>
+                            <p class="font-medium text-gray-700">
+                              Sales Revenue Growth
+                            </p>
+                            <p class="text-xs text-gray-500">
+                              Current: 18.5% &nbsp; Target: 15%
+                            </p>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <span
+                              class="bg-blue-100 text-blue-900 text-xs font-semibold px-2 py-1 rounded"
+                              >On Track</span
+                            >
+                            <span class="text-green-500">✔</span>
+                          </div>
+                        </li>
+
+                        <!-- Collection Rate -->
+                        <li class="flex items-center justify-between">
+                          <div>
+                            <p class="font-medium text-gray-700">
+                              Collection Rate
+                            </p>
+                            <p class="text-xs text-gray-500">
+                              Current: 92.3% &nbsp; Target: 89%
+                            </p>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <span
+                              class="bg-blue-100 text-blue-900 text-xs font-semibold px-2 py-1 rounded"
+                              >On Track</span
+                            >
+                            <span class="text-green-500">✔</span>
+                          </div>
+                        </li>
+
+                        <!-- Buyer Acquisition -->
+                        <li class="flex items-center justify-between">
+                          <div>
+                            <p class="font-medium text-gray-700">
+                              Buyer Acquisition
+                            </p>
+                            <p class="text-xs text-gray-500">
+                              Current: 28% &nbsp; Target: 25%
+                            </p>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <span
+                              class="bg-blue-100 text-blue-900 text-xs font-semibold px-2 py-1 rounded"
+                              >On Track</span
+                            >
+                            <span class="text-green-500">✔</span>
+                          </div>
+                        </li>
+
+                        <!-- Property Turnover -->
+                        <li class="flex items-center justify-between">
+                          <div>
+                            <p class="font-medium text-gray-700">
+                              Property Turnover
+                            </p>
+                            <p class="text-xs text-gray-500">
+                              Current: 57.1% &nbsp; Target: 60%
+                            </p>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <span
+                              class="text-yellow-800 text-xs font-semibold px-2 py-1 rounded"
+                              style="background-color: #854d0e"
+                              >Below Target</span
+                            >
+                            <span class="text-yellow-500">⚠</span>
+                          </div>
+                        </li>
+
+                        <!-- Payment Completion -->
+                        <li class="flex items-center justify-between">
+                          <div>
+                            <p class="font-medium text-gray-700">
+                              Payment Completion
+                            </p>
+                            <p class="text-xs text-gray-500">
+                              Current: 89.4% &nbsp; Target: 85%
+                            </p>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <span
+                              class="bg-blue-100 text-blue-900 text-xs font-semibold px-2 py-1 rounded"
+                              >On Track</span
+                            >
+                            <span class="text-green-500">✔</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   <!-- begin: grid -->
                   <div
                     class="grid lg:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
@@ -2221,104 +2527,247 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                   </div>
                   <!-- end: grid -->
                   <!-- begin: grid -->
-                  <div class="dashboard-grid">
+                  <div class="">
                     <!-- Receivables Aging -->
-                    <div class="card">
-                      <h3>Receivables Aging</h3>
-                      <p class="subtitle">Outstanding amounts by age</p>
+                    <div class="space-y-6">
+                      <!-- Market Insights & Strategic Intelligence -->
+                      <div class="bg-white border rounded-lg shadow-sm p-6">
+                        <h2 class="text-base font-semibold text-gray-800">
+                          Market Insights & Strategic Intelligence
+                        </h2>
+                        <p class="text-sm text-gray-500 mb-4">
+                          Key trends and recommended strategic actions
+                        </p>
 
-                      <div class="aging-list">
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot green"></span>
-                            <span>0-30 days</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          <!-- Card 1 -->
+                          <div
+                            class="flex items-start gap-3 border rounded-lg p-4"
+                          >
+                            <div class="text-green-600">
+                              <!-- Icon -->
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M3 17l6-6 4 4 8-8"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <p class="font-medium text-gray-800">
+                                Luxury apartments showing 22% higher demand in
+                                Q4
+                              </p>
+                              <p class="text-xs text-gray-500">
+                                <span class="font-semibold">Action:</span>
+                                Increase premium inventory
+                              </p>
+                            </div>
                           </div>
-                          <div class="aging-info">
-                            <p class="amount">₦750,000</p>
-                            <p class="invoices">15 Invoices</p>
-                          </div>
-                        </div>
 
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot yellow"></span>
-                            <span>31-60 days</span>
+                          <!-- Card 2 -->
+                          <div
+                            class="flex items-start gap-3 border rounded-lg p-4"
+                          >
+                            <div class="text-green-600">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M11 19l-7-7 7-7m8 14l-7-7 7-7"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <p class="font-medium text-gray-800">
+                                Property values trending upward by 15% annually
+                              </p>
+                              <p class="text-xs text-gray-500">
+                                <span class="font-semibold">Action:</span>
+                                Review pricing strategy
+                              </p>
+                            </div>
                           </div>
-                          <div class="aging-info">
-                            <p class="amount">₦450,000</p>
-                            <p class="invoices">9 Invoices</p>
-                          </div>
-                        </div>
 
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot orange"></span>
-                            <span>61-90 days</span>
+                          <!-- Card 3 -->
+                          <div
+                            class="flex items-start gap-3 border rounded-lg p-4"
+                          >
+                            <div class="text-green-600">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M5 13l4 4L19 7"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <p class="font-medium text-gray-800">
+                                Installment payment completion rate improving
+                              </p>
+                              <p class="text-xs text-gray-500">
+                                <span class="font-semibold">Action:</span>
+                                Expand financing options
+                              </p>
+                            </div>
                           </div>
-                          <div class="aging-info">
-                            <p class="amount">₦225,000</p>
-                            <p class="invoices">4 Invoices</p>
-                          </div>
-                        </div>
 
-                        <div class="aging-item">
-                          <div class="aging-label">
-                            <span class="dot red"></span>
-                            <span>90+ days</span>
-                          </div>
-                          <div class="aging-info">
-                            <p class="amount">₦75,000</p>
-                            <p class="invoices">2 Invoices</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Pending Approvals -->
-                    <div class="card">
-                      <div class="card-header">
-                        <div>
-                          <h3>Pending Approvals</h3>
-                          <p class="subtitle">Items requiring your approval</p>
-                        </div>
-                        <span class="pending">2 pending</span>
-                      </div>
-
-                      <div class="approvals">
-                        <div class="approval-item">
-                          <div>
-                            <p class="code">
-                              DISC-001 <span class="tag">Discount</span>
-                            </p>
-                            <p class="name">John Doe</p>
-                            <p class="note">
-                              Long-term client loyalty discount
-                            </p>
-                          </div>
-                          <div class="approval-actions">
-                            <p class="amount">₦25,000</p>
-                            <div class="btn-group">
-                              <button class="btn approve">Approve</button>
-                              <button class="btn reject">Reject</button>
+                          <!-- Card 4 -->
+                          <div
+                            class="flex items-start gap-3 border rounded-lg p-4"
+                          >
+                            <div class="text-green-600">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M9 5l7 7-7 7"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <p class="font-medium text-gray-800">
+                                Buyer interest in eco-friendly properties
+                                increasing
+                              </p>
+                              <p class="text-xs text-gray-500">
+                                <span class="font-semibold">Action:</span>
+                                Develop green properties
+                              </p>
                             </div>
                           </div>
                         </div>
+                      </div>
 
-                        <div class="approval-item">
-                          <div>
-                            <p class="code">
-                              REF-001 <span class="tag">Refund</span>
-                            </p>
-                            <p class="name">Jane Smith</p>
-                            <p class="note">Double payment error</p>
-                          </div>
-                          <div class="approval-actions">
-                            <p class="amount">₦125,000</p>
-                            <div class="btn-group">
-                              <button class="btn approve">Approve</button>
-                              <button class="btn reject">Reject</button>
-                            </div>
-                          </div>
+                      <!-- Executive Actions -->
+                      <div class="bg-white border rounded-lg shadow-sm p-6">
+                        <h2 class="text-base font-semibold text-gray-800">
+                          Executive Actions
+                        </h2>
+                        <p class="text-sm text-gray-500 mb-4">
+                          Quick access to critical functions
+                        </p>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                          <!-- Button 1 -->
+                          <button
+                            class="flex flex-col items-center justify-center gap-2 rounded-lg px-4 py-6 bg-blue-900 text-white"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="w-6 h-6"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 4v16h16V4H4z"
+                              />
+                            </svg>
+                            <span class="text-sm font-semibold"
+                              >Board Report</span
+                            >
+                          </button>
+
+                          <!-- Button 2 -->
+                          <button
+                            class="flex flex-col items-center justify-center gap-2 rounded-lg px-4 py-6 border text-gray-700 hover:bg-gray-50"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="w-6 h-6"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M11 11V3a8 8 0 100 16v-8h8a8 8 0 11-8-8"
+                              />
+                            </svg>
+                            <span class="text-sm font-semibold">Analytics</span>
+                          </button>
+
+                          <!-- Button 3 -->
+                          <button
+                            class="flex flex-col items-center justify-center gap-2 rounded-lg px-4 py-6 border text-gray-700 hover:bg-gray-50"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="w-6 h-6"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17 20h5V4H2v16h5m10 0v-6a2 2 0 00-2-2h-4a2 2 0 00-2 2v6"
+                              />
+                            </svg>
+                            <span class="text-sm font-semibold"
+                              >Team Performance</span
+                            >
+                          </button>
+
+                          <!-- Button 4 -->
+                          <button
+                            class="flex flex-col items-center justify-center gap-2 rounded-lg px-4 py-6 border text-gray-700 hover:bg-gray-50"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="w-6 h-6"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                            <span class="text-sm font-semibold"
+                              >Set Targets</span
+                            >
+                          </button>
                         </div>
                       </div>
                     </div>
