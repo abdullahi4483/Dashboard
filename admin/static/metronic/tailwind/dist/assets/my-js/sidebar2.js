@@ -11,11 +11,12 @@ const sideHtmll = `<div
             <a href="index.html">
               <img
                 class="dark:hidden min-h-[42px]"
-                src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-square-gray.svg"
+                src="https://promiselandestate.com/wp-content/uploads/2022/11/Promiseland-logo-1.png"
+                width="100px"
               />
               <img
                 class="hidden dark:block min-h-[42px]"
-                src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-square-gray-dark.svg"
+                src="https://promiselandestate.com/wp-content/uploads/2022/11/Promiseland-logo-1.png"
               />
             </a>
           </div>
@@ -37,7 +38,7 @@ const sideHtmll = `<div
               <div class="kt-menu-item ">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="../../index.html"
+                  href="index.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
@@ -55,7 +56,7 @@ const sideHtmll = `<div
               <div class="kt-menu-item">
                 <a
                   class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="../../client.html"
+                  href="client.html"
                 >
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"

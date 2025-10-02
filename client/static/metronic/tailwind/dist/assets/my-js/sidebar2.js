@@ -11,11 +11,13 @@ const sideHtmll = `<div
             <a href="index.html">
               <img
                 class="dark:hidden min-h-[42px]"
-                src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-square-gray.svg"
+                src="https://promiselandestate.com/wp-content/uploads/2022/11/Promiseland-logo-1.png"
+                width="100px"
               />
               <img
                 class="hidden dark:block min-h-[42px]"
-                src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-square-gray-dark.svg"
+                src="https://promiselandestate.com/wp-content/uploads/2022/11/Promiseland-logo-1.png"
+                width="100px"
               />
             </a>
           </div>
@@ -77,12 +79,13 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
                   >
-                    <i class="ki-filled ki-clipboard text-xl"></i>
+                  <i class="ki-filled ki-file ki-plus text-xl"></i>
+                    
                   </span>
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    My invoice
+                    My Application
                   </span>
                 </a>
               </div>
@@ -94,12 +97,12 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
                   >
-                    <i class="ki-filled ki-file ki-plus text-xl"></i>
+                    <i class="ki-filled ki-clipboard text-xl"></i>
                   </span>
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Invoice buyers
+                   My Invoice
                   </span>
                 </a>
               </div>
@@ -116,27 +119,11 @@ const sideHtmll = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Payment
+                    Saved properties
                   </span>
                 </a>
               </div>
-              <div class="kt-menu-item">
-                <a
-                  class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                  href="receipt.html"
-                >
-                  <span
-                    class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
-                  >
-                    <i class="ki-filled ki-receipt ki-text text-xl"></i>
-                  </span>
-                  <span
-                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
-                  >
-                    Receipt
-                  </span>
-                </a>
-              </div>
+              
             </div>
             <!-- End of Sidebar Menu -->
           </div>
@@ -171,7 +158,7 @@ const sideHtmll = `<div
                 <img
                   alt=""
                   class="size-9 rounded-lg shrink-0"
-                  src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                  src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                 />
               </div>
               <div
@@ -181,11 +168,11 @@ const sideHtmll = `<div
                 <div
                   class="flex items-center justify-between px-2.5 py-1.5 gap-1.5"
                 >
-                                    <div class="flex items-center gap-2">
+                  <div class="flex items-center gap-2">
                     <img
                       alt=""
                       class="size-9 shrink-0 rounded-full border-2 border-green-500"
-                      src="../../../../../static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
+                      src="static/metronic/tailwind/dist/assets/media/avatars/300-2.png"
                     />
                     <div class="flex flex-col gap-1.5">
                       <span

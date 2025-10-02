@@ -11,11 +11,12 @@ const sideHtml = `<div
             <a href="index.html">
               <img
                 class="dark:hidden min-h-[42px]"
-                src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-square-gray.svg"
+                src="https://promiselandestate.com/wp-content/uploads/2022/11/Promiseland-logo-1.png"
+                width="100px"
               />
               <img
                 class="hidden dark:block min-h-[42px]"
-                src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-square-gray-dark.svg"
+                src="https://promiselandestate.com/wp-content/uploads/2022/11/Promiseland-logo-1.png"
               />
             </a>
           </div>

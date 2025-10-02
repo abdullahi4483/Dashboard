@@ -60,6 +60,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-52YZ3XGZJ6"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -150,7 +152,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <div class="pb-5">
                 <!-- Container -->
                 <div
-                  class="kt-container-fixed flex items-center justify-between flex-wrap gap-3"
+                  class="kt-container-fixed flex items-center justify-between flex-wrap gap-3 max-w-6xl mx-auto"
                 >
                   <div class="flex items-center flex-wrap gap-1 lg:gap-5">
                     <h1
@@ -2095,820 +2097,474 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <div class="kt-container-fixed">
                 <div class="grid gap-5 lg:gap-7.5">
                   <!-- begin: grid -->
-                  <div
-                    class="grid grid-cols- sm:grid-cols-2 xl:grid-cols-4 gap-4"
-                  >
-                    <!-- Total Properties -->
+                  <div class="max-w-full mx-11">
                     <div
-                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                      class="grid grid-cols- sm:grid-cols-2 xl:grid-cols-4 gap-4"
                     >
-                      <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">
-                          Total Properties
-                        </h2>
-                        <i class="fi fi-rr-building text-gray-600"></i>
-                      </div>
-                      <div class="mt-4">
-                        <p class="text-2xl font-bold text-gray-800">2</p>
-                        <p class="text-sm text-gray-500">Active properties</p>
-                      </div>
-                    </div>
-
-                    <!-- Buyers & Tenants -->
-                    <div
-                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
-                    >
-                      <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">
-                          Buyers & Tenants
-                        </h2>
-                        <i class="fi fi-rr-users text-blue-600"></i>
-                      </div>
-                      <div class="mt-4">
-                        <p class="text-2xl font-bold text-blue-600">3</p>
-                        <p class="text-sm text-gray-500">Active clients</p>
-                      </div>
-                    </div>
-
-                    <!-- Revenue Collected -->
-                    <div
-                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
-                    >
-                      <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">
-                          Revenue Collected
-                        </h2>
-                        <i class="fi fi-rr-dollar text-green-600"></i>
-                      </div>
-                      <div class="mt-4">
-                        <p class="text-2xl font-bold text-green-600">
-                          ₦1,125,000
-                        </p>
-                        <p class="text-sm text-gray-500">
-                          From invoices created
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Pending Collections -->
-                    <div
-                      class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
-                    >
-                      <div class="flex justify-between items-start">
-                        <h2 class="text-gray-700 font-medium">
-                          Pending Collections
-                        </h2>
-                        <i class="fi fi-rr-time-check text-yellow-600"></i>
-                      </div>
-                      <div class="mt-4">
-                        <p class="text-2xl font-bold text-yellow-600">2</p>
-                        <p class="text-sm text-gray-500">Awaiting payment</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end: grid -->
-                  <!-- begin: grid -->
-                  <div
-                    class="grid lg:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
-                  >
-                    <div class="lg:col-span-3">
+                      <!-- Total Properties -->
                       <div
-                        class="bg-white p-6 rounded-xl shadow border border-gray-200 max-w-5xl mx-auto"
+                        class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                        style="border: 1px solid rgb(235, 228, 228)"
                       >
-                        <!-- Title -->
-                        <h2 class="text-lg font-semibold">Payment Overview</h2>
-                        <p class="text-sm text-gray-500 mb-6">
-                          Your overall payment progress across all properties
-                        </p>
-
-                        <!-- Cards -->
-                        <div
-                          class="grid grid-cols sm:grid-cols-2 xl:grid-cols-3 gap-4 mb-6"
-                        >
-                          <!-- Total Invoiced -->
-                          <div class="bg-gray-50 rounded-xl p-6 text-center">
-                            <p class="text-gray-600">Total Invoiced</p>
-                            <p class="text-2xl font-bold text-gray-800">
-                              ₦2,250,000
-                            </p>
-                          </div>
-
-                          <!-- Total Paid -->
-                          <div
-                            class="bg-green-50 border border-green-200 rounded-xl p-6 text-center"
-                          >
-                            <p class="text-green-600">Total Paid</p>
-                            <p class="text-2xl font-bold text-green-600">
-                              ₦1,875,000
-                            </p>
-                          </div>
-
-                          <!-- Outstanding -->
-                          <div
-                            class="bg-red-50 border rounded-xl p-6 text-center"
-                            style="
-                              background-color: #fef2f2;
-                              border: 1px rgba(238, 25, 25, 0.877) solid;
-                            "
-                          >
-                            <p style="color: rgba(238, 25, 25, 0.877)">
-                              Outstanding
-                            </p>
-                            <p
-                              class="text-2xl font-bold"
-                              style="color: rgba(238, 25, 25, 0.877)"
-                            >
-                              ₦375,000
-                            </p>
-                          </div>
+                        <div class="flex justify-between items-start">
+                          <h2 class="text-gray-700 font-medium">
+                            Total Applications
+                          </h2>
+                          <i data-feather="file-text" class="text-blue-600"></i>
                         </div>
-
-                        <!-- Progress bar -->
-                        <div>
-                          <p class="text-sm font-medium text-gray-700 mb-2">
-                            Overall Progress
+                        <div class="mt-4">
+                          <p class="text-2xl font-bold text-gray-800">3</p>
+                          <p class="text-sm text-gray-500">
+                            Property applications
                           </p>
-                          <div
-                            class="w-full bg-pink-100 rounded-full h-3"
-                            style="background-color: rgb(226, 113, 132)"
-                          >
-                            <div
-                              class="bg-pink-500 h-3 rounded-full"
-                              style="
-                                width: 83%;
-                                background-color: rgba(207, 37, 65, 0.945);
-                              "
-                            ></div>
-                          </div>
-                          <p class="text-right text-sm font-medium mt-1">83%</p>
+                        </div>
+                      </div>
+
+                      <!-- Buyers & Tenants -->
+                      <div
+                        class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                        style="border: 1px solid rgb(235, 228, 228)"
+                      >
+                        <div class="flex justify-between items-start">
+                          <h2 class="text-gray-700 font-medium">Approved</h2>
+                          <i
+                            data-feather="check-circle"
+                            class="text-green-600"
+                          ></i>
+                        </div>
+                        <div class="mt-4">
+                          <p class="text-2xl font-bold text-blue-600">1</p>
+                          <p class="text-sm text-gray-500">
+                            Ready for purchase
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Revenue Collected -->
+                      <div
+                        class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                        style="border: 1px solid rgb(235, 228, 228)"
+                      >
+                        <div class="flex justify-between items-start">
+                          <h2 class="text-gray-700 font-medium">
+                            Under Review
+                          </h2>
+                          <i data-feather="clock" class="text-yellow-500"></i>
+                        </div>
+                        <div class="mt-4">
+                          <p class="text-2xl font-bold text-green-600">1</p>
+                          <p class="text-sm text-gray-500">Awaiting approval</p>
+                        </div>
+                      </div>
+
+                      <!-- Pending Collections -->
+                      <div
+                        class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                        style="border: 1px solid rgb(235, 228, 228)"
+                      >
+                        <div class="flex justify-between items-start">
+                          <h2 class="text-gray-700 font-medium">
+                            Saved Properties
+                          </h2>
+                          <i data-feather="heart" class="text-red-500"></i>
+                        </div>
+                        <div class="mt-4">
+                          <p class="text-2xl font-bold text-yellow-600">2</p>
+                          <p class="text-sm text-gray-500">Favorites list</p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- end: grid -->
                   <!-- begin: grid -->
-                  <div
-                    class="grid lg:grid-cols-3 gap-5 lg:gap-7.5 items-stretch"
-                  >
-                    <div class="lg:col-span-3">
-                      <div
-                        class="bg-white p-6 rounded-xl shadow border border-gray-200 max-w-5xl mx-auto"
-                      >
-                        <!-- Header -->
-                        <h2 class="text-lg font-semibold">Recent Invoices</h2>
-                        <p class="text-sm text-gray-500 mb-6">
-                          Your latest billing information with payment options
-                        </p>
+                  <div class="max-w-7xl mx-auto p-11">
+                    <!-- Section Title -->
 
-                        <!-- Invoice List -->
-                        <div class="space-y-4">
-                          <!-- Invoice Item 1 -->
-                          <div
-                            class="p-4 border-0 rounded-lg"
-                            style="border: 1px solid #e5e7eb"
-                          >
-                            <div
-                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
-                              style="
-                                display: flex;
-                                justify-content: space-between;
-                              "
-                            >
-                              <div>
-                                <div class="flex items-center space-x-2">
-                                  <p class="font-semibold text-gray-700">
-                                    INV-001
-                                  </p>
-                                  <span
-                                    class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
-                                    style="
-                                      background-color: rgb(172, 228, 172);
-                                      color: green;
-                                    "
-                                    >Partially Paid</span
-                                  >
-                                </div>
-                                <p class="text-gray-600">
-                                  Ocean View Apartment
-                                </p>
-                                <p class="text-xs text-gray-500">
-                                  Due: 9/30/2024
-                                </p>
-                                <p class="text-sm text-green-600 mt-1">
-                                  Paid: ₦125,000
-                                </p>
-                              </div>
-                              <div class="text-right mt-3 sm:mt-0">
-                                <p class="font-bold text-gray-800">₦250,000</p>
-                                <p class="text-xs text-red-500">
-                                  ₦125,000 remaining
-                                </p>
-                              </div>
-                            </div>
-                            <!-- Progress Bar -->
-                            <div class="mt-3">
-                              <div class="w-full bg-pink-100 rounded-full h-2">
-                                <div
-                                  class="bg-pink-500 h-2 rounded-full"
-                                  style="width: 50%; background-color: #ec4899"
-                                ></div>
-                              </div>
-                              <p class="text-xs text-right mt-1">50%</p>
-                            </div>
-                            <!-- Actions -->
-                            <div class="flex flex-wrap gap-2 mt-3">
-                              <button
-                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
-                                style="border: 1px solid #e5e7eb"
-                                command="show-modal"
-                                commandfor="invoiceDialog"
-                              >
-                                👁 View Details
-                              </button>
-                              <button
-                                class="flex items-center px-3 py-1 bg-pink-500 text-white rounded-lg text-sm"
-                                style="background-color: #ec4899"
-                                command="show-modal"
-                                commandfor="invoiceDialoggg"
-                              >
-                                💳 Make Payment
-                              </button>
-                              <button
-                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
-                                style="border: 1px solid #e5e7eb"
-                                command="show-modal"
-                                commandfor="invoiceDialogggg"
-                              >
-                                📜 Payment History
-                              </button>
-                            </div>
-                          </div>
-
-                          <!-- Invoice Item 2 -->
-                          <div
-                            class="p-4 border-0 rounded-lg"
-                            style="border: 1px solid #e5e7eb"
-                          >
-                            <div
-                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
-                              style="
-                                display: flex;
-                                justify-content: space-between;
-                              "
-                            >
-                              <div>
-                                <div class="flex items-center space-x-2">
-                                  <p class="font-semibold text-gray-700">
-                                    INV-002
-                                  </p>
-                                  <span
-                                    class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
-                                    style="
-                                      background-color: rgb(172, 228, 172);
-                                      color: green;
-                                    "
-                                    >Partially Paid</span
-                                  >
-                                </div>
-                                <p class="text-gray-600">
-                                  Ocean View Apartment
-                                </p>
-                                <p class="text-xs text-gray-500">
-                                  Due: 10/31/2024
-                                </p>
-                                <p class="text-sm text-green-600 mt-1">
-                                  Paid: ₦100,000
-                                </p>
-                              </div>
-                              <div class="text-right mt-3 sm:mt-0">
-                                <p class="font-bold text-gray-800">₦250,000</p>
-                                <p class="text-xs text-red-500">
-                                  ₦150,000 remaining
-                                </p>
-                              </div>
-                            </div>
-                            <!-- Progress Bar -->
-                            <div class="mt-3">
-                              <div
-                                class="w-full bg-pink-100 rounded-full h-2"
-                                style="
-                                  width: 100%; /* w-full */
-                                  background-color: #fce7f3; /* bg-pink-100 */
-                                  border-radius: 9999px; /* rounded-full */
-                                  height: 0.5rem;
-                                "
-                              >
-                                <div
-                                  class="bg-pink-500 h-2 rounded-full"
-                                  style="width: 40%; background-color: #ec4899"
-                                ></div>
-                              </div>
-                              <p class="text-xs text-right mt-1">40%</p>
-                            </div>
-                            <!-- Actions -->
-                            <div class="flex flex-wrap gap-2 mt-3">
-                              <button
-                                class="flex items-center px-3 py-1 border-o rounded-lg text-sm text-gray-700"
-                                style="border: 1px solid #e5e7eb"
-                                command="show-modal"
-                                commandfor="invoiceDialog"
-                              >
-                                👁 View Details
-                              </button>
-                              <button
-                                class="flex items-center px-3 py-1 bg-pink-500 text-white rounded-lg text-sm"
-                                style="background-color: #ec4899"
-                                command="show-modal"
-                                commandfor="invoiceDialoggg"
-                              >
-                                💳 Make Payment
-                              </button>
-                              <button
-                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
-                                style="border: 1px solid #e5e7eb"
-                                command="show-modal"
-                                commandfor="invoiceDialogggg"
-                              >
-                                📜 Payment History
-                              </button>
-                            </div>
-                          </div>
-
-                          <!-- Invoice Item 3 -->
-                          <div
-                            class="p-4 border rounded-lg"
-                            style="border: 1px solid #e5e7eb"
-                          >
-                            <div
-                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
-                              style="
-                                display: flex;
-                                justify-content: space-between;
-                              "
-                            >
-                              <div>
-                                <div class="flex items-center space-x-2">
-                                  <p class="font-semibold text-gray-700">
-                                    INV-003
-                                  </p>
-                                  <span
-                                    class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full"
-                                    style="
-                                      background-color: #e2cbe2;
-                                      color: #ec4899;
-                                    "
-                                    >Paid</span
-                                  >
-                                </div>
-                                <p class="text-gray-600">Executive Villa</p>
-                                <p class="text-xs text-gray-500">
-                                  Due: 10/31/2024
-                                </p>
-                              </div>
-                              <div class="text-right mt-3 sm:mt-0">
-                                <p class="font-bold text-gray-800">₦500,000</p>
-                              </div>
-                            </div>
-                            <!-- Actions -->
-                            <div class="flex flex-wrap gap-2 mt-3">
-                              <button
-                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
-                                style="border: 1px solid #e5e7eb"
-                                command="show-modal"
-                                commandfor="invoiceDialog"
-                              >
-                                👁 View Details
-                              </button>
-                              <button
-                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
-                                style="border: 1px solid #e5e7eb"
-                                command="show-modal"
-                                commandfor="invoiceDialogggg"
-                              >
-                                📜 Payment History
-                              </button>
-                            </div>
-                          </div>
-
-                          <!-- Invoice Item 4 -->
-                          <div
-                            class="p-4 border rounded-lg"
-                            style="border: 1px solid #e5e7eb"
-                          >
-                            <div
-                              class="flex flex-col sm:flex-row sm:justify-between sm:items-start"
-                              style="
-                                display: flex;
-                                justify-content: space-between;
-                              "
-                            >
-                              <div>
-                                <div class="flex items-center space-x-2">
-                                  <p class="font-semibold text-gray-700">
-                                    INV-004
-                                  </p>
-                                  <span
-                                    class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full"
-                                    style="
-                                      background-color: #eec790;
-                                      color: #a16207;
-                                    "
-                                    >Pending</span
-                                  >
-                                </div>
-                                <p class="text-gray-600">
-                                  Ocean View Apartment
-                                </p>
-                                <p class="text-xs text-gray-500">
-                                  Due: 11/30/2024
-                                </p>
-                              </div>
-                              <div class="text-right mt-3 sm:mt-0">
-                                <p class="font-bold text-gray-800">₦250,000</p>
-                              </div>
-                            </div>
-                            <!-- Actions -->
-                            <div class="flex flex-wrap gap-2 mt-3">
-                              <button
-                                class="flex items-center px-3 py-1 border-0 rounded-lg text-sm text-gray-700"
-                                style="border: 1px solid #e5e7eb"
-                                command="show-modal"
-                                commandfor="invoiceDialog"
-                              >
-                                👁 View Details
-                              </button>
-                              <button
-                                class="flex items-center px-3 py-1 bg-pink-500 text-white rounded-lg text-sm"
-                                style="background-color: #ec4899"
-                                command="show-modal"
-                                commandfor="invoiceDialoggg"
-                              >
-                                💳 Make Payment
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- end: grid -->
-                </div>
-                <div
-                  class="bg-white p-6 mt-7 rounded-xl shadow border border-gray-200 max-w-7xl mx-auto"
-                >
-                  <!-- Section Header -->
-                  <h2 class="text-lg font-semibold">Your Buyers & Tenants</h2>
-                  <p class="text-sm text-gray-500 mb-6">
-                    People you've invoiced for your properties
-                  </p>
-
-                  <!-- Cards Grid -->
-                  <div class="lg:col-span-3">
-                    <div
-                      class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
-                    >
+                    <!-- Cards Grid -->
+                    <div class="grid gap-6 sm:grid-cols-2">
                       <!-- Card 1 -->
                       <div
-                        class="border-0 rounded-lg p-5"
-                        style="border: 1px solid #e5e7eb"
+                        class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-sm hover:scale-[1.01]"
                       >
-                        <div class="flex items-start justify-between">
-                          <div class="flex items-center space-x-3">
-                            <div
-                              class="w-10 h-10 mr-4 flex items-center justify-center rounded-full bg-pink-500 text-white font-bold"
-                              style="background-color: #ec4899"
-                            >
-                              J
-                            </div>
-                            <div>
-                              <p class="font-semibold text-gray-800">
-                                John Adebayo
-                              </p>
-                              <p class="text-sm text-gray-500">
-                                Ocean View Apartment
-                              </p>
-                            </div>
-                          </div>
+                        <div class="relative">
+                          <img
+                            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=900"
+                            alt="Ocean View Apartment"
+                            class="w-full h-52 object-cover"
+                          />
                           <span
-                            class="bg-pink-500 text-white text-xs px-3 py-1 rounded-full"
-                            >Buyer</span
+                            class="absolute top-2 left-2 bg-teal-600 text-white text-xs px-3 py-1 rounded-full"
+                            >Featured</span
+                          >
+                          <span
+                            class="absolute top-2 right-2 bg-white p-2 rounded-full shadow cursor-pointer"
+                          >
+                            <i
+                              data-feather="heart"
+                              class="w-4 h-4 text-red-500"
+                            ></i>
+                          </span>
+                          <span
+                            class="absolute bottom-2 left-2 bg-white text-teal-600 text-xs px-3 py-1 rounded-full shadow"
+                            >Available</span
                           >
                         </div>
 
-                        <div class="mt-4 space-y-1">
-                          <p class="text-sm text-gray-700">
-                            Total Invoiced
-                            <span class="font-semibold">₦5,000,000</span>
+                        <div class="p-4 space-y-3">
+                          <h3 class="font-semibold text-lg">
+                            Ocean View Apartment
+                          </h3>
+                          <p
+                            class="text-sm text-gray-500 flex items-center gap-2"
+                          >
+                            <i data-feather="map-pin" class="w-4 h-4"></i>
+                            123 Marina Drive, Victoria Island, Lagos
                           </p>
-                          <p class="text-sm">
-                            Total Paid
-                            <span class="font-semibold text-green-600"
-                              >₦2,500,000</span
-                            >
-                          </p>
-                          <p class="text-sm">
-                            Outstanding
-                            <span class="font-semibold text-red-600"
-                              >₦2,500,000</span
-                            >
-                          </p>
-                        </div>
 
-                        <!-- Progress -->
-                        <div class="mt-3">
+                          <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-gray-800"
+                              >₦15,000,000</span
+                            >
+                            <span
+                              class="flex items-center gap-1 text-yellow-500 text-sm font-medium"
+                            >
+                              <i
+                                data-feather="star"
+                                class="w-4 h-4 fill-yellow-500"
+                              ></i>
+                              4.8 <span class="text-gray-500">(24)</span>
+                            </span>
+                          </div>
+
                           <div
-                            style="
-                              max-width: 100%; /* w-full */
-                              background-color: #ebcfdf; /* bg-pink-100 */
-                              border-radius: 9999px; /* rounded-full */
-                              height: 0.5rem;
-                            "
+                            class="flex items-center gap-6 text-gray-600 text-sm"
                           >
-                            <div
-                              class="bg-pink-500 h-2 rounded-full"
-                              style="width: 50%; background-color: #ec4899"
-                            ></div>
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="home" class="w-4 h-4"></i>
+                              3</span
+                            >
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="droplet" class="w-4 h-4"></i>
+                              2</span
+                            >
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="square" class="w-4 h-4"></i>
+                              120m²</span
+                            >
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="car" class="w-4 h-4"></i>
+                              2</span
+                            >
+                          </div>
+
+                          <p class="text-sm text-gray-600">
+                            Modern apartment with stunning ocean views,
+                            featuring contemporary design and premium finishes.
+                          </p>
+
+                          <p
+                            class="text-sm text-gray-500 flex items-center gap-1"
+                          >
+                            <i data-feather="briefcase" class="w-4 h-4"></i>
+                            Promiseland Properties
+                          </p>
+                          <p class="text-sm font-semibold">
+                            Min. Down Payment:
+                            <span class="text-black">₦3,000,000</span>
+                          </p>
+
+                          <div class="flex flex-wrap gap-2">
+                            <button
+                              class="px-3 py-1 text-xs bg-gray-100 rounded-full"
+                            >
+                              Full Payment
+                            </button>
+                            <button
+                              class="px-3 py-1 text-xs bg-gray-100 rounded-full"
+                            >
+                              Monthly installments
+                            </button>
+                            <button
+                              class="px-3 py-1 text-xs bg-gray-100 rounded-full"
+                            >
+                              +1 more
+                            </button>
+                          </div>
+
+                          <div class="flex gap-3 pt-3">
+                            <button
+                              class="flex-1 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1"
+                            >
+                              <i data-feather="eye" class="w-4 h-4"></i> View
+                              Details
+                            </button>
+                            <button
+                              class="flex-1 py-2 text-sm bg-blue-900 text-white rounded-lg hover:bg-blue-800 flex items-center justify-center gap-1"
+                              onclick="document.getElementById('applicationDialog').showModal()"
+                            >
+                              <i data-feather="send" class="w-4 h-4"></i> Apply
+                              Now
+                            </button>
                           </div>
                         </div>
                       </div>
 
                       <!-- Card 2 -->
                       <div
-                        class="border-0 rounded-lg p-5"
-                        style="border: 1px solid #e5e7eb"
+                        class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-sm hover:scale-[1.01]"
                       >
-                        <div class="flex items-start justify-between">
-                          <div class="flex items-center space-x-3">
-                            <div
-                              class="w-10 mr-4 h-10 flex items-center justify-center rounded-full bg-pink-500 text-white font-bold"
-                              style="background-color: #ec4899"
-                            >
-                              S
-                            </div>
-                            <div>
-                              <p class="font-semibold text-gray-800">
-                                Sarah Okafor
-                              </p>
-                              <p class="text-sm text-gray-500">
-                                Executive Villa
-                              </p>
-                            </div>
-                          </div>
+                        <div class="relative">
+                          <img
+                            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=900"
+                            alt="Executive Villa"
+                            class="w-full h-52 object-cover"
+                          />
                           <span
-                            class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full"
-                            >Tenant</span
+                            class="absolute top-2 left-2 bg-teal-600 text-white text-xs px-3 py-1 rounded-full"
+                            >Featured</span
                           >
-                        </div>
-
-                        <div class="mt-4 space-y-1">
-                          <p class="text-sm text-gray-700">
-                            Total Invoiced
-                            <span class="font-semibold">₦1,500,000</span>
-                          </p>
-                          <p class="text-sm">
-                            Total Paid
-                            <span class="font-semibold text-green-600"
-                              >₦1,500,000</span
-                            >
-                          </p>
-                          <p class="text-sm">
-                            Outstanding
-                            <span class="font-semibold text-red-600">₦0</span>
-                          </p>
-                        </div>
-
-                        <!-- Progress -->
-                        <div class="mt-3">
-                          <div
-                            class="w-full bg-pink-100 rounded-full h-2"
-                            style="
-                              width: 100%; /* w-full */
-                              background-color: #fce7f3; /* bg-pink-100 */
-                              border-radius: 9999px; /* rounded-full */
-                              height: 0.5rem;
-                            "
-                          >
-                            <div
-                              class="bg-pink-500 h-2 rounded-full"
-                              style="width: 100%; background-color: #ec4899"
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Card 3 -->
-                      <div
-                        class="border-0 rounded-lg p-5"
-                        style="border: 1px solid #e5e7eb"
-                      >
-                        <div class="flex items-start justify-between">
-                          <div class="flex items-center space-x-3">
-                            <div
-                              class="w-10 mr-4 h-10 flex items-center justify-center rounded-full bg-pink-500 text-white font-bold"
-                              style="background-color: #ec4899"
-                            >
-                              M
-                            </div>
-                            <div>
-                              <p class="font-semibold text-gray-800">
-                                Michael Okoro
-                              </p>
-                              <p class="text-sm text-gray-500">
-                                Ocean View Apartment
-                              </p>
-                            </div>
-                          </div>
                           <span
-                            class="bg-pink-500 text-white text-xs px-3 py-1 rounded-full"
-                            >Buyer</span
+                            class="absolute top-2 right-2 bg-white p-2 rounded-full shadow cursor-pointer"
+                          >
+                            <i
+                              data-feather="heart"
+                              class="w-4 h-4 text-red-500"
+                            ></i>
+                          </span>
+                          <span
+                            class="absolute bottom-2 left-2 bg-white text-teal-600 text-xs px-3 py-1 rounded-full shadow"
+                            >Available</span
                           >
                         </div>
 
-                        <div class="mt-4 space-y-1">
-                          <p class="text-sm text-gray-700">
-                            Total Invoiced
-                            <span class="font-semibold">₦1,000,000</span>
+                        <div class="p-4 space-y-3">
+                          <h3 class="font-semibold text-lg">Executive Villa</h3>
+                          <p
+                            class="text-sm text-gray-500 flex items-center gap-2"
+                          >
+                            <i data-feather="map-pin" class="w-4 h-4"></i>
+                            456 Independence Layout, Enugu
                           </p>
-                          <p class="text-sm">
-                            Total Paid
-                            <span class="font-semibold text-green-600"
-                              >₦250,000</span
-                            >
-                          </p>
-                          <p class="text-sm">
-                            Outstanding
-                            <span class="font-semibold text-red-600"
-                              >₦750,000</span
-                            >
-                          </p>
-                        </div>
 
-                        <!-- Progress -->
-                        <div class="mt-3">
+                          <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-gray-800"
+                              >₦25,000,000</span
+                            >
+                            <span
+                              class="flex items-center gap-1 text-yellow-500 text-sm font-medium"
+                            >
+                              <i
+                                data-feather="star"
+                                class="w-4 h-4 fill-yellow-500"
+                              ></i>
+                              4.9 <span class="text-gray-500">(18)</span>
+                            </span>
+                          </div>
+
                           <div
-                            class="w-full bg-pink-100 rounded-full h-2"
-                            style="
-                              width: 100%; /* w-full */
-                              background-color: #fce7f3; /* bg-pink-100 */
-                              border-radius: 9999px; /* rounded-full */
-                              height: 0.5rem;
-                            "
+                            class="flex items-center gap-6 text-gray-600 text-sm"
                           >
-                            <div
-                              class="bg-pink-500 h-2 rounded-full"
-                              style="width: 25%; background-color: #ec4899"
-                            ></div>
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="home" class="w-4 h-4"></i>
+                              5</span
+                            >
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="droplet" class="w-4 h-4"></i>
+                              4</span
+                            >
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="square" class="w-4 h-4"></i>
+                              300m²</span
+                            >
+                            <span class="flex items-center gap-1"
+                              ><i data-feather="car" class="w-4 h-4"></i>
+                              4</span
+                            >
+                          </div>
+
+                          <p class="text-sm text-gray-600">
+                            Spacious executive villa with private garden and
+                            premium security features.
+                          </p>
+
+                          <p
+                            class="text-sm text-gray-500 flex items-center gap-1"
+                          >
+                            <i data-feather="briefcase" class="w-4 h-4"></i>
+                            Promiseland Properties
+                          </p>
+                          <p class="text-sm font-semibold">
+                            Min. Down Payment:
+                            <span class="text-black">₦5,000,000</span>
+                          </p>
+
+                          <div class="flex flex-wrap gap-2">
+                            <button
+                              class="px-3 py-1 text-xs bg-gray-100 rounded-full"
+                            >
+                              Full Payment
+                            </button>
+                            <button
+                              class="px-3 py-1 text-xs bg-gray-100 rounded-full"
+                            >
+                              Quarterly installments
+                            </button>
+                            <button
+                              class="px-3 py-1 text-xs bg-gray-100 rounded-full"
+                            >
+                              +1 more
+                            </button>
+                          </div>
+
+                          <div class="flex gap-3 pt-3">
+                            <button
+                              class="flex-1 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-100 flex items-center justify-center gap-1"
+                            >
+                              <i data-feather="eye" class="w-4 h-4"></i> View
+                              Details
+                            </button>
+                            <button
+                              class="flex-1 py-2 text-sm bg-blue-900 text-white rounded-lg hover:bg-blue-800 flex items-center justify-center gap-1"
+                              onclick="document.getElementById('applicationDialog').showModal()"
+                            >
+                              <i data-feather="send" class="w-4 h-4"></i> Apply
+                              Now
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="w-full p-4">
-                  <div class="bg-white border border-gray-200 rounded-lg p-6">
-                    <!-- Header -->
-                    <h2 class="text-lg font-semibold">Your Properties</h2>
-                    <p class="text-sm text-gray-500 mb-4">
-                      Properties under your management with payment status
-                    </p>
+                  <!-- end: grid -->
+                  <!-- begin: grid -->
+                  <div
+                    class="max-w-7xl mx-10 px-4 py-4 rounded-lg"
+                    style="border: 1px solid rgb(235, 228, 228)"
+                  >
+                    <!-- Section Header -->
+                    <div class="mb-6">
+                      <h2 class="text-xl font-semibold">Recent Applications</h2>
+                      <p class="text-sm text-gray-500">
+                        Track your latest property applications
+                      </p>
+                    </div>
 
-                    <!-- Cards Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <!-- Property Card 1 -->
+                    <!-- Application List -->
+                    <div class="space-y-4">
+                      <!-- Application Item -->
                       <div
-                        class="border border-gray-200 rounded-lg overflow-hidden"
+                        class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white border rounded-lg shadow-sm p-4 gap-4"
                       >
-                        <!-- Image -->
-                        <div class="relative">
-                          <iframe
-                            src="https://drive.google.com/file/d/1Acj4IK0cvJ2R1ILai7n9VUf1CLViOH1F/preview"
-                            width="640"
-                            height="480"
-                            allow="autoplay"
-                          ></iframe>
-                          <span
-                            class="absolute top-2 right-2 bg-gray-100 text-xs font-semibold px-2 py-1 rounded-full"
-                            >Active</span
-                          >
-                        </div>
-
-                        <!-- Content -->
-                        <div class="p-4">
-                          <h3 class="text-base font-semibold">
-                            Ocean View Apartment
-                          </h3>
-                          <p class="text-sm text-gray-500">
-                            123 Marina Bay, Lagos
-                          </p>
-
-                          <div class="flex justify-between text-sm mt-3">
-                            <p>
-                              <span class="font-semibold">Type</span><br />
-                              Apartment
+                        <!-- Left -->
+                        <div class="flex items-center gap-4">
+                          <img
+                            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop"
+                            alt="Ocean View Apartment"
+                            class="w-20 h-14 object-cover rounded"
+                          />
+                          <div>
+                            <h3 class="font-semibold text-gray-800">
+                              Ocean View Apartment
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                              Applied on 11/15/2024
                             </p>
-                            <p>
-                              <span class="font-semibold">Monthly Fee</span
-                              ><br />
-                              ₦250,000
-                            </p>
-                          </div>
-
-                          <!-- Payment Progress -->
-                          <div class="mt-3">
-                            <p class="text-sm font-medium text-gray-700">
-                              Payment Progress
-                            </p>
-                            <div
-                              class="w-full bg-pink-100 rounded-full h-2 mt-1"
-                              style="background-color: #e0c4d2"
-                            >
-                              <div
-                                class="bg-pink-500 h-2 rounded-full w-1/2"
-                                style="background-color: #ec4899; width: 50%"
-                              ></div>
-                            </div>
-                            <div
-                              class="flex justify-between text-xs text-gray-500 mt-1"
-                            >
-                              <span>Paid: ₦375,000</span>
-                              <span>50%</span>
-                              <span>Outstanding: ₦375,000</span>
+                            <div class="flex items-center gap-2 mt-1">
+                              <span
+                                class="px-2 py-0.5 text-xs rounded bg-yellow-100 text-yellow-700 font-medium"
+                                >Under Review</span
+                              >
+                              <span class="text-sm font-semibold text-gray-700"
+                                >₦15,000,000</span
+                              >
                             </div>
                           </div>
                         </div>
+                        <!-- Right -->
+                        <button
+                          class="flex items-center gap-1 text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-100"
+                        >
+                          <i data-feather="eye" class="w-4 h-4"></i> View
+                        </button>
                       </div>
 
-                      <!-- Property Card 2 -->
+                      <!-- Application Item -->
                       <div
-                        class="border border-gray-200 rounded-lg overflow-hidden"
+                        class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white border rounded-lg shadow-sm p-4 gap-4"
                       >
-                        <!-- Image -->
-                        <div class="relative">
-                          <iframe
-                            src="https://drive.google.com/file/d/175bclNLlpNnQ1Zt7Kz0sWp5DySDAvWiI/preview"
-                            width="640"
-                            height="480"
-                            allow="autoplay"
-                          ></iframe>
-                          <span
-                            class="absolute top-2 right-2 bg-gray-100 text-xs font-semibold px-2 py-1 rounded-full"
-                            >Active</span
-                          >
-                        </div>
-
-                        <!-- Content -->
-                        <div class="p-4">
-                          <h3 class="text-base font-semibold">
-                            Executive Villa
-                          </h3>
-                          <p class="text-sm text-gray-500">
-                            456 Victoria Island, Lagos
-                          </p>
-
-                          <div class="flex justify-between text-sm mt-3">
-                            <p>
-                              <span class="font-semibold">Type</span><br />
-                              Villa
+                        <!-- Left -->
+                        <div class="flex items-center gap-4">
+                          <img
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop"
+                            alt="Garden Terrace"
+                            class="w-20 h-14 object-cover rounded"
+                          />
+                          <div>
+                            <h3 class="font-semibold text-gray-800">
+                              Garden Terrace
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                              Applied on 11/20/2024
                             </p>
-                            <p>
-                              <span class="font-semibold">Monthly Fee</span
-                              ><br />
-                              ₦500,000
-                            </p>
-                          </div>
-
-                          <!-- Payment Progress -->
-                          <div class="mt-3">
-                            <p class="text-sm font-medium text-gray-700">
-                              Payment Progress
-                            </p>
-                            <div
-                              class="w-full bg-pink-100 rounded-full h-2 mt-1"
-                              style="
-                                width: 100%; /* w-full */
-                                background-color: #fce7f3; /* bg-pink-100 */
-                                border-radius: 9999px; /* rounded-full */
-                                height: 0.5rem;
-                              "
-                            >
-                              <div
-                                class="bg-pink-500 h-2 rounded-full w-full"
-                                style="background-color: #ec4899"
-                              ></div>
-                            </div>
-                            <div
-                              class="flex justify-between text-xs text-gray-500 mt-1"
-                            >
-                              <span>Paid: ₦1,500,000</span>
-                              <span>100%</span>
-                              <span>Outstanding: ₦0</span>
+                            <div class="flex items-center gap-2 mt-1">
+                              <span
+                                class="px-2 py-0.5 text-xs rounded bg-green-100 text-green-700 font-medium"
+                                >Approved</span
+                              >
+                              <span class="text-sm font-semibold text-gray-700"
+                                >₦8,500,000</span
+                              >
                             </div>
                           </div>
                         </div>
+                        <!-- Right -->
+                        <button
+                          class="flex items-center gap-1 text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-100"
+                        >
+                          <i data-feather="eye" class="w-4 h-4"></i> View
+                        </button>
+                      </div>
+
+                      <!-- Application Item -->
+                      <div
+                        class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-white border rounded-lg shadow-sm p-4 gap-4"
+                      >
+                        <!-- Left -->
+                        <div class="flex items-center gap-4">
+                          <img
+                            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop"
+                            alt="Executive Villa"
+                            class="w-20 h-14 object-cover rounded"
+                          />
+                          <div>
+                            <h3 class="font-semibold text-gray-800">
+                              Executive Villa
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                              Applied on 10/30/2024
+                            </p>
+                            <div class="flex items-center gap-2 mt-1">
+                              <span
+                                class="px-2 py-0.5 text-xs rounded bg-red-100 text-red-700 font-medium"
+                                >Rejected</span
+                              >
+                              <span class="text-sm font-semibold text-gray-700"
+                                >₦25,000,000</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Right -->
+                        <button
+                          class="flex items-center gap-1 text-sm border border-gray-300 px-3 py-1.5 rounded-lg hover:bg-gray-100"
+                        >
+                          <i data-feather="eye" class="w-4 h-4"></i> View
+                        </button>
                       </div>
                     </div>
                   </div>
+
+                  <!-- end: grid -->
                 </div>
               </div>
               <!-- End of Container -->
@@ -3155,846 +2811,152 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     </div>
     <!-- End of Share Profile Modal -->
     <!-- Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialog"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed; /* fixed */
-          inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
-          width: auto; /* size-auto → width:auto */
-          height: auto; /* size-auto → height:auto */
-          max-height: none; /* max-h-none */
-          max-width: none; /* max-w-none */
-          overflow-y: auto; /* overflow-y-auto */
-          background-color: transparent; /* bg-transparent */
-          backdrop-filter: none; /* backdrop:bg-transparent (no backdrop color) */
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-        >
-        </el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-2xl data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
+    <dialog
+      id="applicationDialog"
+      class="rounded-lg w-full max-w-lg p-0"
+      style="margin-left: 30%"
+    >
+      <div class="bg-white rounded-lg shadow-xl">
+        <!-- Header -->
+        <div class="flex items-center justify-between border-b px-6 py-4">
+          <h2 class="text-lg font-semibold text-gray-900">
+            Apply for Ocean View Apartment
+          </h2>
+          <button
+            onclick="document.getElementById('applicationDialog').close()"
+            class="text-gray-400 hover:text-gray-600"
           >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4 my-header"
-            >
-              <h3my-panel
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem; /* text-lg → 18px */
-                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
-                  font-weight: 600; /* font-semibold */
-                  color: #111827;
-                "
-              >
-                Invoice Details
-              </h3my-panel>
-              <button
-                command="close"
-                commandfor="invoiceDialog"
-                class="text-gray-400 hover:text-gray-600 my-link"
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div class="px-6 py-4 space-y-4 my-section">
-              <p
-                class="text-sm text-gray-500"
-                style="
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem; /* Tailwind's default for text-sm */
-                  color: #6b7280;
-                "
-              >
-                Invoice INV-001 for Ocean View Apartment
-              </p>
-
-              <div
-                class="grid grid-cols-2 gap-4 text-sm"
-                style="
-                  display: grid; /* grid */
-                  grid-template-columns: repeat(
-                    2,
-                    minmax(0, 1fr)
-                  ); /* grid-cols-2 */
-                  gap: 1rem; /* gap-4 → 16px */
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem;
-                "
-              >
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Invoice ID
-                  </p>
-                  <p class="text-gray-900" style="color: #111827">INV-001</p>
-                </div>
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Status
-                  </p>
-                  <p
-                    class="text-yellow-600 font-semibold"
-                    style="
-                      color: #ca8a04; /* text-yellow-600 */
-                      font-weight: 600;
-                    "
-                  >
-                    Partially Paid
-                  </p>
-                </div>
-                <div>
-                  <p
-                    class="font-medium text-gray-600"
-                    style="font-weight: 500; /* font-medium */ color: #4b5563"
-                  >
-                    Issue Date
-                  </p>
-                  <p class="text-gray-900" style="color: #111827">9/1/2024</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Due Date</p>
-                  <p class="text-gray-900">9/30/2024</p>
-                </div>
-              </div>
-
-              <hr class="border-gray-200" />
-
-              <div>
-                <p class="font-medium text-gray-700">Description</p>
-                <p class="text-sm text-gray-500">
-                  Monthly Service Charge - September 2024
-                </p>
-              </div>
-
-              <div class="space-y-2 text-sm">
-                <div class="flex justify-between">
-                  <span>Service Charge</span>
-                  <span class="font-medium">₦200,000</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Security Fee</span>
-                  <span class="font-medium">₦30,000</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>Maintenance Fee</span>
-                  <span class="font-medium">₦20,000</span>
-                </div>
-              </div>
-
-              <hr class="border-gray-200" />
-
-              <div class="flex justify-between font-semibold text-gray-900">
-                <span>Total Amount</span>
-                <span>₦250,000</span>
-              </div>
-
-              <div class="flex justify-between text-sm">
-                <span class="text-green-600 font-semibold">Paid Amount</span>
-                <span class="text-green-600 font-semibold">₦125,000</span>
-              </div>
-              <div class="flex justify-between text-sm">
-                <span class="text-red-600 font-semibold">Remaining Amount</span>
-                <span class="text-red-600 font-semibold">₦125,000</span>
-              </div>
-
-              <div class="pt-2">
-                <div class="flex justify-between text-xs text-gray-600 mb-1">
-                  <span>Payment Progress</span>
-                  <span>50%</span>
-                </div>
-                <div
-                  class="w-full bg-gray-200 h-2"
-                  style="
-                    width: 100%; /* w-full */
-                    background-color: #e5e7eb;
-                    border-radius: 9999px; /* rounded-full */
-                    height: 0.5rem;
-                  "
-                >
-                  <div
-                    class="bg-red-500 h-2 rounded-full w-1/2"
-                    style="
-                      background-color: #ec4899; /* bg-red-500 */
-                      height: 0.5rem; /* h-2 */
-                      border-radius: 9999px; /* rounded-full */
-                      width: 50%;
-                    "
-                  ></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
-              <button
-                command="close"
-                commandfor="invoiceDialog"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                Close
-              </button>
-              <button
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                Download
-              </button>
-              <button
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
-                History
-              </button>
-              <button class="my-danger-btn">Make Payment</button>
-            </div>
-          </el-dialog-panel>
+            ✕
+          </button>
         </div>
-      </dialog>
-    </el-dialog>
+
+        <!-- Body -->
+        <div class="px-6 py-4 space-y-4">
+          <p class="text-sm text-gray-500">
+            Fill out this application to express your interest in purchasing
+            this property
+          </p>
+
+          <!-- Property Details Card -->
+          <div
+            class="bg-gray-50 p-4 rounded-md border text-sm grid grid-cols-2 gap-4"
+          >
+            <div>
+              <p class="font-medium text-gray-700">Price:</p>
+              <p class="text-gray-900">₦15,000,000</p>
+            </div>
+            <div>
+              <p class="font-medium text-gray-700">Min. Down Payment:</p>
+              <p class="text-gray-900">₦3,000,000</p>
+            </div>
+          </div>
+
+          <!-- Form Inputs -->
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Preferred Payment Plan -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Preferred Payment Plan *</label
+              >
+              <select
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              >
+                <option>Select payment plan</option>
+                <option>Full Payment</option>
+                <option>Monthly Installments</option>
+                <option>Quarterly Installments</option>
+              </select>
+            </div>
+
+            <!-- Down Payment -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Down Payment Amount *</label
+              >
+              <input
+                type="number"
+                placeholder="Min. ₦3,000,000"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <!-- Monthly Income -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Monthly Income *</label
+              >
+              <input
+                type="number"
+                placeholder="Your monthly income"
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <!-- Preferred Call Time -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Preferred Call Time</label
+              >
+              <select
+                class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+              >
+                <option>Select time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Additional Notes -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700"
+              >Additional Notes</label
+            >
+            <textarea
+              placeholder="Any additional information or special requests..."
+              class="mt-1 w-full border rounded-md px-3 py-2 text-sm focus:ring-blue-500 focus:border-blue-500"
+            ></textarea>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="flex items-start gap-2">
+            <input type="checkbox" class="mt-1" />
+            <span class="text-sm text-gray-600">
+              I agree to the terms and conditions and authorize Promiseland
+              Properties to process my application and contact me regarding this
+              property purchase.
+            </span>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
+          <button
+            onclick="document.getElementById('applicationDialog').close()"
+            class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          >
+            Cancel
+          </button>
+          <button
+            class="rounded-md bg-blue-700 text-white px-4 py-2 text-sm hover:bg-blue-800"
+          >
+            Submit Application
+          </button>
+        </div>
+      </div>
+    </dialog>
+
     <!-- End of Modal -->
     <!-- Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialoggg"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed;
-          inset: 0;
-          width: auto;
-          height: auto;
-          max-height: none;
-          max-width: none;
-          overflow-y: auto;
-          background-color: transparent;
-          backdrop-filter: none;
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-        >
-        </el-dialog-backdrop>
 
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95 my-panel"
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4"
-              style="
-                display: flex;
-                align-items: center; /* items-center */
-                justify-content: space-between; /* justify-between */
-                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <h3
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem; /* text-lg → 18px */
-                  line-height: 1.75rem; /* Tailwind's line-height for text-lg */
-                  font-weight: 600; /* font-semibold */
-                  color: #111827;
-                "
-              >
-                Make Payment
-              </h3>
-              <button
-                command="close"
-                commandfor="invoiceDialoggg"
-                class="text-gray-400 hover:text-gray-600"
-                style="
-                  color: #9ca3af; /* text-gray-400 */
-                  transition: color 0.2s ease-in-out; /* smooth hover effect */
-                "
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-4"
-              style="
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-              "
-            >
-              <!-- Invoice summary -->
-              <div
-                class="bg-gray-50 rounded-md p-4 grid grid-cols-2 gap-4 text-sm"
-                style="
-                  background-color: #f9fafb;
-                  border-radius: 0.375rem;
-                  padding: 1rem;
-                  display: grid;
-                  grid-template-columns: repeat(2, minmax(0, 1fr));
-                  gap: 1rem;
-                  font-size: 0.875rem;
-                  line-height: 1.25rem;
-                "
-              >
-                <div>
-                  <p class="font-medium text-gray-600">Invoice Amount</p>
-                  <p class="font-semibold text-gray-900">₦250,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Paid Amount</p>
-                  <p class="font-semibold text-green-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Remaining Amount</p>
-                  <p class="font-semibold text-red-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-medium text-gray-600">Progress</p>
-                  <p class="font-semibold text-gray-900">50% paid</p>
-                </div>
-              </div>
-
-              <!-- Progress bar -->
-              <div class="pt-2">
-                <div class="w-full bg-gray-200 h-2 rounded-full">
-                  <div
-                    class="bg-green-500 h-2 rounded-full"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Payment Amount -->
-              <div>
-                <label class="font-medium text-gray-700"
-                  >Payment Amount (₦)</label
-                >
-                <input
-                  type="number"
-                  placeholder="Enter amount (Max: ₦125,000)"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
-                  style="max-width: 100%"
-                />
-                <div class="flex gap-2 mt-2">
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    25%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    50%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    75%
-                  </button>
-                  <button class="px-3 py-1 text-sm rounded-md border">
-                    Full
-                  </button>
-                </div>
-              </div>
-
-              <!-- Payment Method -->
-              <div>
-                <p class="font-medium text-gray-700">Payment Method</p>
-                <div class="mt-1 flex items-center gap-2">
-                  <input type="radio" name="payment-method" />
-                  <span>Card Payment</span>
-                </div>
-              </div>
-
-              <!-- Notes -->
-              <div>
-                <p class="font-medium text-gray-700">Notes (Optional)</p>
-                <textarea
-                  placeholder="Add any payment notes..."
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"
-                ></textarea>
-              </div>
-
-              <!-- Secure payment notice -->
-              <div
-                class="border border-blue-200 bg-blue-50 rounded-md p-3 text-xs text-blue-700"
-              >
-                <strong>Secure Payment:</strong> Your payment will be processed
-                securely. You’ll receive a confirmation receipt via email.
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4">
-              <button
-                command="close"
-                commandfor="invoiceDialoggg"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  border: 1px solid #d1d5db; /* border-gray-300 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  color: #374151; /* text-gray-700 */
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Cancel
-              </button>
-              <button
-                class="rounded-md bg-red-600 text-white px-3 py-2 text-sm font-medium hover:bg-red-700"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  background-color: #dc2626; /* bg-red-600 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  font-weight: 500; /* font-medium */
-                  color: #ffffff; /* text-white */
-                  cursor: pointer;
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Pay ₦0
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-
-    <!-- End of Modal -->
-    <el-dialog>
-      <dialog
-        id="invoiceDialogggg"
-        aria-labelledby="invoice-title"
-        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
-        style="
-          position: fixed;
-          inset: 0;
-          width: auto;
-          height: auto;
-          max-height: none;
-          max-width: none;
-          overflow-y: auto;
-          background-color: transparent;
-          backdrop-filter: none;
-          z-index: 50;
-        "
-      >
-        <!-- Backdrop -->
-        <el-dialog-backdrop
-          class="fixed inset-0 bg-black/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in my-backdrop"
-          style="
-            position: fixed; /* fixed */
-            inset: 0; /* inset-0 (top:0; right:0; bottom:0; left:0) */
-            background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
-            transition: opacity 0.3s ease-out; /* smooth fade-in/out */
-            opacity: 1; /* fully visible by default */
-          "
-        ></el-dialog-backdrop>
-
-        <!-- Modal Content -->
-        <div
-          tabindex="0"
-          class="flex min-h-full items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 my-container"
-          style="
-            display: flex; /* flex */
-            min-height: 100%; /* min-h-full */
-            align-items: flex-end; /* items-end */
-            justify-content: center; /* justify-center */
-            padding: 1rem; /* p-4 → 16px */
-            text-align: center; /* text-center */
-            outline: none; /* focus:outline-none */
-          "
-        >
-          <el-dialog-panel
-            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl"
-            style="
-              position: relative; /* relative */
-              transform: translateY(0) scale(1); /* initial state */
-              overflow: hidden; /* overflow-hidden */
-              border-radius: 0.5rem; /* rounded-lg */
-              background-color: #ffffff; /* bg-white */
-              text-align: left; /* text-left */
-              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-                0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
-              transition: all 0.3s ease-out; /* smooth transition */
-              margin-top: 2rem; /* sm:my-8 → margin vertical on small screens */
-              margin-bottom: 2rem;
-              width: 100%; /* sm:w-full */
-              max-width: 32rem; /* sm:max-w-2xl → max-width: 768px */
-            "
-          >
-            <!-- Header -->
-            <div
-              class="flex items-center justify-between border-b px-6 py-4"
-              style="
-                display: flex;
-                align-items: center; /* items-center */
-                justify-content: space-between; /* justify-between */
-                border-bottom: 1px solid #e5e7eb; /* border-b (light gray) */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <h3
-                id="invoice-title"
-                class="text-lg font-semibold text-gray-900"
-                style="
-                  font-size: 1.125rem;
-                  line-height: 1.75rem;
-                  font-weight: 600;
-                  color: #111827;
-                "
-              >
-                Payment History
-              </h3>
-              <button
-                command="close"
-                commandfor="invoiceDialogggg"
-                class="text-gray-400 hover:text-gray-600"
-                style="
-                  color: #9ca3af; /* text-gray-400 */
-                  transition: color 0.2s ease-in-out; /* smooth hover effect */
-                "
-              >
-                ✕
-              </button>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="px-6 py-4 space-y-4"
-              style="
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem; /* space-y-4 → vertical spacing */
-              "
-            >
-              <p
-                class="text-sm text-gray-500"
-                style="
-                  font-size: 0.875rem; /* text-sm → 14px */
-                  line-height: 1.25rem; /* Tailwind's default for text-sm */
-                  color: #6b7280;
-                "
-              >
-                All payments for invoice INV-001
-              </p>
-
-              <!-- Summary -->
-              <div class="grid grid-cols-3 gap-4 text-center text-sm">
-                <div>
-                  <p class="font-semibold text-gray-900">Total Invoice</p>
-                  <p class="font-bold text-black">₦250,000</p>
-                </div>
-                <div>
-                  <p class="font-semibold text-gray-900">Total Paid</p>
-                  <p class="font-bold text-green-600">₦125,000</p>
-                </div>
-                <div>
-                  <p class="font-semibold text-gray-900">Balance Due</p>
-                  <p class="font-bold text-red-600">₦125,000</p>
-                </div>
-              </div>
-
-              <!-- Progress bar -->
-              <div class="pt-2" style="padding-top: 0.5rem; /* pt-2 */">
-                <div
-                  class="flex justify-between text-xs text-gray-600 mb-1"
-                  style="margin-bottom: 0.25rem; /* mb-1 */"
-                >
-                  <span>50% completed</span>
-                </div>
-                <div class="w-full bg-gray-200 h-2 rounded-full">
-                  <div
-                    class="bg-red-500 h-2 rounded-full"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-
-              <!-- Payment Record -->
-              <div
-                class="border rounded-lg p-4 flex justify-between items-center"
-                style="
-                  border: 1px solid #e5e7eb; /* light gray border */
-                  border-radius: 0.375rem; /* rounded-lg */
-                  padding: 1rem; /* p-4 */
-                  display: flex; /* flex */
-                  justify-content: space-between; /* justify-between */
-                  align-items: center; /* items-center */
-                "
-              >
-                <div>
-                  <p class="font-semibold">
-                    PAY-002
-                    <span
-                      class="bg-red-100 text-red-600 text-xs font-medium px-2 py-1 rounded-full ml-2"
-                      style="
-                        background-color: #fee2e2; /* bg-red-100 */
-                        color: #dc2626; /* text-red-600 */
-                        font-size: 0.75rem; /* text-xs */
-                        font-weight: 500; /* font-medium */
-                        padding: 0.25rem 0.5rem; /* px-2 py-1 */
-                        border-radius: 9999px; /* rounded-full */
-                        margin-left: 0.5rem; /* ml-2 */
-                      "
-                    >
-                      Completed
-                    </span>
-                  </p>
-                  <p class="text-sm text-gray-600">Method: Bank Transfer</p>
-                  <p class="text-xs text-gray-400">Reference: REF-987654321</p>
-                </div>
-                <div class="text-right">
-                  <p class="text-green-600 font-bold">₦125,000</p>
-                  <p class="text-xs text-gray-500">9/15/2024</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <div
-              class="flex justify-end gap-2 border-t bg-gray-50 px-6 py-4"
-              style="
-                display: flex; /* flex */
-                justify-content: flex-end; /* justify-end */
-                gap: 0.5rem; /* gap-2 → 8px */
-                border-top: 1px solid #e5e7eb; /* border-t */
-                background-color: #f9fafb; /* bg-gray-50 */
-                padding-left: 1.5rem; /* px-6 → 24px */
-                padding-right: 1.5rem;
-                padding-top: 1rem; /* py-4 → 16px */
-                padding-bottom: 1rem;
-              "
-            >
-              <button
-                command="close"
-                commandfor="invoiceDialogggg"
-                class="rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  border: 1px solid #d1d5db; /* border-gray-300 */
-                  padding: 0.5rem 0.75rem; /* px-3 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  color: #374151; /* text-gray-700 */
-                  transition: background-color 0.2s ease;
-                "
-              >
-                Close
-              </button>
-              <button
-                class="rounded-md bg-pink-600 text-white px-4 py-2 text-sm font-medium hover:bg-pink-700 flex items-center gap-1"
-                style="
-                  border-radius: 0.375rem; /* rounded-md */
-                  background-color: #ec4899; /* bg-red-500 */
-                  padding: 0.5rem 1rem; /* px-4 py-2 */
-                  font-size: 0.875rem; /* text-sm */
-                  font-weight: 500; /* font-medium */
-                  color: #ffffff; /* text-white */
-                  cursor: pointer;
-                  transition: background-color 0.2s ease;
-                  display: flex; /* flex */
-                  align-items: center; /* items-center */
-                  gap: 0.25rem; /* gap-1 → 4px */
-                "
-                command="show-modal"
-                commandfor="invoiceDialoggg"
-              >
-                <span>＋</span> Make Payment
-              </button>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
     <!-- End of Modal -->
 
     <!-- Styles -->
 
-    <style>
-      .my-danger-btn {
-        border-radius: 0.375rem; /* rounded-md */
-        background-color: #ec4899; /* bg-red-500 */
-        padding: 0.5rem 0.75rem; /* px-3 py-2 */
-        font-size: 0.875rem; /* text-sm */
-        font-weight: 600; /* font-semibold */
-        color: #ffffff; /* text-white */
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-
-      .my-danger-btn:hover {
-        background-color: #f87171; /* hover:bg-red-400 */
-      }
-
-      .my-section {
-        padding-left: 1.5rem; /* px-6 → 24px */
-        padding-right: 1.5rem;
-        padding-top: 1rem; /* py-4 → 16px */
-        padding-bottom: 1rem;
-      }
-
-      /* space-y-4 → adds vertical spacing between children */
-      .my-section > * + * {
-        margin-top: 1rem; /* 16px */
-      }
-
-      .my-link {
-        color: #9ca3af; /* text-gray-400 */
-        transition: color 0.2s ease-in-out; /* smooth hover effect */
-      }
-
-      .my-link:hover {
-        color: #4b5563; /* text-gray-600 */
-      }
-
-      .my-backdrop {
-        position: fixed; /* fixed */
-        inset: 0; /* inset-0 → top:0; right:0; bottom:0; left:0 */
-        background-color: rgba(0, 0, 0, 0.5); /* bg-black/50 */
-        transition-property: opacity; /* transition-opacity */
-        transition-duration: 150ms; /* default Tailwind duration */
-        transition-timing-function: ease-in-out; /* default easing */
-      }
-
-      /* State when dialog is closed */
-      .my-backdrop[data-closed] {
-        opacity: 0; /* data-closed:opacity-0 */
-      }
-
-      /* Enter transition */
-      .my-backdrop[data-enter] {
-        transition-duration: 300ms; /* data-enter:duration-300 */
-        transition-timing-function: ease-out; /* data-enter:ease-out */
-      }
-
-      /* Leave transition */
-      .my-backdrop[data-leave] {
-        transition-duration: 200ms; /* data-leave:duration-200 */
-        transition-timing-function: ease-in; /* data-leave:ease-in */
-      }
-
-      .my-container {
-        display: flex; /* flex */
-        min-height: 100%; /* min-h-full */
-        align-items: flex-end; /* items-end */
-        justify-content: center; /* justify-center */
-        padding: 1rem; /* p-4 */
-        text-align: center; /* text-center */
-        outline: none; /* focus:outline-none */
-      }
-
-      /* Small screens and up (sm:) */
-      @media (min-width: 640px) {
-        .my-container {
-          align-items: center; /* sm:items-center */
-          padding: 0; /* sm:p-0 */
-        }
-      }
-      .my-panel {
-        position: relative; /* relative */
-        transform: translate(0, 0); /* transform (baseline) */
-        overflow: hidden; /* overflow-hidden */
-        border-radius: 0.5rem; /* rounded-lg (8px radius) */
-        background-color: #ffffff; /* bg-white */
-        text-align: left; /* text-left */
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
-        transition-property: all; /* transition-all */
-        transition-duration: 150ms; /* default Tailwind duration */
-        transition-timing-function: ease-in-out; /* default ease */
-        opacity: 1; /* default visible */
-        margin: 0; /* reset */
-      }
-
-      /* Closed state */
-      .my-panel[data-closed] {
-        transform: translateY(1rem); /* data-closed:translate-y-4 (16px down) */
-        opacity: 0; /* data-closed:opacity-0 */
-      }
-
-      @media (min-width: 640px) {
-        .my-panel {
-          margin-top: 2rem; /* sm:my-8 (32px vertical margin) */
-          margin-bottom: 2rem;
-          width: 100%; /* sm:w-full */
-          max-width: 42rem; /* sm:max-w-2xl (672px) */
-        }
-
-        .my-panel[data-closed] {
-          transform: translateY(0) scale(0.95);
-          /* data-closed:sm:translate-y-0 + data-closed:sm:scale-95 */
-        }
-      }
-
-      /* Enter transition */
-      .my-panel[data-enter] {
-        transition-duration: 300ms; /* data-enter:duration-300 */
-        transition-timing-function: ease-out; /* data-enter:ease-out */
-      }
-
-      /* Leave transition */
-      .my-panel[data-leave] {
-        transition-duration: 200ms; /* data-leave:duration-200 */
-        transition-timing-function: ease-in; /* data-leave:ease-in */
-      }
-      .my-header {
-        display: flex; /* flex */
-        align-items: center; /* items-center */
-        justify-content: space-between; /* justify-between */
-        border-bottom: 1px solid #e5e7eb; /* border-b (Tailwind gray-200 default) */
-        padding-left: 1.5rem; /* px-6 → 24px */
-        padding-right: 1.5rem;
-        padding-top: 1rem; /* py-4 → 16px */
-        padding-bottom: 1rem;
-      }
-      .my-rounded-btn {
-        border-radius: 0.375rem; /* rounded-md */
-        border: 1px solid #d1d5db; /* border-gray-300 */
-        padding: 0.5rem 0.75rem; /* px-3 py-2 */
-        font-size: 0.875rem; /* text-sm */
-        color: #374151; /* text-gray-700 */
-        background-color: transparent;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-
-      .my-rounded-btn:hover {
-        background-color: #f3f4f6; /* hover:bg-gray-100 */
-      }
-    </style>
+    <script>
+      feather.replace();
+    </script>
     <!-- End of Page -->
     <!-- Scripts -->
     <script src="static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
