@@ -67,7 +67,7 @@ const sideHtml = `<div
                   <span
                     class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
                   >
-                    Receivables
+                    Properties
                   </span>
                 </a>
               </div>
@@ -83,9 +83,9 @@ const sideHtml = `<div
 
                   </span>
                   <span
-                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium text-center"
                   >
-                    Approvals
+                    Sales Analytics
                   </span>
                 </a>
               </div>
