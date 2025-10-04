@@ -1,0 +1,742 @@
+<!--
+Product: Metronic is a toolkit of UI components built with Tailwind CSS for developing scalable web applications quickly and efficiently
+Version: v9.2.7
+Author: Keenthemes
+Contact: support@keenthemes.com
+Website: https://www.keenthemes.com
+Support: https://devs.keenthemes.com
+Follow: https://www.twitter.com/keenthemes
+License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
+-->
+<!DOCTYPE html>
+<html
+  class="h-full"
+  data-kt-theme="true"
+  data-kt-theme-mode="light"
+  dir="ltr"
+  lang="en"
+>
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/card by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:38:38 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <title>Promiseland</title>
+    <meta charset="utf-8" />
+    <meta content="follow, index" name="robots" />
+    <link href="card.html" rel="canonical" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <meta
+      content="Campaigns in card layout, using Tailwind CSS"
+      name="description"
+    />
+    <meta content="@keenthemes" name="twitter:site" />
+    <meta content="@keenthemes" name="twitter:creator" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="Metronic - Tailwind CSS Campaigns - Card"
+      name="twitter:title"
+    />
+    <meta
+      content="Campaigns in card layout, using Tailwind CSS"
+      name="twitter:description"
+    />
+    <meta
+      content="/static/metronic/tailwind/dist/assets/media/app/og-image.png"
+      name="twitter:image"
+    />
+    <meta
+      content="https://keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/card"
+      property="og:url"
+    />
+    <meta content="en_US" property="og:locale" />
+    <meta content="website" property="og:type" />
+    <meta content="@keenthemes" property="og:site_name" />
+    <meta
+      content="Metronic - Tailwind CSS Campaigns - Card"
+      property="og:title"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/metronic/tailwind/dist/assets/vendors/keenicons/styles.bundle.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/metronic/tailwind/dist/assets/css/styles.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <script src="static/metronic/tailwind/dist/assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-52YZ3XGZJ6"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-52YZ3XGZJ6");
+    </script>
+  </head>
+  <body
+    class="antialiased flex h-full text-base text-foreground bg-background [--header-height:60px] [--sidebar-width:90px] bg-muted"
+  >
+    <!-- Theme Mode -->
+    <script>
+      const defaultThemeMode = "light"; // light|dark|system
+      let themeMode;
+
+      if (document.documentElement) {
+        if (localStorage.getItem("kt-theme")) {
+          themeMode = localStorage.getItem("kt-theme");
+        } else if (
+          document.documentElement.hasAttribute("data-kt-theme-mode")
+        ) {
+          themeMode =
+            document.documentElement.getAttribute("data-kt-theme-mode");
+        } else {
+          themeMode = defaultThemeMode;
+        }
+
+        if (themeMode === "system") {
+          themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        document.documentElement.classList.add(themeMode);
+      }
+    </script>
+    <!-- End of Theme Mode -->
+    <!-- Page -->
+    <!-- Base -->
+    <div class="flex grow">
+      <!-- Header -->
+      <header
+        class="flex lg:hidden items-center fixed z-10 top-0 start-0 end-0 shrink-0 bg-muted h-(--header-height)"
+        id="header"
+      >
+        <!-- Container -->
+        <div
+          class="kt-container-fixed flex items-center justify-between flex-wrap gap-3"
+        >
+          <a href="index.html">
+            <img
+              class="dark:hidden min-h-[30px]"
+              src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-gray.svg"
+            />
+            <img
+              class="hidden dark:block min-h-[30px]"
+              src="https://keenthemes.com/static/metronic/tailwind/dist/assets/media/app/mini-logo-gray-dark.svg"
+            />
+          </a>
+          <button
+            class="kt-btn kt-btn-icon kt-btn-ghost -me-1"
+            data-kt-drawer-toggle="#sidebar"
+          >
+            <i class="ki-filled ki-menu"> </i>
+          </button>
+        </div>
+        <!-- End of Container -->
+      </header>
+      <!-- End of Header -->
+      <!-- Wrapper -->
+      <div class="flex flex-col lg:flex-row grow pt-(--header-height) lg:pt-0">
+        <!-- Sidebar -->
+        <div id="sideHtmll"></div>
+        <!-- End of Sidebar -->
+        <!-- Main -->
+        <div
+          class="flex flex-col grow rounded-xl bg-background border border-input lg:ms-(--sidebar-width) mt-0 lg:mt-5 m-5"
+        >
+          <div
+            class="flex flex-col grow kt-scrollable-y-auto lg:[--scrollbar-width:auto] pt-5"
+            id="scrollable_content"
+          >
+            <main class="grow" role="content">
+              <!-- Toolbar -->
+              <div class="pb-5" style="margin-left: 5%">
+                <!-- Container -->
+                <div
+                  class="kt-container-fixed flex items-center justify-between flex-wrap gap-3 max-w-6xl mx-11"
+                >
+                  <div class="flex items-center flex-wrap gap-1 lg:gap-5">
+                    <h2 class="text-lg font-semibold text-gray-700">
+                      Property Applications
+                      <p class="text-sm mt-3 text-gray-500">
+                        Review and manage all buyer applications
+                      </p>
+                    </h2>
+                  </div>
+                  <div class="flex items-center flex-wrap gap-1.5 lg:gap-2.5">
+                    <!-- Search -->
+                    <button
+                      class="group kt-btn kt-btn-ghost kt-btn-icon size-9 hover:bg-primary/10 hover:[&amp;_i]:text-primary"
+                      data-kt-modal-toggle="#search_modal"
+                    >
+                      <i
+                        class="ki-filled ki-magnifier text-lg group-hover:text-primary"
+                      >
+                      </i>
+                    </button>
+
+                    <select
+                      id="status"
+                      name="status"
+                      class="block rounded-md border-0 bg-white text-sm px-6 text-gray-700 shadow-sm focus:border-0 focus:ring-0 focus:ring-0 focus:ring-0 Active:border-0"
+                      style=""
+                    >
+                      <option>All Status</option>
+                      <option>Pending</option>
+                      <option>Partially paid</option>
+                      <option>Overdue</option>
+                      <option>paid</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End of Container -->
+              </div>
+              <!-- End of Toolbar -->
+
+              <!-- Container -->
+
+              <!-- End of Container -->
+              <!-- Container -->
+              <div class="kt-container-fixed">
+                <!-- begin: works -->
+
+                <div
+                  class="lg:col-span-1 grid xl:grid-cols-4 gap-5 lg:gap-7.5 items-stretch mb-5 lg:mb-7.5 lg:mt-5 lg:mb-0 max-w-6xl mx-11"
+                >
+                  <!-- Buyers & Tenants -->
+                  <div
+                    class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    style="border: 1px solid gainsboro"
+                  >
+                    <div class="flex justify-between items-start">
+                      <h2 class="text-gray-700 font-medium">Pending</h2>
+                      <i
+                        class="fi fi-rr-alarm-exclamation text-red-600 text-2xl"
+                      ></i>
+                    </div>
+                    <div class="mt-">
+                      <p class="text-2xl font-bold text-blue-600">1</p>
+                    </div>
+                  </div>
+
+                  <!-- Revenue Collected -->
+                  <div
+                    class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    style="border: 1px solid gainsboro"
+                  >
+                    <div class="flex justify-between items-start">
+                      <h2 class="text-gray-700 font-medium">Partially Paid</h2>
+                      <i
+                        class="fi fi-rr-time-quarter-past text-yellow-600 text-2xl"
+                      ></i>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-2xl font-bold text-green-600">3</p>
+                    </div>
+                  </div>
+
+                  <!-- Pending Collections -->
+                  <div
+                    class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    style="border: 1px solid gainsboro"
+                  >
+                    <div class="flex justify-between items-start">
+                      <h2 class="text-gray-700 font-medium">Overdue</h2>
+                      <i
+                        class="fi fi-rr-check-circle text-green-600 text-2xl"
+                      ></i>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-2xl font-bold text-yellow-600">0</p>
+                    </div>
+                  </div>
+                  <!-- lastcard -->
+                  <div
+                    class="bg-white rounded-2xl shadow-sm p-5 flex flex-col justify-between"
+                    style="border: 1px solid gainsboro"
+                  >
+                    <div class="flex justify-between items-start">
+                      <h2 class="text-gray-700 font-medium">paid</h2>
+                      <i
+                        class="fi fi-rr-alarm-exclamation text-red-600"
+                        style="color: #dc2626"
+                      ></i>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-2xl font-bold text-yellow-600">1</p>
+                    </div>
+                  </div>
+                  <!-- last card -->
+                </div>
+
+                <!-- Invoice List -->
+                <div class="max-w-7xl mx-11 bg-white p-6 rounded-lg shadow-sm">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      margin-bottom: 20px;
+                    "
+                  >
+                    <div>
+                      <h2 class="text-xl font-semibold text-gray-800 mb-3">
+                        Applications
+                      </h2>
+                      <p class="text-sm text-gray-500">2 applications found</p>
+                    </div>
+                  </div>
+                  <!-- Card 1 -->
+                  <div
+                    class="bg-white border rounded-lg p-4 mb-5 shadow-sm hover:shadow-md transition"
+                  >
+                    <div
+                      class="flex flex-col md:flex-row md:items-start md:justify-between"
+                    >
+                      <!-- Left section -->
+                      <div class="flex flex-col md:flex-row gap-4">
+                        <!-- Image -->
+                        <div class="relative">
+                          <img
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Property"
+                            class="w-full md:w-48 h-32 object-cover rounded-lg"
+                          />
+                          <span
+                            class="absolute top-2 left-2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded"
+                          >
+                            Pending
+                          </span>
+                        </div>
+
+                        <!-- Info -->
+                        <div>
+                          <h3 class="text-lg font-semibold text-gray-800">
+                            Ocean View Apartment
+                          </h3>
+                          <p class="text-sm text-gray-500">APP-2024-001</p>
+
+                          <div class="mt-3 space-y-1 text-sm text-gray-700">
+                            <div class="flex items-center gap-2">
+                              <i class="fi fi-rr-user text-blue-600"></i>
+                              <span class="font-medium">John Adebayo</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                              <i class="fi fi-rr-phone-call text-green-600"></i>
+                              <span>+234 802 123 4567</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                              <i class="fi fi-rr-envelope text-gray-500"></i>
+                              <span>john.adebayo@email.com</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                              <i class="fi fi-rr-calendar text-gray-500"></i>
+                              <span>Applied: 10/5/2024</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Price -->
+                      <div class="mt-4 md:mt-0 text-right">
+                        <p class="text-lg font-bold text-gray-800">
+                          ₦15,000,000
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Payment Info -->
+                    <div
+                      class="mt-4 bg-gray-100 rounded-lg p-3 grid grid-cols-1 md:grid-cols-3 text-sm text-gray-700"
+                    >
+                      <div>
+                        <span class="block text-gray-500">Payment Plan</span>
+                        <span class="font-medium">Monthly Installments</span>
+                      </div>
+                      <div>
+                        <span class="block text-gray-500">Down Payment</span>
+                        <span class="font-medium">₦3,000,000</span>
+                      </div>
+                      <div>
+                        <span class="block text-gray-500">Monthly Income</span>
+                        <span class="font-medium">₦600,000</span>
+                      </div>
+                    </div>
+
+                    <!-- Notes -->
+                    <div class="mt-3 text-sm text-gray-700">
+                      <span class="block font-medium text-gray-600 mb-1"
+                        >Applicant Notes:</span
+                      >
+                      <p>
+                        Very interested in this property. Please process
+                        quickly.
+                      </p>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap gap-3">
+                      <button
+                        class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 text-sm font-medium"
+                        onclick="document.getElementById('viewApplicationDialog').showModal()"
+                      >
+                        👁️ View Details
+                      </button>
+                      <button
+                        class="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-medium"
+                      >
+                        ✅ Approve
+                      </button>
+                      <button
+                        class="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 text-sm font-medium"
+                      >
+                        ❌ Reject
+                      </button>
+                      <button
+                        class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 text-sm font-medium"
+                      >
+                        ☎️ Contact Buyer
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div
+                    class="bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition"
+                  >
+                    <div
+                      class="flex flex-col md:flex-row md:items-start md:justify-between"
+                    >
+                      <!-- Left section -->
+                      <div class="flex flex-col md:flex-row gap-4">
+                        <!-- Image -->
+                        <div class="relative">
+                          <img
+                            src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Property"
+                            class="w-full md:w-48 h-32 object-cover rounded-lg"
+                          />
+                          <span
+                            class="absolute top-2 left-2 bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded"
+                          >
+                            Approved
+                          </span>
+                        </div>
+
+                        <!-- Info -->
+                        <div>
+                          <h3 class="text-lg font-semibold text-gray-800">
+                            Executive Villa
+                          </h3>
+                          <p class="text-sm text-gray-500">APP-2024-002</p>
+
+                          <div class="mt-3 space-y-1 text-sm text-gray-700">
+                            <div class="flex items-center gap-2">
+                              <span class="font-medium">Sarah Okafor</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                              <span>+234 803 987 6543</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                              <span>sarah.okafor@email.com</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                              <span>Applied: 10/4/2024</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Price -->
+                      <div class="mt-4 md:mt-0 text-right">
+                        <p class="text-lg font-bold text-gray-800">
+                          ₦25,000,000
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Payment Info -->
+                    <div
+                      class="mt-4 bg-gray-100 rounded-lg p-3 grid grid-cols-1 md:grid-cols-3 text-sm text-gray-700"
+                    >
+                      <div>
+                        <span class="block text-gray-500">Payment Plan</span>
+                        <span class="font-medium">Full Payment</span>
+                      </div>
+                      <div>
+                        <span class="block text-gray-500">Down Payment</span>
+                        <span class="font-medium">₦25,000,000</span>
+                      </div>
+                      <div>
+                        <span class="block text-gray-500">Monthly Income</span>
+                        <span class="font-medium">₦800,000</span>
+                      </div>
+                    </div>
+
+                    <!-- Notes -->
+                    <div class="mt-3 text-sm text-gray-700">
+                      <span class="block font-medium text-gray-600 mb-1"
+                        >Applicant Notes:</span
+                      >
+                      <p>Ready for immediate purchase.</p>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap gap-3">
+                      <button
+                        class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 text-sm font-medium"
+                        onclick="document.getElementById('viewApplicationDialog').showModal()"
+                      >
+                        👁️ View Details
+                      </button>
+                      <button
+                        class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 text-sm font-medium"
+                      >
+                        ☎️ Contact Buyer
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- end: works -->
+              </div>
+              <!-- End of Container -->
+            </main>
+          </div>
+        </div>
+        <!-- End of Main -->
+      </div>
+      <!-- End of Wrapper -->
+    </div>
+    <!-- End of Base -->
+    <div id="headhtmlll"></div>
+    <!-- Share Profile Modal -->
+
+    <!-- End of Page -->
+    <el-dialog>
+      <dialog
+        id="viewApplicationDialog"
+        aria-labelledby="view-application-title"
+        class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent z-50"
+      >
+        <!-- Backdrop -->
+        <el-dialog-backdrop
+          class="fixed inset-0 bg-black/50 transition-opacity"
+        ></el-dialog-backdrop>
+
+        <!-- Modal Container -->
+        <div
+          tabindex="0"
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <el-dialog-panel
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl"
+          >
+            <!-- Header -->
+            <div class="flex items-center justify-between border-b px-6 py-4">
+              <h3
+                id="view-application-title"
+                class="text-lg font-semibold text-gray-900"
+              >
+                Application Details
+              </h3>
+              <button
+                command="close"
+                commandfor="viewApplicationDialog"
+                class="text-gray-400 hover:text-gray-600 text-xl"
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Body -->
+            <div class="px-6 py-4 space-y-4">
+              <p class="text-sm text-gray-500">
+                Complete information for application
+                <span class="font-medium">APP-2024-001</span>
+              </p>
+
+              <!-- Application Status -->
+              <div class="flex justify-end">
+                <span
+                  class="bg-yellow-100 text-yellow-700 text-xs font-medium px-3 py-1 rounded-full"
+                >
+                  Pending
+                </span>
+              </div>
+
+              <!-- Property Information -->
+              <div class="border rounded-lg p-4 shadow-sm bg-gray-50">
+                <h4 class="font-semibold text-gray-800 mb-2">
+                  🏢 Property Information
+                </h4>
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                  alt="Property Image"
+                  class="w-full h-40 object-cover rounded-lg mb-3"
+                />
+                <p class="font-medium text-gray-900">Ocean View Apartment</p>
+                <p class="text-sm text-gray-500">Property ID: P1</p>
+                <p class="text-blue-600 font-semibold mt-2">
+                  Applied Price: ₦15,000,000
+                </p>
+              </div>
+
+              <!-- Applicant Information -->
+              <div class="border rounded-lg p-4 shadow-sm bg-white">
+                <h4 class="font-semibold text-gray-800 mb-2">
+                  👤 Applicant Information
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <div>
+                    <p class="text-gray-500">Full Name</p>
+                    <p class="font-medium text-gray-900">John Adebayo</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500">Email Address</p>
+                    <p class="font-medium text-gray-900">
+                      johnadebayo@email.com
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500">Phone</p>
+                    <p class="font-medium text-gray-900">+234 802 123 4567</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500">Preferred Call Time</p>
+                    <p class="font-medium text-gray-900">Evening</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Financial Information -->
+              <div class="border rounded-lg p-4 shadow-sm bg-gray-50">
+                <h4 class="font-semibold text-gray-800 mb-2">
+                  💰 Financial Information
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <div>
+                    <p class="text-gray-500">Payment Plan</p>
+                    <p class="font-medium text-gray-900">Monthly</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500">Installments</p>
+                    <p class="font-medium text-gray-900">₦3,000,000 × 5</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Application Details -->
+              <div class="border rounded-lg p-4 shadow-sm bg-white">
+                <h4 class="font-semibold text-gray-800 mb-2">
+                  📄 Application Details
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <div>
+                    <p class="text-gray-500">Application ID</p>
+                    <p class="font-medium text-gray-900">APP-2024-001</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-500">Application Date</p>
+                    <p class="font-medium text-gray-900">10/04/2024</p>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-3">
+                  Very interested in this property. Please process quickly.
+                </p>
+              </div>
+
+              <!-- Assessment Recommendation -->
+              <div class="border rounded-lg p-4 shadow-sm bg-gray-50">
+                <h4 class="font-semibold text-gray-800 mb-2">
+                  📊 Assessment Recommendation
+                </h4>
+                <div class="text-sm space-y-1">
+                  <p>
+                    <span class="font-medium text-gray-600"
+                      >Income to Price Ratio:</span
+                    >
+                    <span class="text-gray-900">33%</span>
+                  </p>
+                  <p>
+                    <span class="font-medium text-gray-600"
+                      >Down Payment Rate:</span
+                    >
+                    <span class="text-gray-900">20%</span>
+                  </p>
+                  <p
+                    class="text-green-700 bg-green-100 rounded px-3 py-1 inline-block mt-2"
+                  >
+                    ✅ Down payment meets minimum requirement (20%)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div
+              class="flex flex-col sm:flex-row justify-end sm:justify-between border-t bg-gray-50 px-6 py-4 gap-2"
+            >
+              <div class="flex justify-start">
+                <button
+                  command="close"
+                  commandfor="viewApplicationDialog"
+                  class="rounded-md border border-gray-300 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  Close
+                </button>
+              </div>
+              <div>
+                <button
+                  class="rounded-md bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700"
+                >
+                  Contact Buyer
+                </button>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+    <!-- Scripts -->
+    <script src="static/metronic/tailwind/dist/assets/my-js/sidebar2.js"></script>
+    <script src="static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
+    <script src="static/metronic/tailwind/dist/assets/vendors/ktui/ktui.min.js"></script>
+    <script src="static/metronic/tailwind/dist/assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <!-- End of Scripts -->
+  </body>
+
+  <!-- Mirrored from keenthemes.com/metronic/tailwind/demo8/public-profile/campaigns/card by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Sep 2025 09:38:40 GMT -->
+</html>
