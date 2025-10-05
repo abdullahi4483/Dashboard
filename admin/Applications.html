@@ -428,11 +428,18 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                       >
                         ☎️ Contact Buyer
                       </button>
+                      <button
+                        class="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 text-sm font-medium"
+                        onclick="document.getElementById('createInvoiceDialog').showModal()"
+                      >
+                        Create Invoice
+                      </button>
                     </div>
                   </div>
 
                   <!-- Card 2 -->
-                  <div
+                  <divCreate
+                    Invoice
                     class="bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition"
                   >
                     <div
@@ -528,7 +535,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                         ☎️ Contact Buyer
                       </button>
                     </div>
-                  </div>
+                  </divCreate>
                 </div>
                 <!-- end: works -->
               </div>
@@ -543,7 +550,189 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <!-- End of Base -->
     <div id="headhtmlll"></div>
     <!-- Share Profile Modal -->
+    <el-dialog>
+      <dialog
+        id="createInvoiceDialog"
+        aria-labelledby="create-invoice-title"
+        class="my-dialog"
+      >
+        <!-- Backdrop -->
+        <el-dialog-backdrop class="my-backdrop"></el-dialog-backdrop>
 
+        <!-- Container -->
+        <div tabindex="0" class="my-container">
+          <el-dialog-panel class="my-panel">
+            <!-- Header -->
+            <div class="my-header">
+              <h3
+                id="create-invoice-title"
+                class="text-lg font-semibold text-gray-900"
+              >
+                Create Purchase Invoice
+              </h3>
+              <button
+                command="close"
+                commandfor="createInvoiceDialog"
+                class="text-gray-400 hover:text-gray-600 text-xl"
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Body -->
+            <div class="my-body">
+              <p class="description">
+                Create installment invoices for property buyers with detailed
+                line items and payment terms.
+              </p>
+
+              <div class="my-grid">
+                <!-- Left Section -->
+                <div class="col-span-2 space-y-6">
+                  <!-- Purchase Invoice Details -->
+                  <div class="my-card">
+                    <h4 class="font-medium text-gray-900 mb-3">
+                      Purchase Invoice Details
+                    </h4>
+
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <label class="block text-gray-700 mb-1"
+                          >Property *</label
+                        >
+                        <select class="w-full border rounded px-2 py-1 text-sm">
+                          <option>Select property</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label class="block text-gray-700 mb-1"
+                          >Property Buyer *</label
+                        >
+                        <select class="w-full border rounded px-2 py-1 text-sm">
+                          <option>Select buyer</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <label class="block text-gray-700 mb-1"
+                        >Description *</label
+                      >
+                      <input
+                        type="text"
+                        placeholder="e.g., Property Purchase Installment #1 - December 2024"
+                        class="w-full border rounded px-2 py-1 text-sm"
+                      />
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 mt-4">
+                      <div>
+                        <label class="block text-gray-700 mb-1"
+                          >Due Date *</label
+                        >
+                        <input
+                          type="date"
+                          class="w-full border rounded px-2 py-1 text-sm"
+                        />
+                      </div>
+                      <div>
+                        <label class="block text-gray-700 mb-1"
+                          >Installment # (Optional)</label
+                        >
+                        <input
+                          type="number"
+                          class="w-full border rounded px-2 py-1 text-sm"
+                          placeholder="1"
+                        />
+                      </div>
+                      <div>
+                        <label class="block text-gray-700 mb-1"
+                          >Total Installments (Optional)</label
+                        >
+                        <input
+                          type="number"
+                          class="w-full border rounded px-2 py-1 text-sm"
+                          placeholder="6"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <label class="block text-gray-700 mb-1">Notes</label>
+                      <textarea
+                        class="w-full border rounded px-2 py-1 text-sm"
+                        rows="2"
+                        placeholder="Additional notes for the purchase invoice..."
+                      ></textarea>
+                    </div>
+
+                    <div class="mt-4">
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" class="mr-2" checked />
+                        Allow partial payments for this installment
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Invoice Line Items -->
+                  <div
+                    class="border rounded-lg p-4"
+                    style="
+                      margin-top: 20px;
+                      border: 1px solid rgb(231, 224, 224);
+                      border-radius: 8px;
+                      padding: 20px;
+                    "
+                  >
+                    <h4 class="font-medium text-gray-900 mb-3">
+                      Invoice Line Items
+                    </h4>
+
+                    <div class="flex gap-2 mb-2">
+                      <input
+                        type="text"
+                        placeholder="e.g., Property Purchase Amount"
+                        class="flex-1 border rounded px-2 py-1 text-sm"
+                      />
+                      <input
+                        type="number"
+                        placeholder="Amount (₦)"
+                        class="w-40 border rounded px-2 py-1 text-sm"
+                      />
+                    </div>
+
+                    <button class="add-fee">+ Add Purchase Fee</button>
+
+                    <p class="text-xs text-gray-500 mt-2">
+                      Common purchase fees: Property Purchase Amount • Legal
+                      Documentation • Survey Fees • Title Registration • Land
+                      Transfer Tax • Processing Fees
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="preview">
+                  <div class="preview">
+                    <h4 class="font-medium text-gray-900 mb-3">
+                      Invoice Preview
+                    </h4>
+                    <p class="preview p">Review before creating</p>
+
+                    <div class="flex justify-between text-lg font-semibold">
+                      <span>Invoice Total</span>
+                      <span>₦0</span>
+                    </div>
+
+                    <button class="btn-primary">Create Purchase Invoice</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
     <!-- End of Page -->
     <el-dialog>
       <dialog
@@ -731,6 +920,232 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       </dialog>
     </el-dialog>
     <!-- Scripts -->
+    <style>
+      /* Dialog Wrapper */
+      .my-dialog {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        max-height: none;
+        max-width: none;
+        overflow-y: auto;
+        background-color: transparent;
+        backdrop-filter: none;
+        z-index: 50;
+      }
+
+      /* Backdrop */
+      .my-backdrop {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease-out;
+        opacity: 1;
+      }
+
+      /* Container */
+      .my-container {
+        display: flex;
+        min-height: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+        outline: none;
+      }
+      @media (min-width: 640px) {
+        .my-container {
+          align-items: center;
+          padding: 0;
+        }
+      }
+
+      /* Panel */
+      .my-panel {
+        position: relative;
+        transform: none;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        background-color: #ffffff;
+        text-align: left;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        transition: all 0.3s ease-out;
+        width: 100%;
+      }
+      @media (min-width: 640px) {
+        .my-panel {
+          margin: 2rem 0;
+          max-width: 64rem; /* 5xl */
+        }
+      }
+
+      /* Header */
+      .my-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 1rem 1.5rem;
+      }
+      .my-header h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #111827;
+      }
+      .my-header button {
+        background: none;
+        border: none;
+        font-size: 1.25rem;
+        color: #9ca3af;
+        cursor: pointer;
+      }
+      .my-header button:hover {
+        color: #4b5563;
+      }
+
+      /* Body spacing */
+      .my-body {
+        padding: 1rem 1.5rem;
+      }
+      .my-body p.description {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin-bottom: 1rem;
+      }
+
+      /* Grid Layout */
+      .my-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .my-grid .col-span-2 {
+        grid-column: span 2 / span 2;
+      }
+      .my-grid .col-span-1 {
+        grid-column: span 1 / span 1;
+      }
+
+      /* Card Boxes */
+      .my-card {
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        background: #fff;
+      }
+      .my-card h4 {
+        font-weight: 500;
+        color: #111827;
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+      }
+
+      /* Form Inputs */
+      .my-card label {
+        display: block;
+        font-size: 0.875rem;
+        color: #374151;
+        margin-bottom: 0.25rem;
+      }
+      .my-card input,
+      .my-card select,
+      .my-card textarea {
+        width: 100%;
+        border: 1px solid #d1d5db;
+        border-radius: 0.375rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        color: #111827;
+      }
+      .my-card input:focus,
+      .my-card select:focus,
+      .my-card textarea:focus {
+        outline: none;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 1px #2563eb;
+      }
+
+      /* Checkbox */
+      .my-card input[type="checkbox"] {
+        width: auto;
+        margin-right: 0.5rem;
+      }
+
+      /* Line Items */
+      .line-items {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .line-items input.flex-1 {
+        flex: 1;
+      }
+      .line-items input.w-40 {
+        width: 10rem;
+      }
+      .add-fee {
+        font-size: 0.875rem;
+        color: #2563eb;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      .add-fee:hover {
+        text-decoration: underline;
+      }
+      .my-card p.hint {
+        font-size: 0.75rem;
+        color: #6b7280;
+        margin-top: 0.5rem;
+      }
+
+      /* Preview Section */
+      .preview {
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
+        padding: 1rem;
+      }
+      .preview h4 {
+        font-weight: 500;
+        color: #111827;
+        margin-bottom: 0.75rem;
+      }
+      .preview p {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin-bottom: 0.5rem;
+      }
+      .preview .total {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #111827;
+      }
+
+      /* Buttons */
+      .btn-primary {
+        display: inline-block;
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 0.375rem;
+        background-color: #1e3a8a;
+        color: #fff;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
+        cursor: pointer;
+        text-align: center;
+      }
+      .btn-primary:hover {
+        background-color: #1e40af;
+      }
+    </style>
+    <!-- style -->
     <script src="static/metronic/tailwind/dist/assets/my-js/sidebar2.js"></script>
     <script src="static/metronic/tailwind/dist/assets/js/core.bundle.js"></script>
     <script src="static/metronic/tailwind/dist/assets/vendors/ktui/ktui.min.js"></script>
