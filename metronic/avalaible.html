@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Land Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="min-h-screen p-4 md:p-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Filters Sidebar -->
+        <div class="bg-white shadow-md rounded-3xl p-5 md:col-span-1">
+          <h2 class="text-lg font-semibold mb-4">Filters</h2>
+
+          <!-- Search -->
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Search properties..."
+              class="w-full p-2 rounded-xl border border-gray-200 focus:ring focus:ring-green-200"
+            />
+          </div>
+
+          <!-- Dropdowns -->
+          <div class="space-y-3">
+            <select
+              class="w-full p-2 rounded-xl border border-gray-200 focus:ring focus:ring-green-200"
+            >
+              <option>All Phases</option>
+              <option>Phase 1</option>
+              <option>Phase 2</option>
+            </select>
+
+            <select
+              class="w-full p-2 rounded-xl border border-gray-200 focus:ring focus:ring-green-200"
+            >
+              <option>All Status</option>
+              <option>Available</option>
+              <option>Sold</option>
+            </select>
+
+            <select
+              class="w-full p-2 rounded-xl border border-gray-200 focus:ring focus:ring-green-200"
+            >
+              <option>All Prices</option>
+              <option>₦1m - ₦5m</option>
+              <option>₦5m - ₦10m</option>
+            </select>
+          </div>
+
+          <p class="text-sm text-gray-600 mt-5">3 properties found</p>
+        </div>
+
+        <!-- Available Land Section -->
+        <div class="md:col-span-3">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between mb-6"
+          >
+            <div>
+              <h2 class="text-2xl font-semibold text-gray-800">
+                Available properties
+              </h2>
+              <p class="text-gray-500">
+                Browse our collection of premium land properties
+              </p>
+            </div>
+          </div>
+
+          <!-- Property Cards Grid -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div
+              class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-lg transition"
+            >
+              <div class="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+                  alt="property"
+                  class="w-full h-48 object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full"
+                  >Unspecified</span
+                >
+                <span
+                  class="absolute top-3 right-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full"
+                  >available</span
+                >
+              </div>
+
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Test</h3>
+                <p class="text-gray-600 text-sm flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 text-gray-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 20.25c4.97 0 9-4.03 9-9S16.97 2.25 12 2.25 3 6.28 3 11.25s4.03 9 9 9Z"
+                    />
+                  </svg>
+                  ehehe
+                </p>
+                <p class="text-gray-500 text-sm mt-1">test1</p>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span class="text-xs bg-gray-100 px-3 py-1 rounded-full"
+                    >djd.ldl</span
+                  >
+                  <span class="text-xs bg-gray-100 px-3 py-1 rounded-full"
+                    >length</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-lg transition"
+            >
+              <div class="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1587574293340-611f67836bdb?auto=format&fit=crop&w=800&q=80"
+                  alt="property"
+                  class="w-full h-48 object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full"
+                  >Unspecified</span
+                >
+                <span
+                  class="absolute top-3 right-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full"
+                  >available</span
+                >
+              </div>
+
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Last</h3>
+                <p class="text-gray-600 text-sm flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 text-gray-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 20.25c4.97 0 9-4.03 9-9S16.97 2.25 12 2.25 3 6.28 3 11.25s4.03 9 9 9Z"
+                    />
+                  </svg>
+                  er
+                </p>
+                <p class="text-gray-500 text-sm mt-1">
+                  No description available.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span class="text-xs bg-gray-100 px-3 py-1 rounded-full"
+                    >er</span
+                  >
+                  <span class="text-xs bg-gray-100 px-3 py-1 rounded-full"
+                    >ere</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-white rounded-3xl shadow-sm overflow-hidden hover:shadow-lg transition"
+            >
+              <div class="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                  alt="property"
+                  class="w-full h-48 object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full"
+                  >Unspecified</span
+                >
+                <span
+                  class="absolute top-3 right-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full"
+                  >available</span
+                >
+              </div>
+
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">S Tast</h3>
+                <p class="text-gray-600 text-sm flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 text-gray-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 20.25c4.97 0 9-4.03 9-9S16.97 2.25 12 2.25 3 6.28 3 11.25s4.03 9 9 9Z"
+                    />
+                  </svg>
+                  Plot 1162 CRD Estate
+                </p>
+                <p class="text-gray-500 text-sm mt-1">Test all description</p>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span class="text-xs bg-gray-100 px-3 py-1 rounded-full"
+                    >Feature 1</span
+                  >
+                  <span class="text-xs bg-gray-100 px-3 py-1 rounded-full"
+                    >Feature 2 and Feature 3</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
