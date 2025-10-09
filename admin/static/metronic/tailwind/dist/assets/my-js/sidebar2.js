@@ -124,24 +124,42 @@ const sideHtmll = `<div
               </div>
 
               <div class="kt-menu-item">
-              <a
-                class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
-                href="Applications.html"
-              >
-                <span
-                  class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
+                <a
+                  class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
+                  href="Applications.html"
                 >
-                  <i class="ki-outline ki-home text-xl"></i>
+                  <span
+                    class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
+                  >
+                    <i class="ki-outline ki-home text-xl"></i>
 
-                </span>
-                <span
-                  class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                  </span>
+                  <span
+                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                  >
+                    Applications
+                  </span>
+                </a>
+              </div>
+              <div class="kt-menu-item">
+                <a
+                  class="kt-menu-link rounded-[9px] border border-transparent kt-menu-item-active:border-border kt-menu-item-active:bg-background kt-menu-link-hover:bg-background kt-menu-link-hover:border-border w-[62px] h-[60px] flex flex-col justify-center items-center gap-1 p-2"
+                  href="allocation.html"
                 >
-                  Applications
-                </span>
-              </a>
-            </div>
-              
+                  <span
+                    class="kt-menu-icon kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground"
+                  >
+                    <i class="ki-outline ki-plus text-xl"></i>
+
+
+                  </span>
+                  <span
+                    class="kt-menu-title text-xs kt-menu-item-here:text-primary kt-menu-item-active:text-primary kt-menu-link-hover:text-primary text-secondary-foreground font-medium"
+                  >
+                    Allocations
+                  </span>
+                </a>
+              </div>
             </div>
             <!-- End of Sidebar Menu -->
           </div>
