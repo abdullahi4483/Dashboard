@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4"
+  >
+    <div class="bg-white w-full max-w-4xl rounded-lg shadow-lg overflow-hidden">
+      <!-- Cover Image -->
+      <div class="h-40 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+
+      <!-- Profile Section -->
+      <div class="relative px-6 pb-6">
+        <!-- Profile Picture -->
+        <div class="absolute -top-16 left-6">
+          <img
+            src="https://i.pravatar.cc/150?img=12"
+            alt="Profile"
+            class="w-32 h-32 rounded-full border-4 border-white shadow-md object-cover"
+          />
+        </div>
+
+        <!-- User Info -->
+        <div class="pt-20 md:flex md:items-center md:justify-between">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-800">Abdullahi Bello</h1>
+            <p class="text-gray-500">Software Developer</p>
+            <p class="text-gray-400 text-sm mt-1">@abdullahi.dev</p>
+          </div>
+          <button
+            class="mt-4 md:mt-0 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
+          >
+            Edit Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Bio Section -->
+      <div class="border-t px-6 py-4">
+        <h2 class="font-semibold text-gray-700 mb-2">About</h2>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Passionate full-stack developer with a focus on building scalable web
+          applications. Experienced in Tailwind CSS, JavaScript, and modern
+          frameworks. Loves problem-solving and creating beautiful UI
+          experiences.
+        </p>
+      </div>
+
+      <!-- Stats Section -->
+      <div
+        class="border-t px-6 py-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+      >
+        <div>
+          <h3 class="text-xl font-bold text-gray-800">120</h3>
+          <p class="text-sm text-gray-500">Projects</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-800">85</h3>
+          <p class="text-sm text-gray-500">Clients</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-800">10+</h3>
+          <p class="text-sm text-gray-500">Years Experience</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-800">5</h3>
+          <p class="text-sm text-gray-500">Awards</p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="border-t px-6 py-4">
+        <h2 class="font-semibold text-gray-700 mb-3">Contact Information</h2>
+        <div class="space-y-2 text-sm text-gray-600">
+          <p><strong>Email:</strong> abdullahi@example.com</p>
+          <p><strong>Phone:</strong> +234 812 345 6789</p>
+          <p><strong>Location:</strong> Abuja, Nigeria</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
